@@ -119,8 +119,8 @@ If you haven't already, set up Quartz to automatically deploy on push:
 > >         uses: actions/deploy-pages@v4
 > > ```
 >
-> > [!EXAMPLE]- Option 2: Quartz with Obsidian Theme
-> > For using an Obsidian Theme in Quartz.
+> > [!EXAMPLE]- Option 2: Quartz with Quartz Themes
+> > For using an Obsidian Theme with Quartz.
 > >
 > > > [!IMPORTANT] Don't forget to replace `THEME-NAME` with your Obsidian theme of choice
 > > > A list of theme options can be [found here](https://github.com/saberzero1/quartz-themes?tab=readme-ov-file#supported-themes).
@@ -191,11 +191,11 @@ In Obsidian, open `Settings > Community Plugins > Quartz Syncer > Options` and c
 > Using the original Quartz repository as an example:
 >
 > The repository is hosted at https://github.com/jackyzha0/quartz.
-> - Repository name: `quartz`
-> - Username: `jackyzha0`
-> - GitHub token: generated token. usually starts with `ghp_`.
+> - *Repository name*: `quartz`
+> - *Username*: `jackyzha0`
+> - *GitHub token*: generated token. usually starts with `ghp_`.
 
-After setting all three fields, you should get a green checkmark in the Quartz Syncer options. If not, check [[troubleshooting/Authentication\|the relevant troubleshooting page]] for help.
+After setting all three fields, you should get a green checkmark in the Quartz Syncer options. If not, check [[Documentation/Authentication\|the relevant troubleshooting page]] for help.
 
 ## That's it
 
