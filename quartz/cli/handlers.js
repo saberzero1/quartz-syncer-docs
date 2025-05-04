@@ -1,11 +1,11 @@
 import { promises } from "fs"
 import path from "path"
 import esbuild from "esbuild"
-import { styleText } from "util"
+import chalk from "chalk"
 import { sassPlugin } from "esbuild-sass-plugin"
 import fs from "fs"
 import { intro, outro, select, text } from "@clack/prompts"
-import { rm } from "fs/promises"
+import { rimraf } from "rimraf"
 import chokidar from "chokidar"
 import prettyBytes from "pretty-bytes"
 import { execSync, spawnSync } from "child_process"
@@ -48,7 +48,7 @@ function resolveContentPath(contentPath) {
  */
 export async function handleCreate(argv) {
   console.log()
-  intro(styleText(["bgGreen", "black"], ` Quartz v${version} `))
+  intro(chalk.bgGreen.black(` Quartz v${version} `))
   const contentFolder = resolveContentPath(argv.directory)
   let setupStrategy = argv.strategy?.toLowerCase()
   let linkResolutionStrategy = argv.links?.toLowerCase()
@@ -61,16 +61,12 @@ export async function handleCreate(argv) {
       // Error handling
       if (!sourceDirectory) {
         outro(
-          styleText(
-            "red",
-            `Setup strategies (arg '${styleText(
-              "yellow",
+          chalk.red(
+            `Setup strategies (arg '${chalk.yellow(
               `-${CreateArgv.strategy.alias[0]}`,
-            )}') other than '${styleText(
-              "yellow",
+            )}') other than '${chalk.yellow(
               "new",
-            )}' require content folder argument ('${styleText(
-              "yellow",
+            )}' require content folder argument ('${chalk.yellow(
               `-${CreateArgv.source.alias[0]}`,
             )}') to be set`,
           ),
@@ -79,23 +75,19 @@ export async function handleCreate(argv) {
       } else {
         if (!fs.existsSync(sourceDirectory)) {
           outro(
-            styleText(
-              "red",
-              `Input directory to copy/symlink 'content' from not found ('${styleText(
-                "yellow",
+            chalk.red(
+              `Input directory to copy/symlink 'content' from not found ('${chalk.yellow(
                 sourceDirectory,
-              )}', invalid argument "${styleText("yellow", `-${CreateArgv.source.alias[0]}`)})`,
+              )}', invalid argument "${chalk.yellow(`-${CreateArgv.source.alias[0]}`)})`,
             ),
           )
           process.exit(1)
         } else if (!fs.lstatSync(sourceDirectory).isDirectory()) {
           outro(
-            styleText(
-              "red",
-              `Source directory to copy/symlink 'content' from is not a directory (found file at '${styleText(
-                "yellow",
+            chalk.red(
+              `Source directory to copy/symlink 'content' from is not a directory (found file at '${chalk.yellow(
                 sourceDirectory,
-              )}', invalid argument ${styleText("yellow", `-${CreateArgv.source.alias[0]}`)}")`,
+              )}', invalid argument ${chalk.yellow(`-${CreateArgv.source.alias[0]}`)}")`,
             ),
           )
           process.exit(1)
@@ -127,7 +119,7 @@ export async function handleCreate(argv) {
     if (contentStat.isSymbolicLink()) {
       await fs.promises.unlink(contentFolder)
     } else {
-      await rm(contentFolder, { recursive: true, force: true })
+      await rimraf(contentFolder)
     }
   }
 
@@ -237,7 +229,7 @@ export async function handleBuild(argv) {
     argv.watch = true
   }
 
-  console.log(`\n${styleText(["bgGreen", "black"], ` Quartz v${version} `)} \n`)
+  console.log(chalk.bgGreen.black(`\n Quartz v${version} \n`))
   const ctx = await esbuild.context({
     entryPoints: [fp],
     outfile: cacheFile,
@@ -312,13 +304,13 @@ export async function handleBuild(argv) {
     }
 
     if (cleanupBuild) {
-      console.log(styleText("yellow", "Detected a source code change, doing a hard rebuild..."))
+      console.log(chalk.yellow("Detected a source code change, doing a hard rebuild..."))
       await cleanupBuild()
     }
 
     const result = await ctx.rebuild().catch((err) => {
-      console.error(`${styleText("red", "Couldn't parse Quartz configuration:")} ${fp}`)
-      console.log(`Reason: ${styleText("grey", err)}`)
+      console.error(`${chalk.red("Couldn't parse Quartz configuration:")} ${fp}`)
+      console.log(`Reason: ${chalk.grey(err)}`)
       process.exit(1)
     })
     release()
@@ -356,8 +348,7 @@ export async function handleBuild(argv) {
     const server = http.createServer(async (req, res) => {
       if (argv.baseDir && !req.url?.startsWith(argv.baseDir)) {
         console.log(
-          styleText(
-            "red",
+          chalk.red(
             `[404] ${req.url} (warning: link outside of site, this is likely a Quartz bug)`,
           ),
         )
@@ -392,10 +383,8 @@ export async function handleBuild(argv) {
         })
         const status = res.statusCode
         const statusString =
-          status >= 200 && status < 300
-            ? styleText("green", `[${status}]`)
-            : styleText("red", `[${status}]`)
-        console.log(statusString + styleText("grey", ` ${argv.baseDir}${req.url}`))
+          status >= 200 && status < 300 ? chalk.green(`[${status}]`) : chalk.red(`[${status}]`)
+        console.log(statusString + chalk.grey(` ${argv.baseDir}${req.url}`))
         release()
       }
 
@@ -404,10 +393,7 @@ export async function handleBuild(argv) {
         res.writeHead(302, {
           Location: newFp,
         })
-        console.log(
-          styleText("yellow", "[302]") +
-            styleText("grey", ` ${argv.baseDir}${req.url} -> ${newFp}`),
-        )
+        console.log(chalk.yellow("[302]") + chalk.grey(` ${argv.baseDir}${req.url} -> ${newFp}`))
         res.end()
       }
 
@@ -457,8 +443,7 @@ export async function handleBuild(argv) {
     const wss = new WebSocketServer({ port: argv.wsPort })
     wss.on("connection", (ws) => connections.push(ws))
     console.log(
-      styleText(
-        "cyan",
+      chalk.cyan(
         `Started a Quartz server listening at http://localhost:${argv.port}${argv.baseDir}`,
       ),
     )
@@ -482,7 +467,7 @@ export async function handleBuild(argv) {
       .on("change", () => build(clientRefresh))
       .on("unlink", () => build(clientRefresh))
 
-    console.log(styleText("grey", "hint: exit with ctrl+c"))
+    console.log(chalk.grey("hint: exit with ctrl+c"))
   }
 }
 
@@ -492,7 +477,7 @@ export async function handleBuild(argv) {
  */
 export async function handleUpdate(argv) {
   const contentFolder = resolveContentPath(argv.directory)
-  console.log(`\n${styleText(["bgGreen", "black"], ` Quartz v${version} `)} \n`)
+  console.log(chalk.bgGreen.black(`\n Quartz v${version} \n`))
   console.log("Backing up your content")
   execSync(
     `git remote show upstream || git remote add upstream https://github.com/jackyzha0/quartz.git`,
@@ -505,7 +490,7 @@ export async function handleUpdate(argv) {
   try {
     gitPull(UPSTREAM_NAME, QUARTZ_SOURCE_BRANCH)
   } catch {
-    console.log(styleText("red", "An error occurred above while pulling updates."))
+    console.log(chalk.red("An error occurred above while pulling updates."))
     await popContentFolder(contentFolder)
     return
   }
@@ -532,9 +517,9 @@ export async function handleUpdate(argv) {
 
   const res = spawnSync("npm", ["i"], opts)
   if (res.status === 0) {
-    console.log(styleText("green", "Done!"))
+    console.log(chalk.green("Done!"))
   } else {
-    console.log(styleText("red", "An error occurred above while installing dependencies."))
+    console.log(chalk.red("An error occurred above while installing dependencies."))
   }
 }
 
@@ -553,14 +538,14 @@ export async function handleRestore(argv) {
  */
 export async function handleSync(argv) {
   const contentFolder = resolveContentPath(argv.directory)
-  console.log(`\n${styleText(["bgGreen", "black"], ` Quartz v${version} `)}\n`)
+  console.log(chalk.bgGreen.black(`\n Quartz v${version} \n`))
   console.log("Backing up your content")
 
   if (argv.commit) {
     const contentStat = await fs.promises.lstat(contentFolder)
     if (contentStat.isSymbolicLink()) {
       const linkTarg = await fs.promises.readlink(contentFolder)
-      console.log(styleText("yellow", "Detected symlink, trying to dereference before committing"))
+      console.log(chalk.yellow("Detected symlink, trying to dereference before committing"))
 
       // stash symlink file
       await stashContentFolder(contentFolder)
@@ -595,7 +580,7 @@ export async function handleSync(argv) {
     try {
       gitPull(ORIGIN_NAME, QUARTZ_SOURCE_BRANCH)
     } catch {
-      console.log(styleText("red", "An error occurred above while pulling updates."))
+      console.log(chalk.red("An error occurred above while pulling updates."))
       await popContentFolder(contentFolder)
       return
     }
@@ -609,12 +594,10 @@ export async function handleSync(argv) {
       stdio: "inherit",
     })
     if (res.status !== 0) {
-      console.log(
-        styleText("red", `An error occurred above while pushing to remote ${ORIGIN_NAME}.`),
-      )
+      console.log(chalk.red(`An error occurred above while pushing to remote ${ORIGIN_NAME}.`))
       return
     }
   }
 
-  console.log(styleText("green", "Done!"))
+  console.log(chalk.green("Done!"))
 }

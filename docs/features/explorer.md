@@ -43,7 +43,9 @@ Want to customize it even more?
 - Removing explorer: remove `Component.Explorer()` from `quartz.layout.ts`
   - (optional): After removing the explorer component, you can move the [[table of contents | Table of Contents]] component back to the `left` part of the layout
 - Changing `sort`, `filter` and `map` behavior: explained in [[#Advanced customization]]
-- Component: `quartz/components/Explorer.tsx`
+- Component:
+  - Wrapper (Outer component, generates file tree, etc): `quartz/components/Explorer.tsx`
+  - Explorer node (recursive, either a folder or a file): `quartz/components/ExplorerNode.tsx`
 - Style: `quartz/components/styles/explorer.scss`
 - Script: `quartz/components/scripts/explorer.inline.ts`
 
@@ -186,7 +188,7 @@ Component.Explorer({
 > and passing it in.
 >
 > ```ts title="quartz.layout.ts"
-> import { Options } from "./quartz/components/Explorer"
+> import { Options } from "./quartz/components/ExplorerNode"
 >
 > export const mapFn: Options["mapFn"] = (node) => {
 >   // implement your function here
