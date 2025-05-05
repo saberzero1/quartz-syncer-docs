@@ -196,7 +196,7 @@ In Obsidian, open `Settings > Community Plugins > Quartz Syncer > Options` and c
 > - *Username*: `jackyzha0`
 > - *GitHub token*: generated token. usually starts with `ghp_`.
 
-After setting all three fields, you should get a green checkmark in the Quartz Syncer options. If not, check [[Documentation/Authentication\|the relevant troubleshooting page]] for help.
+After setting all three fields, you should get a green checkmark in the Quartz Syncer options. If not, check [[Troubleshooting/Authentication\|the relevant troubleshooting page]] for help.
 
 ## That's it
 
