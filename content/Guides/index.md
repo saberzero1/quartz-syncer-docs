@@ -3,7 +3,7 @@
 ---
 
 
-| Category                                                                                     | Description                                                   |
-| -------------------------------------------------------------------------------------------- | ------------------------------------------------------------- |
-| [[Guides/Generating a fine-grained access token\|Generating a fine-grained access token]] | Guide on how to generated an authentication token for GitHub. |
+| Category                                                             | Description                                                   |
+| -------------------------------------------------------------------- | ------------------------------------------------------------- |
+| [[Guides/Generating an access token\|Generating an access token]] | Guide on how to generated an authentication token for GitHub. |
 
