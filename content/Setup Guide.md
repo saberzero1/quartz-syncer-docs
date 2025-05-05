@@ -1,5 +1,5 @@
 ---
-{"title":"Setup Guide","description":"Instructions for setting up Quartz Syncer plugin.","created":"04-05-25","date":"05-05-25","publish":true,"PassFrontmatter":true}
+{"title":"Setup Guide","description":"Instructions for setting up Quartz Syncer plugin.","created":"2025-05-04T00:00:00+02:00","date":"2025-05-06T00:28:34+02:00","publish":true,"PassFrontmatter":true}
 ---
 
 
@@ -20,7 +20,7 @@ Configure the following settings in the `quartz.config.ts` file:
 
 (Below example only shows a subset of all settings. Please do not remove any settings.)
 
-```ts title="quartz.config.ts" {3,6,12,25ú}
+```ts title="quartz.config.ts" {3,6,12,25}
 const config: QuartzConfig = {
   configuration: {
     pageTitle: "Quartz 4",
