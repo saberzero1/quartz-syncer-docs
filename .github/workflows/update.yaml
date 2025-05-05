@@ -32,4 +32,4 @@ jobs:
           git config --global user.name "github-actions[bot]"
           git config remote.upstream.url >&- || git remote add upstream https://github.com/jackyzha0/quartz.git
           git pull upstream v4 -X theirs --allow-unrelated-histories --no-edit
-          git status
+          git push
