@@ -15,7 +15,3 @@
 ## Usage
 
 [[Usage Guide\|Usage Guide]].
-
-[[Setup Guide.pdf]]
-
-![[Setup Guide.pdf]]
