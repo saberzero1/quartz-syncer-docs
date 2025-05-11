@@ -18,4 +18,4 @@
 
 [[Setup Guide.pdf]]
 
-![[Setup%20Guide.pdf]]
+![[Setup Guide.pdf]]
