@@ -1,8 +1,8 @@
 ---
-{"title":"Troubleshooting","description":"Troubleshooting common issues.","created":"2004-05-25T00:00:00+02:00","date":"2025-05-14T11:47:13+02:00","publish":true,"PassFrontmatter":true}
+{"title":"Troubleshooting","description":"Troubleshooting common issues.","created":"2004-05-25T00:00:00+02:00","date":"2025-05-14T12:56:35+02:00","publish":true,"PassFrontmatter":true}
 ---
 
-Hello!
+
 | Category                                              | Description                                                    |
 | ----------------------------------------------------- | -------------------------------------------------------------- |
 | [[Authentication\|Authentication]] | Documentation related to GitHub authentication.                |
