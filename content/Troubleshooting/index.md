@@ -3,10 +3,6 @@
 ---
 
 
-Hello!
-
-![[../Troubleshooting/test.png]]
-
 | Category                                              | Description                                                    |
 | ----------------------------------------------------- | -------------------------------------------------------------- |
 | [[Troubleshooting/Authentication\|Authentication]] | Documentation related to GitHub authentication.                |
