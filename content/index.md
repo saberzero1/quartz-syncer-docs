@@ -5,15 +5,15 @@
 
 Hello!
 
-![[../Troubleshooting/test.png]]
+![[test.png]]
 
 | Category                                              | Description                                                    |
 | ----------------------------------------------------- | -------------------------------------------------------------- |
-| [[Troubleshooting/Authentication\|Authentication]] | Documentation related to GitHub authentication.                |
-| [[Troubleshooting/Dataview\|Dataview]]             | Documentation related to using the Dataview Obsidian plugin.   |
-| [[Troubleshooting/Excalidraw\|Excalidraw]]         | Documentation related to using the Excalidraw Obsidian plugin. |
-| [[Troubleshooting/Frontmatter\|Frontmatter]]       | Documentation related to using Frontmatter.                    |
-| [[Troubleshooting/Quartz\|Quartz]]                 | Documentation related to Quartz.                               |
+| [[Authentication\|Authentication]] | Documentation related to GitHub authentication.                |
+| [[Dataview\|Dataview]]             | Documentation related to using the Dataview Obsidian plugin.   |
+| [[Excalidraw\|Excalidraw]]         | Documentation related to using the Excalidraw Obsidian plugin. |
+| [[Frontmatter\|Frontmatter]]       | Documentation related to using Frontmatter.                    |
+| [[Quartz\|Quartz]]                 | Documentation related to Quartz.                               |
 
 
 ## I have a different issue not listed here
