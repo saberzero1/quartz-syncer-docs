@@ -3,12 +3,12 @@
 ---
 
 
-| Category                                        | Description                                                                 |
-| ----------------------------------------------- | --------------------------------------------------------------------------- |
-| [[Settings/GitHub/index\|GitHub]]            | Quartz Syncer settings related to GitHub.                                   |
-| [[Settings/Interations/index\|Integrations]] | Quartz Syncer settings related to integrations with other Obsidian plugins. |
-| [[Settings/Quartz/index\|Quartz]]            | Quartz Syncer settings related to Quartz.                                   |
-| [[Settings/Themes/index\|Themes]]            | Quartz Syncer settings related to Quartz Themes.                            |
+| Category                                         | Description                                                                 |
+| ------------------------------------------------ | --------------------------------------------------------------------------- |
+| [[Settings/GitHub/index\|GitHub]]             | Quartz Syncer settings related to GitHub.                                   |
+| [[Settings/Integrations/index\|Integrations]] | Quartz Syncer settings related to integrations with other Obsidian plugins. |
+| [[Settings/Quartz/index\|Quartz]]             | Quartz Syncer settings related to Quartz.                                   |
+| [[Settings/Themes/index\|Themes]]             | Quartz Syncer settings related to Quartz Themes.                            |
 
 
 ## GitHub (check connection)
