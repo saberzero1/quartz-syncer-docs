@@ -1,15 +1,15 @@
 ---
-{"title":"Troubleshooting","description":"Troubleshooting common issues.","created":"2025-05-05T00:00:00Z+0200","date":"2025-05-15T08:57:29Z+0200","publish":true,"test":true,"PassFrontmatter":true}
+{"title":"Troubleshooting","description":"Troubleshooting common issues.","created":"2025-05-05T00:00:00Z+0200","date":"2025-05-16T12:38:02Z+0200","publish":true,"PassFrontmatter":true}
 ---
 
 
-| Category                                              | Description                                                    |
-| ----------------------------------------------------- | -------------------------------------------------------------- |
-| [[Troubleshooting/Authentication\|Authentication]] | Documentation related to GitHub authentication.                |
-| [[Troubleshooting/Dataview\|Dataview]]             | Documentation related to using the Dataview Obsidian plugin.   |
-| [[Troubleshooting/Excalidraw\|Excalidraw]]         | Documentation related to using the Excalidraw Obsidian plugin. |
-| [[Troubleshooting/Frontmatter\|Frontmatter]]       | Documentation related to using Frontmatter.                    |
-| [[Troubleshooting/Quartz\|Quartz]]                 | Documentation related to Quartz.                               |
+| Category                                              | Description                                                             |
+| ----------------------------------------------------- | ----------------------------------------------------------------------- |
+| [[Troubleshooting/Authentication\|Authentication]] | Troubleshooting issues related to GitHub authentication.                |
+| [[Troubleshooting/Dataview\|Dataview]]             | Troubleshooting issues related to using the Dataview Obsidian plugin.   |
+| [[Troubleshooting/Excalidraw\|Excalidraw]]         | Troubleshooting issues related to using the Excalidraw Obsidian plugin. |
+| [[Troubleshooting/Frontmatter\|Frontmatter]]       | Troubleshooting issues related to Frontmatter.                          |
+| [[Troubleshooting/Quartz\|Quartz]]                 | Troubleshooting issues related to Quartz.                               |
 
 
 ## I have a different issue not listed here

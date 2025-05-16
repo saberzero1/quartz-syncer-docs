@@ -1,9 +1,11 @@
 ---
-{"title":"Guides","description":"Guides and tutorials for using Quartz Syncer.","created":"2005-05-25T00:00:00Z+0200","date":"2025-05-15T08:57:29Z+0200","publish":true,"PassFrontmatter":true}
+{"title":"Guides","description":"Guides and tutorials for using Quartz Syncer.","created":"2025-05-15T00:00:00Z+0200","date":"2025-05-16T12:46:25Z+0200","publish":true,"PassFrontmatter":true}
 ---
 
 
-| Category                                                             | Description                                                   |
-| -------------------------------------------------------------------- | ------------------------------------------------------------- |
-| [[Guides/Generating an access token\|Generating an access token]] | Guide on how to generated an authentication token for GitHub. |
+| Category                                                                                                         | Description                                                                                        |
+| ---------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------- |
+| [[Guides/Configuring a specific folder for Quartz content\|Configuring a specific folder for Quartz content]] | Guide on how to configure a specific folder in your vault for Quartz instead of your entire vault. |
+| [[Guides/Generating an access token\|Generating an access token]]                                             | Guide on how to generated an authentication token for GitHub.                                      |
+| [[Guides/Using an Obsidian theme in Quartz\|Using an Obsidian theme in Quartz]]                               | Guide on how to use Quartz Themes to use an Obsidian theme in Quartz.                              |
 
