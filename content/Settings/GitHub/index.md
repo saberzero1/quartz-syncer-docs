@@ -5,8 +5,8 @@
 
 | Category                                                              | Description                                                          | Default value |
 | --------------------------------------------------------------------- | -------------------------------------------------------------------- | ------------- |
-| [[Settings/GitHub/Access token\|Access token]]                     | Quartz Syncer settings related to access token for GitHub.           | ""            |
-| [[Settings/GitHub/Repository name\|Repository name]]               | Quartz Syncer settings related to repository name for GitHub.        | ""            |
-| [[Settings/GitHub/Username\|Username]]                             | Quartz Syncer settings related to username for GitHub.               | ""            |
-| [[Settings/GitHub/Vault root folder name\|Vault root folder name]] | Quartz Syncer settings related to vault root folder name for GitHub. | /             |
+| [[Settings/GitHub/Access token\|Access token]]                     | Quartz Syncer settings related to access token for GitHub.           | `""`          |
+| [[Settings/GitHub/Repository name\|Repository name]]               | Quartz Syncer settings related to repository name for GitHub.        | `""`          |
+| [[Settings/GitHub/Username\|Username]]                             | Quartz Syncer settings related to username for GitHub.               | `""`          |
+| [[Settings/GitHub/Vault root folder name\|Vault root folder name]] | Quartz Syncer settings related to vault root folder name for GitHub. | `/`           |
 
