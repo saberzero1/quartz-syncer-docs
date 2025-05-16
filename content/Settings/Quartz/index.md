@@ -3,7 +3,7 @@
 ---
 
 
-| Category                                              | Description                                                  |
-| ----------------------------------------------------- | ------------------------------------------------------------ |
-| [[Settings/Quartz/Content folder\|Content folder]] | Quartz Syncer settings related to content folder for Quartz. |
+| Category                                              | Description                                                  | Default value |
+| ----------------------------------------------------- | ------------------------------------------------------------ | ------------- |
+| [[Settings/Quartz/Content folder\|Content folder]] | Quartz Syncer settings related to content folder for Quartz. | content       |
 
