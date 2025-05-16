@@ -1,5 +1,5 @@
 ---
-{"title":"Roadmap","description":"Changelog and feature roadmap for Quartz Syncer.","created":"2025-05-16T12:59:31Z+0200","date":"2025-05-16T13:58:18Z+0200","publish":true,"PassFrontmatter":true}
+{"title":"Roadmap","description":"Changelog and feature roadmap for Quartz Syncer.","created":"2025-05-16T12:59:31Z+0200","date":"2025-05-16T21:36:02Z+0200","publish":true,"PassFrontmatter":true}
 ---
 
 
@@ -17,7 +17,7 @@
 
 ## Someday
 
-- Manage Quartz settings.
+- Manage Quartz configuration.
 - Manage Quartz layout.
 - Manage Quartz plugins.
 
@@ -48,6 +48,7 @@
 	- Document (new): `pdf`
 - Added a new icon.
 - Added this documention website.
+- Fixed deleting multiple files in single commit.
 
 ### Version 1.3.1
 
