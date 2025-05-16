@@ -1,5 +1,5 @@
 ---
-{"title":"Setup Guide","description":"Instructions for setting up Quartz Syncer plugin.","created":"2025-05-05T12:00:00Z+0200","date":"2025-05-15T08:55:40Z+0200","publish":true,"PassFrontmatter":true}
+{"title":"Setup Guide","description":"Instructions for setting up Quartz Syncer plugin.","created":"2025-05-05T12:00:00+02:00","date":"2025-05-16T20:44:23+02:00","publish":true,"PassFrontmatter":true}
 ---
 
 
@@ -225,7 +225,7 @@ In Obsidian, open `Settings > Community Plugins > Quartz Syncer > Options` and c
 > The repository is hosted at https://github.com/jackyzha0/quartz.
 > - *Repository name*: `quartz`
 > - *Username*: `jackyzha0`
-> - *GitHub token*: generated token. usually starts with `ghp_`.
+> - *GitHub token*: generated token. usually starts with `github_pat_` or `ghp_`.
 
 After setting all three fields, you should get a green checkmark in the Quartz Syncer options. If not, check [[Troubleshooting/Authentication\|the relevant troubleshooting page]] for help.
 
