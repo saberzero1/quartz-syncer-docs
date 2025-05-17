@@ -1,12 +1,12 @@
 ---
-{"title":"GitHub","description":"Quartz Syncer settings related to GitHub.","created":"2025-05-15T10:59:23Z+0200","date":"2025-05-17T00:08:37Z+0200","publish":true,"PassFrontmatter":true}
+{"title":"GitHub","description":"Quartz Syncer settings related to GitHub.","created":"2025-05-15T10:59:23Z+0200","date":"2025-05-17T00:08:37Z+0200","publish":true}
 ---
 
 
-| Category                                                              | Description                                                          | Default value |
-| --------------------------------------------------------------------- | -------------------------------------------------------------------- | ------------- |
-| [[Settings/GitHub/Access token\|Access token]]                     | Quartz Syncer settings related to access token for GitHub.           | `""`          |
-| [[Settings/GitHub/Repository name\|Repository name]]               | Quartz Syncer settings related to repository name for GitHub.        | `""`          |
-| [[Settings/GitHub/Username\|Username]]                             | Quartz Syncer settings related to username for GitHub.               | `""`          |
-| [[Settings/GitHub/Vault root folder name\|Vault root folder name]] | Quartz Syncer settings related to vault root folder name for GitHub. | `/`           |
+| Category                                                              | Description                                                        | Default value      |
+| --------------------------------------------------------------------- | ------------------------------------------------------------------ | ------------------ |
+| [[Settings/GitHub/Access token\|Access token]]                     | Access token to authenticate to GitHub.                            | `""`               |
+| [[Settings/GitHub/Repository name\|Repository name]]               | Quartz repository name on GitHub.                                  | `"quartz"`         |
+| [[Settings/GitHub/Username\|Username]]                             | Username or organization that own the Quartz repository on GitHub. | `""`               |
+| [[Settings/GitHub/Vault root folder name\|Vault root folder name]] | Folder in vault to use for Quartz notes.                           | `/` (entire vault) |
 
