@@ -1,5 +1,5 @@
 ---
-{"title":"GitHub","description":"Quartz Syncer settings related to GitHub.","created":"2025-05-15T10:59:23Z+0200","date":"2025-05-17T00:08:37Z+0200","publish":true}
+{"title":"GitHub","description":"Quartz Syncer settings related to GitHub.","created":"2025-05-15T10:59:23Z+0200","date":"2025-05-17T00:08:37Z+0200","publish":true,"cssclasses":""}
 ---
 
 

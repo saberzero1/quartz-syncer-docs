@@ -1,5 +1,5 @@
 ---
-{"title":"Quartz","description":"Troubleshooting issues related to Quartz.","created":"2025-05-05T00:00:00Z+0200","date":"2025-05-16T12:54:40Z+0200","publish":true}
+{"title":"Quartz","description":"Troubleshooting issues related to Quartz.","created":"2025-05-05T00:00:00Z+0200","date":"2025-05-16T12:54:40Z+0200","publish":true,"cssclasses":""}
 ---
 
 
