@@ -1,5 +1,5 @@
 ---
-{"publish":true,"title":"Roadmap","description":"Changelog and feature roadmap for Quartz Syncer.","created":"2025-05-16T12:59:31Z+0200","modified":"2025-05-17T18:47:50Z+0200","cssclasses":""}
+{"publish":true,"title":"Roadmap","description":"Changelog and feature roadmap for Quartz Syncer.","created":"2025-05-16T12:59:31Z+0200","modified":"2025-05-17T22:39:48Z+0200","cssclasses":""}
 ---
 
 
@@ -12,6 +12,8 @@
 - Added option to only pass valid Quartz properties.
 	- This can be overridden by setting the new `Include all properties` option.
 - Updated publication center headings to better reflect functionality.
+- Cleaned up all unused and redundant functions.
+- Finished up all of the essential documentation.
 
 ## Planned
 
