@@ -1,5 +1,5 @@
 ---
-{"publish":true,"title":"Roadmap","description":"Changelog and feature roadmap for Quartz Syncer.","created":"2025-05-16T12:59:31Z+0200","modified":"2025-05-17T12:18:36.569+02:00","cssclasses":""}
+{"publish":true,"title":"Roadmap","description":"Changelog and feature roadmap for Quartz Syncer.","created":"2025-05-16T12:59:31Z+0200","modified":"2025-05-17T16:49:56.469+02:00","cssclasses":""}
 ---
 
 
@@ -8,6 +8,10 @@
 ### Version 1.5.0
 
 - Added to Obsidian Community Plugin list.
+- Added separate settings for configuring note properties/frontmatter.
+- Added option to only pass valid Quartz properties.
+	- This can be overridden by setting the new `Include all properties` option.
+- Updated publication center headings to better reflect functionality.
 
 ## Planned
 
