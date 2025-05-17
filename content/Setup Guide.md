@@ -1,5 +1,5 @@
 ---
-{"publish":true,"title":"Setup Guide","description":"Instructions for setting up Quartz Syncer plugin.","created":"2025-05-05T12:00:00Z+0200","modified":"2025-05-17T12:21:06.740+02:00","cssclasses":""}
+{"publish":true,"title":"Setup Guide","description":"Instructions for setting up Quartz Syncer plugin.","created":"2025-05-05T12:00:00Z+0200","modified":"2025-05-17T18:47:50Z+0200","cssclasses":""}
 ---
 
 

@@ -1,5 +1,5 @@
 ---
-{"publish":true,"title":"Excalidraw","description":"Troubleshooting issues related to using the Excalidraw Obsidian plugin.","created":"2025-05-05T00:00:00Z+0200","modified":"2025-05-17T12:23:16.847+02:00","cssclasses":""}
+{"publish":true,"title":"Excalidraw","description":"Troubleshooting issues related to using the Excalidraw Obsidian plugin.","created":"2025-05-05T00:00:00Z+0200","modified":"2025-05-17T18:47:50Z+0200","cssclasses":""}
 ---
 
 
