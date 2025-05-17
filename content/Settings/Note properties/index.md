@@ -1,5 +1,5 @@
 ---
-{"publish":true,"title":"Note properties (frontmatter)","description":"Quartz Syncer settings related to note properties or frontmatter.","created":"2025-05-17T15:08:00Z+0200","modified":"2025-05-17T17:31:02.785+02:00","cssclasses":""}
+{"publish":true,"title":"Note properties (frontmatter)","description":"Quartz Syncer settings related to note properties or frontmatter.","created":"2025-05-17T15:08:00Z+0200","modified":"2025-05-17T18:47:50Z+0200","cssclasses":""}
 ---
 
 
