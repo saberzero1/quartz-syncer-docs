@@ -1,5 +1,5 @@
 ---
-{"title":"Setup Guide","description":"Instructions for setting up Quartz Syncer plugin.","created":"2025-05-05T12:00:00+02:00","date":"2025-05-16T20:44:23+02:00","publish":true,"PassFrontmatter":true}
+{"title":"Setup Guide","description":"Instructions for setting up Quartz Syncer plugin.","created":"2025-05-05T12:00:00Z+0200","date":"2025-05-17T12:00:14Z+0200","publish":true}
 ---
 
 
@@ -195,11 +195,11 @@ For other options, see the [Quartz docs on hosting](https://quartz.jzhao.xyz/hos
 ## Generating a fine-grained access token
 
 1. Go to [this page](https://github.com/settings/personal-access-tokens/new) and apply the following settings:
-	1. *Token name*: The name to identify this token. I'd recommend something that indicates it is for Quartz Syncer, like `Quartz Syncer token`. ![[Media/Access Token/access-token-name.png]]
-	2. *Expiration*: When this token will expire. Defaults to 30 days from now. GitHub will send you and email when your token is about to expire. ![[Media/Access Token/access-token-expiration-date.png]]
-	3. *Repository access*: Select **Only select repositories** and in the drop-down select your Quartz repository. ![[Media/Access Token/access-token-repository-access.png]]
-	4. *Permissions*: Click **Repository permissions** to open all options. ![[Media/Access Token/access-token-permissions-options.png]]
-	5. Scroll to the **Contents** option and change *Access: No access* to *Access: Read and write*. This will allow Quartz Syncer to manage your Quartz' content folder. ![[Media/Access Token/access-token-contents-permission.png]]
+ 1. *Token name*: The name to identify this token. I'd recommend something that indicates it is for Quartz Syncer, like `Quartz Syncer token`. ![[Media/Access Token/access-token-name.png]]
+ 2. *Expiration*: When this token will expire. Defaults to 30 days from now. GitHub will send you and email when your token is about to expire. ![[Media/Access Token/access-token-expiration-date.png]]
+ 3. *Repository access*: Select **Only select repositories** and in the drop-down select your Quartz repository. ![[Media/Access Token/access-token-repository-access.png]]
+ 4. *Permissions*: Click **Repository permissions** to open all options. ![[Media/Access Token/access-token-permissions-options.png]]
+ 5. Scroll to the **Contents** option and change *Access: No access* to *Access: Read and write*. This will allow Quartz Syncer to manage your Quartz' content folder. ![[Media/Access Token/access-token-contents-permission.png]]
 2. Now scroll down and click the button that says **Generate token**. ![[Media/Access Token/access-token-generate-token-button.png]]
 3. A popup with show with the current settings. Click **Generate token** to confirm. ![[Media/Access Token/access-token-confirmation-popup.png]]
 4. Click the copy button to copy the generated access token. ![[Media/Access Token/access-token-copy-generated-token.png]]
@@ -222,7 +222,8 @@ In Obsidian, open `Settings > Community Plugins > Quartz Syncer > Options` and c
 > [!EXAMPLE]- Configuration Example
 > Using the original Quartz repository as an example:
 >
-> The repository is hosted at https://github.com/jackyzha0/quartz.
+> The repository is hosted at <https://github.com/jackyzha0/quartz>.
+>
 > - *Repository name*: `quartz`
 > - *Username*: `jackyzha0`
 > - *GitHub token*: generated token. usually starts with `github_pat_` or `ghp_`.
