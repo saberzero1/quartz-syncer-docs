@@ -1,5 +1,5 @@
 ---
-{"title":"Settings","description":"Overview of all settings.","created":"2025-05-07T22:37:11Z+0200","date":"2025-05-17T11:58:03Z+0200","publish":true,"cssclasses":""}
+{"publish":true,"title":"Settings","description":"Overview of all settings.","created":"2025-05-07T22:37:11Z+0200","modified":"2025-05-17T12:20:35.342+02:00","cssclasses":""}
 ---
 
 

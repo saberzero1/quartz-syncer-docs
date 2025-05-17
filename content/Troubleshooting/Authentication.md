@@ -1,5 +1,5 @@
 ---
-{"title":"Authentication","description":"Troubleshooting issues related to GitHub authentication.","created":"2025-05-05T00:00:00Z+0200","date":"2025-05-16T12:37:07Z+0200","publish":true,"cssclasses":""}
+{"publish":true,"title":"Authentication","description":"Troubleshooting issues related to GitHub authentication.","created":"2025-05-05T00:00:00Z+0200","modified":"2025-05-17T12:22:12.886+02:00","cssclasses":""}
 ---
 
 
