@@ -1,5 +1,5 @@
 ---
-{"title":"Using an Obsidian theme in Quartz","description":"Guide on how to use Quartz Themes to use an Obsidian theme in Quartz.","created":"2025-05-16T11:05:44Z+0200","date":"2025-05-16T12:46:02Z+0200","publish":true}
+{"title":"Using an Obsidian theme in Quartz","description":"Guide on how to use Quartz Themes to use an Obsidian theme in Quartz.","created":"2025-05-16T11:05:44Z+0200","date":"2025-05-16T12:46:02Z+0200","publish":true,"cssclasses":""}
 ---
 
 
