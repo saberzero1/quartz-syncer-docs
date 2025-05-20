@@ -1,5 +1,5 @@
 ---
-{"publish":true,"title":"Guides","description":"Guides and tutorials for using Quartz Syncer.","created":"2025-05-15T00:00:00Z+0200","modified":"2025-05-18T10:30:17Z+0200","cssclasses":""}
+{"publish":true,"title":"Guides","description":"Guides and tutorials for using Quartz Syncer.","created":"2025-05-15T00:00:00Z+0200","modified":"2025-05-20T20:32:45Z+0200","cssclasses":""}
 ---
 
 
