@@ -1,5 +1,5 @@
 ---
-{"publish":true,"title":"Generating a fine-grained access token","description":"Guide on how to generated an authentication token for GitHub.","created":"2025-05-15T00:00:00Z+0200","modified":"2025-05-18T09:45:20Z+0200","cssclasses":""}
+{"publish":true,"title":"Generating a fine-grained access token","description":"Guide on how to generated an authentication token for GitHub.","created":"2025-05-15T00:00:00Z+0200","modified":"2025-05-20T12:00:55Z+0200","tags":["guides"],"cssclasses":""}
 ---
 
 
