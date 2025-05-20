@@ -1,5 +1,5 @@
 ---
-{"publish":true,"title":"Integrations","description":"Quartz Syncer settings related to integrations with other Obsidian plugins.","created":"2025-05-15T15:52:53Z+0200","modified":"2025-05-17T18:47:50Z+0200","cssclasses":""}
+{"publish":true,"title":"Integrations","description":"Quartz Syncer settings related to integrations with other Obsidian plugins.","created":"2025-05-15T15:52:53Z+0200","modified":"2025-05-20T12:34:40Z+0200","tags":["settings/integrations"],"cssclasses":""}
 ---
 
 
