@@ -1,5 +1,5 @@
 ---
-{"publish":true,"title":"Usage Guide","description":"Details on using Quartz Syncer.","created":"2025-05-05T00:00:00Z+0200","modified":"2025-05-17T22:24:35Z+0200","cssclasses":""}
+{"publish":true,"title":"Usage Guide","description":"Details on using Quartz Syncer.","created":"2025-05-05T00:00:00Z+0200","modified":"2025-05-20T12:01:40Z+0200","tags":["guides"],"cssclasses":""}
 ---
 
 
@@ -45,7 +45,7 @@ Open the publication center (see above for instructions). Your eligible notes wi
 
 After you are satisfied with your selection, click the big button on the bottom left that says `PUBLISH SELECTED CHANGES` and watch the magic happen.
 
-> [!INFO] Why does Quartz Syncer make two commits?
+> [!INFO] Why does Quartz Syncer sometimes make two commits?
 >
 >To prevent any potential inconsistencies with git, Quartz Syncer sometimes makes two commits in a row: the first commit adds and/or updates any notes selected. The second commit removes any notes selected for unpublishing.
 >
