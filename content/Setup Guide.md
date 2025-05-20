@@ -1,5 +1,5 @@
 ---
-{"publish":true,"title":"Setup Guide","description":"Instructions for setting up Quartz Syncer plugin.","created":"2025-05-05T12:00:00Z+0200","modified":"2025-05-20T12:01:36Z+0200","tags":["guides"],"cssclasses":""}
+{"publish":true,"title":"Setup Guide","description":"Instructions for setting up Quartz Syncer plugin.","created":"2025-05-05T12:00:00Z+0200","modified":"2025-05-21T00:01:26Z+0200","tags":["guides"],"cssclasses":""}
 ---
 
 
@@ -132,7 +132,7 @@ If you haven't already, set up Quartz to automatically deploy on push:
 > >
 > > Add the following script as `.github/workflows/deploy.yaml`:
 > >
-> > ```yaml title=".github/workflows/deploy.yaml" {9}
+> > ```yaml title=".github/workflows/deploy.yaml" {8-9, 32-33}
 > > name: Deploy Quartz site to GitHub Pages
 > > 
 > > on:
