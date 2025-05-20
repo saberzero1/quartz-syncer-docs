@@ -1,5 +1,5 @@
 ---
-{"publish":true,"title":"Generating a fine-grained access token","description":"Guide on how to generated an authentication token for GitHub.","created":"2025-05-15T00:00:00Z+0200","modified":"2025-05-20T12:00:55Z+0200","tags":["guides"],"cssclasses":""}
+{"publish":true,"title":"Generating a fine-grained access token","description":"Guide on how to generated an authentication token for GitHub.","created":"2025-05-15T00:00:00Z+0200","modified":"2025-05-21T00:05:10Z+0200","tags":["guides"],"cssclasses":""}
 ---
 
 
@@ -10,7 +10,7 @@
 
 1. Go to [this page](https://github.com/settings/personal-access-tokens/new) and apply the following settings:
  1. *Token name*: The name to identify this token. I'd recommend something that indicates it is for Quartz Syncer, like `Quartz Syncer token`. ![[../Media/Access Token/access-token-name.png]]
- 2. *Expiration*: When this token will expire. Defaults to 30 days from now. GitHub will send you and email when your token is about to expire. ![[../Media/Access Token/access-token-expiration-date.png]]
+ 2. *Expiration*: When this token will expire. Defaults to 30 days from now. GitHub will send you an email when your token is about to expire. ![[../Media/Access Token/access-token-expiration-date.png]]
  3. *Repository access*: Select **Only select repositories** and in the drop-down select your Quartz repository. ![[../Media/Access Token/access-token-repository-access.png]]
  4. *Permissions*: Click **Repository permissions** to open all options. ![[../Media/Access Token/access-token-permissions-options.png]]
  5. Scroll to the **Contents** option and change *Access: No access* to *Access: Read and write*. This will allow Quartz Syncer to manage your Quartz' content folder. ![[../Media/Access Token/access-token-contents-permission.png]]
