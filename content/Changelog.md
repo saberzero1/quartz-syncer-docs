@@ -9,6 +9,7 @@
 
 - Added note counts to the publication center.
 - Various minor styling changes.
+- Updated documentation.
 
 ## Planned
 
