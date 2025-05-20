@@ -1,5 +1,5 @@
 ---
-{"publish":true,"title":"Usage Guide","description":"Details on using Quartz Syncer.","created":"2025-05-05T00:00:00Z+0200","modified":"2025-05-20T12:01:40Z+0200","tags":["guides"],"cssclasses":""}
+{"publish":true,"title":"Usage Guide","description":"Details on using Quartz Syncer.","created":"2025-05-05T00:00:00Z+0200","modified":"2025-05-20T12:06:55Z+0200","tags":["guides"],"cssclasses":""}
 ---
 
 
@@ -40,8 +40,8 @@ Open the publication center (see above for instructions). Your eligible notes wi
 - **Unpublished notes**: notes that are in your Obsidian vault, but not in your Quartz repository. Any notes checked here will be published to Quartz.
 - **Changed notes**: notes that are in your Obsidian vault and in your Quartz repository, but they don't match. This is usually because the note has been changed in your vault. Any notes checked here will be updated in Quartz.
 	- You can click the icon next to your note's title to preview the exact changes that will be made.
-- **Unchanged notes (select to unpublished)**: notes that are in your Obsidian vault and in your Quartz repository, and their contents match. Any notes checked here will be unpublished and removed from your Quartz repository.
-- **Currently published notes**: a list of all notes that are currently published in your Quartz repository. It includes both unchanged and changed notes. It serves as an overview of your entire Quartz site content.
+- **Published notes (select to unpublished)**: notes that are in your in your Quartz repository. Any notes checked here will be unpublished and removed from your Quartz repository. Notes deleted from your vault need to be unpublished here to remove them from Quartz.
+- **Unchanged  notes**: a list of all unchanged notes that are currently published in your Quartz repository. It includes only unchanged notes.
 
 After you are satisfied with your selection, click the big button on the bottom left that says `PUBLISH SELECTED CHANGES` and watch the magic happen.
 
