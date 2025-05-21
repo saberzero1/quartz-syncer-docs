@@ -17,7 +17,7 @@ New to Quartz Syncer? please follow the [[Setup Guide\|setup guide]] to get star
 
 ## Usage
 
-Unsure on how to use Quartz Syncer, or just curious about its usage? Check the [[Usage Guide\|usage guide]].
+Unsure on how to use Quartz Syncer, or just curious about its usage? Check out the [[Usage Guide\|usage guide]].
 
 ## Advanced usage
 
