@@ -1,5 +1,5 @@
 ---
-{"publish":true,"title":"Roadmap","description":"Changelog and feature roadmap for Quartz Syncer.","created":"2025-05-16T12:59:31Z+0200","modified":"2025-05-21T20:08:28Z+0200","cssclasses":""}
+{"publish":true,"title":"Roadmap","description":"Changelog and feature roadmap for Quartz Syncer.","created":"2025-05-16T12:59:31Z+0200","modified":"2025-05-21T22:12:52Z+0200","cssclasses":""}
 ---
 
 
@@ -18,6 +18,10 @@
 - Manage Quartz plugins.
 
 ## Released
+
+### Version 1.6.3
+
+- Fixed mobile folder selector styling.
 
 ### Version 1.6.2
 
