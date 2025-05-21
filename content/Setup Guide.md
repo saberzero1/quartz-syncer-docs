@@ -187,11 +187,6 @@ If you haven't already, set up Quartz to automatically deploy on push:
 
 For other options, see the [Quartz docs on hosting](https://quartz.jzhao.xyz/hosting).
 
-
-<div class="transclusion internal-embed is-loaded"><a class="markdown-embed-link" href="/Guides/Generating-an-access-token#Generating-a-fine-grained-access-token" aria-label="Open link"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon lucide-link"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a><div class="markdown-embed">
-
-
-
 ## Generating a fine-grained access token
 
 1. Go to [this page](https://github.com/settings/personal-access-tokens/new) and apply the following settings:
@@ -206,9 +201,6 @@ For other options, see the [Quartz docs on hosting](https://quartz.jzhao.xyz/hos
 5. Open Obsidian.
 6. Open Obsidian's settings and click on **Quartz Syncer** under *Community Plugins*.
 7. Paste the generated token in the **GitHub token** field. ![[Media/Access Token/access-token-obsidian-settings.png]]
-
-
-</div></div>
 
 
 ## Set up Quartz Syncer
