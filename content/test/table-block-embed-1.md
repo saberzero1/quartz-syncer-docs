@@ -5,14 +5,14 @@
 hello
 # Table-block-embed-1
 
-![[test/table-block-embed-2#^some-line\|table-block-embed-2#^some-line]]
+Some line 
 
 | Link                                             | Expected Behavior     |
 | ------------------------------------------------ | --------------------- |
 | [[test/table-block-embed-2#^some-line\|table-block-embed-2#^some-line]]               | A link to the block   |
-| ![[test/table-block-embed-2#^some-line\|table-block-embed-2#^some-line]]              | An embedded line      |
-| ![[test/table-block-embed-2#^some-line\|alias]]       | An embedded line      |
-| ![[test/table-block-embed-2#^some-bullet\|table-block-embed-2#^some-bullet]]            | An embedded list      |
-| ![[test/table-block-embed-2#^some-bullet\|alias]]     | An embedded list      |
-| ![[test/table-block-embed-2#^some-sub-bullet\|table-block-embed-2#^some-sub-bullet]]        | An embedded list item |
-| ![[test/table-block-embed-2#^some-sub-bullet\|alias]] | An embedded list item |
+| Some line               | An embedded line      |
+| Some line        | An embedded line      |
+| - Some bullet             | An embedded list      |
+| - Some bullet      | An embedded list      |
+| 	- Some sub bullet         | An embedded list item |
+| 	- Some sub bullet  | An embedded list item |
