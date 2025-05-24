@@ -3,7 +3,6 @@
 ---
 
 
-| Category                                           | Description                                     |
-| -------------------------------------------------- | ----------------------------------------------- |
-| [[Useful resources/Lucide icons\|Lucide icons]] | List of all Lucide icons available in Obsidian. |
+| Category | Description |
+| -------- | ----------- |
 
