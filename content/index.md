@@ -1,5 +1,5 @@
 ---
-{"publish":true,"title":"Quartz Syncer Documentation","description":"Quartz Syncer allows you to manage your Quartz site content from Obsidian.","created":"2025-04-20T00:00:00Z+0200","modified":"2025-05-20T23:46:17Z+0200","cssclasses":""}
+{"publish":true,"title":"Quartz Syncer Documentation","description":"Quartz Syncer allows you to manage your Quartz site content from Obsidian.","created":"2025-04-20T00:00:00Z+0200","modified":"2025-05-26T16:18:46Z+0200","cssclasses":""}
 ---
 
 
