@@ -1,5 +1,5 @@
 ---
-{"publish":true,"title":"Roadmap","description":"Changelog and feature roadmap for Quartz Syncer.","created":"2025-05-16T12:59:31Z+0200","modified":"2025-05-23T13:30:29Z+0200","cssclasses":""}
+{"publish":true,"title":"Roadmap","description":"Changelog and feature roadmap for Quartz Syncer.","created":"2025-05-16T12:59:31Z+0200","modified":"2025-05-26T14:28:53Z+0200","cssclasses":""}
 ---
 
 
@@ -18,6 +18,10 @@
 - Manage Quartz plugins.
 
 ## Released
+
+### Version 1.6.4
+
+- Moved all inlined styling to CSS classes.
 
 ### Version 1.6.3
 
