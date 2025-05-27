@@ -1,5 +1,5 @@
 ---
-{"publish":true,"title":"Roadmap","description":"Changelog and feature roadmap for Quartz Syncer.","created":"2025-05-16T12:59:31Z+0200","modified":"2025-05-27T16:47:00Z+0200","cssclasses":""}
+{"publish":true,"title":"Roadmap","description":"Changelog and feature roadmap for Quartz Syncer.","created":"2025-05-16T12:59:31Z+0200","modified":"2025-05-27T16:50:36Z+0200","cssclasses":""}
 ---
 
 
@@ -26,6 +26,7 @@
 - Settings that are overridden by other settings are now automatically hidden.
 - Settings modal will now remember the last settings tab opened, instead of always opening the GitHub tab.
 - Added missing heading to the Frontmatter settings tab.
+- Removed redundant rendering calls.
 - Restructured import statements.
 
 ### Version 1.6.5
