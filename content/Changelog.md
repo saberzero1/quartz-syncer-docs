@@ -1,17 +1,9 @@
 ---
-{"publish":true,"title":"Roadmap","description":"Changelog and feature roadmap for Quartz Syncer.","created":"2025-05-16T12:59:31Z+0200","modified":"2025-05-27T15:46:20Z+0200","cssclasses":""}
+{"publish":true,"title":"Roadmap","description":"Changelog and feature roadmap for Quartz Syncer.","created":"2025-05-16T12:59:31Z+0200","modified":"2025-05-27T16:47:00Z+0200","cssclasses":""}
 ---
 
 
 ## Upcoming
-
-### Version 1.6.6
-
-- Re-implemented the settings modal to use built-in Obsidian functionality.
-- Settings that are overridden by other settings are now automatically hidden.
-- Settings modal will now remember the last settings tab opened, instead of always opening the GitHub tab.
-- Added missing heading to the Frontmatter settings tab.
-- Restructured import statements.
 
 ## Planned
 
@@ -27,6 +19,14 @@
 - Manage Quartz plugins.
 
 ## Released
+
+### Version 1.6.6
+
+- Re-implemented the settings modal to use built-in Obsidian functionality.
+- Settings that are overridden by other settings are now automatically hidden.
+- Settings modal will now remember the last settings tab opened, instead of always opening the GitHub tab.
+- Added missing heading to the Frontmatter settings tab.
+- Restructured import statements.
 
 ### Version 1.6.5
 
