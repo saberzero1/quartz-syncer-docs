@@ -1,15 +1,20 @@
 ---
-{"publish":true,"title":"Roadmap","description":"Changelog and feature roadmap for Quartz Syncer.","created":"2025-05-16T12:59:31Z+0200","modified":"2025-05-26T22:49:50Z+0200","cssclasses":""}
+{"publish":true,"title":"Roadmap","description":"Changelog and feature roadmap for Quartz Syncer.","created":"2025-05-16T12:59:31Z+0200","modified":"2025-05-27T12:11:09Z+0200","cssclasses":""}
 ---
 
 
 ## Upcoming
+
+### Version 1.6.6
+
+- Now hides settings that are overridden by other settings.
 
 ## Planned
 
 - Excalidraw support.
 - Canvas support.
 - Built-in Quartz Themes support.
+- TTRPG-related plugin support.
 
 ## Someday
 
