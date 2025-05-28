@@ -1,5 +1,5 @@
 ---
-{"publish":true,"title":"Roadmap","description":"Changelog and feature roadmap for Quartz Syncer.","created":"2025-05-16T12:59:31Z+0200","modified":"2025-05-27T16:50:36Z+0200","cssclasses":""}
+{"publish":true,"title":"Roadmap","description":"Changelog and feature roadmap for Quartz Syncer.","created":"2025-05-16T12:59:31Z+0200","modified":"2025-05-28T19:50:42Z+0200","cssclasses":""}
 ---
 
 
@@ -16,7 +16,7 @@
 
 - Manage Quartz configuration.
 - Manage Quartz layout.
-- Manage Quartz plugins.
+- Manage Quartz components.
 
 ## Released
 
