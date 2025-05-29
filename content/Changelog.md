@@ -5,6 +5,10 @@
 
 ## Upcoming
 
+### Version 1.6.7
+
+- Removed redundant `decodeURI` call on blobs.
+
 ## Planned
 
 - Excalidraw support.
