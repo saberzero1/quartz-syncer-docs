@@ -1,5 +1,5 @@
 ---
-{"publish":true,"title":"Roadmap","description":"Changelog and feature roadmap for Quartz Syncer.","created":"2025-05-16T12:59:31Z+0200","modified":"2025-05-30T21:43:51Z+0200","cssclasses":""}
+{"publish":true,"title":"Roadmap","description":"Changelog and feature roadmap for Quartz Syncer.","created":"2025-05-16T12:59:31Z+0200","modified":"2025-05-30T21:48:08Z+0200","cssclasses":""}
 ---
 
 
