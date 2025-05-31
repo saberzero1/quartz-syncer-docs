@@ -10,7 +10,7 @@
 
 ## Can I use an Obsidian Theme in Quartz?
 
-See [[Guides/Using an Obsidian theme in Quartz\|Using an Obsidian theme in Quartz]].
+See [[Guides/Using an Obsidian theme in Quartz]].
 
 ## What theme is this site using?
 

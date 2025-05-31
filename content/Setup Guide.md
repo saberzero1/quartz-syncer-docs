@@ -203,6 +203,8 @@ For other options, see the [Quartz docs on hosting](https://quartz.jzhao.xyz/hos
 7. Paste the generated token in the **GitHub token** field. ![[Media/Access Token/access-token-obsidian-settings.png]]
 
 
+[[Guides/Generating an access token#Generating a fine-grained access token]]
+
 ## Set up Quartz Syncer
 
 In Obsidian, open `Settings > Community Plugins > Quartz Syncer > Options` and configure the following fields:
@@ -226,4 +228,4 @@ After setting all three fields, you should get a green checkmark in the Quartz S
 
 You should now be able to start publishing to Quartz using Quartz Syncer.
 
-For further details, check the [[Usage Guide\|Usage Guide]].
+For further details, check the [[Usage Guide]].

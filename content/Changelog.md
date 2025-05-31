@@ -1,5 +1,5 @@
 ---
-{"publish":true,"title":"Roadmap","description":"Changelog and feature roadmap for Quartz Syncer.","created":"2025-05-16T12:59:31Z+0200","modified":"2025-05-31T10:39:55Z+0200","cssclasses":""}
+{"publish":true,"title":"Roadmap","description":"Changelog and feature roadmap for Quartz Syncer.","created":"2025-05-16T12:59:31Z+0200","modified":"2025-05-31T12:42:20Z+0200","cssclasses":""}
 ---
 
 
@@ -9,8 +9,11 @@
 
 - Removed redundant `decodeURI` call on blobs.
 - Removed redundant function calls in Dataview processor.
+- Removed unused utility functions.
 - Replaced many CSS rules with Obsidian CSS properties to better integrate with Obsidian themes.
 - Fixed grammatical error in embed settings description.
+- Expanded settings tabs to show names on desktop.
+	- Tablet and mobile still only show name on the active tab.
 
 ## Planned
 
