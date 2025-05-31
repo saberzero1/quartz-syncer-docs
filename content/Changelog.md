@@ -1,5 +1,5 @@
 ---
-{"publish":true,"title":"Roadmap","description":"Changelog and feature roadmap for Quartz Syncer.","created":"2025-05-16T12:59:31Z+0200","modified":"2025-05-30T21:48:08Z+0200","cssclasses":""}
+{"publish":true,"title":"Roadmap","description":"Changelog and feature roadmap for Quartz Syncer.","created":"2025-05-16T12:59:31Z+0200","modified":"2025-05-31T10:39:55Z+0200","cssclasses":""}
 ---
 
 
@@ -8,6 +8,9 @@
 ### Version 1.6.7
 
 - Removed redundant `decodeURI` call on blobs.
+- Removed redundant function calls in Dataview processor.
+- Replaced many CSS rules with Obsidian CSS properties to better integrate with Obsidian themes.
+- Fixed grammatical error in embed settings description.
 
 ## Planned
 
