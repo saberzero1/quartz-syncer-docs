@@ -1,5 +1,5 @@
 ---
-{"publish":true,"title":"Quartz Syncer Documentation","description":"Quartz Syncer allows you to manage your Quartz site content from Obsidian.","created":"2025-04-20T00:00:00Z+0200","modified":"2025-05-31T13:06:28Z+0200","cssclasses":""}
+{"publish":true,"title":"Quartz Syncer Documentation","description":"Quartz Syncer allows you to manage your Quartz site content from Obsidian.","created":"2025-04-20T00:00:00Z+0200","modified":"2025-05-31T13:08:41Z+0200","cssclasses":""}
 ---
 
 
@@ -41,21 +41,3 @@ Quartz Syncer would not have been build without the following:
 - [Dataview](https://blacksmithgu.github.io/obsidian-dataview/), for their great API integration, allowing me to properly integrate it in Quartz.
 - [Obsidian Publish](https://obsidian.md/publish), for inspiring me to create a similar solution for Quartz.
 - The entire Obsidian community, for all your weird and amazing creations. Keep it up.
-
-### Version 1.6.7
-
-- Removed redundant `decodeURI` call on blobs.
-- Removed redundant function calls in Dataview processor.
-- Removed unused utility functions.
-- Replaced many CSS rules with Obsidian CSS properties to better integrate with Obsidian themes.
-- Fixed grammatical error in embed settings description.
-- Expanded settings tabs to show names on desktop.
-	- Tablet and mobile still only show name on the active tab.
-
-
-[[index#Acknowledgements]]
-
-## Advanced usage
-
-For more advanced use-cases of Quartz Syncer, check the [[Guides/index\|guides section]].
-
