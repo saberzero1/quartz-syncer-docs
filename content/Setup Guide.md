@@ -1,5 +1,5 @@
 ---
-{"publish":true,"title":"Setup Guide","description":"Instructions for setting up Quartz Syncer plugin.","created":"2025-05-05T12:00:00Z+0200","modified":"2025-05-21T00:01:26Z+0200","tags":["guides"],"cssclasses":""}
+{"publish":true,"title":"Setup Guide","description":"Instructions for setting up Quartz Syncer plugin.","created":"2025-05-05T12:00:00Z+0200","modified":"2025-05-31T13:01:56Z+0200","tags":["guides"],"cssclasses":""}
 ---
 
 
@@ -202,8 +202,6 @@ For other options, see the [Quartz docs on hosting](https://quartz.jzhao.xyz/hos
 6. Open Obsidian's settings and click on **Quartz Syncer** under *Community Plugins*.
 7. Paste the generated token in the **GitHub token** field. ![[Media/Access Token/access-token-obsidian-settings.png]]
 
-
-[[Guides/Generating an access token#Generating a fine-grained access token]]
 
 ## Set up Quartz Syncer
 
