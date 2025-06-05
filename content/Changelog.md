@@ -1,5 +1,5 @@
 ---
-{"publish":true,"title":"Roadmap","description":"Changelog and feature roadmap for Quartz Syncer.","created":"2025-05-16T12:59:31Z+0200","modified":"2025-06-05T17:11:19Z+0200","cssclasses":""}
+{"publish":true,"title":"Roadmap","description":"Changelog and feature roadmap for Quartz Syncer.","created":"2025-05-16T12:59:31Z+0200","modified":"2025-06-05T17:53:38Z+0200","cssclasses":""}
 ---
 
 
@@ -24,7 +24,7 @@
 
 - Fixed DataviewJS queries not always returning correct data.
 - Fixed MathJax collapsing to inline queries when embedded.
-- Updated documentations.
+- Updated documentation.
 
 ### Version 1.6.7
 
