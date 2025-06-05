@@ -1,5 +1,5 @@
 ---
-{"publish":true,"title":"Roadmap","description":"Changelog and feature roadmap for Quartz Syncer.","created":"2025-05-16T12:59:31Z+0200","modified":"2025-06-05T16:48:08Z+0200","cssclasses":""}
+{"publish":true,"title":"Roadmap","description":"Changelog and feature roadmap for Quartz Syncer.","created":"2025-05-16T12:59:31Z+0200","modified":"2025-06-05T17:11:19Z+0200","cssclasses":""}
 ---
 
 
@@ -416,3 +416,173 @@
 |Name1|Blurb|
 |---|---|
 |[[Settings/GitHub/Vault root folder name\|Vault root folder name]]|Vault root folder name|
+
+## Access token
+
+- [[Settings/GitHub/Access token\|Access token]]
+
+## Apply embeds
+
+- [[Settings/Quartz/Apply embeds\|Apply embeds]]
+
+## Authentication
+
+- [[Troubleshooting/Authentication\|Authentication]]
+
+## Configuring a specific folder for Quartz content
+
+- [[Guides/Configuring a specific folder for Quartz content\|Configuring a specific folder for Quartz content]]
+
+## Content folder
+
+- [[Settings/Quartz/Content folder\|Content folder]]
+
+## Dataview
+
+- [[Settings/Integrations/Dataview\|Dataview]]
+- [[Troubleshooting/Dataview\|Dataview]]
+- [[tags/dataview\|Dataview]]
+
+## Excalidraw
+
+- [[Settings/Integrations/Excalidraw\|Excalidraw]]
+- [[Troubleshooting/Excalidraw\|Excalidraw]]
+- [[tags/excalidraw\|Excalidraw]]
+
+## Frontmatter
+
+- [[Troubleshooting/Frontmatter\|Frontmatter]]
+- [[tags/frontmatter\|Frontmatter]]
+
+## Frontmatter settings
+
+- [[tags/settings/frontmatter\|Frontmatter settings]]
+
+## Generating a fine-grained access token
+
+- [[Guides/Generating an access token\|Generating a fine-grained access token]]
+
+## GitHub
+
+- [[Settings/GitHub/index\|GitHub]]
+
+## GitHub settings
+
+- [[tags/settings/github\|GitHub settings]]
+
+## Guides
+
+- [[Guides/index\|Guides]]
+- [[tags/guides\|Guides]]
+
+## Include all properties
+
+- [[Settings/Note properties/Include all properties\|Include all properties]]
+
+## Include created timestamp
+
+- [[Settings/Note properties/Include created timestamp\|Include created timestamp]]
+
+## Include modified timestamp
+
+- [[Settings/Note properties/Include modified timestamp\|Include modified timestamp]]
+
+## Include published timestamp
+
+- [[Settings/Note properties/Include published timestamp\|Include published timestamp]]
+
+## Integration
+
+- [[tags/integration\|Integration]]
+
+## Integration settings
+
+- [[tags/settings/integrations\|Integration settings]]
+
+## Integrations
+
+- [[Settings/Integrations/index\|Integrations]]
+
+## Note properties (frontmatter)
+
+- [[Settings/Note properties/index\|Note properties (frontmatter)]]
+
+## Publish key
+
+- [[Settings/Note properties/Publish key\|Publish key]]
+
+## Quartz
+
+- [[Settings/Quartz/index\|Quartz]]
+- [[Troubleshooting/Quartz\|Quartz]]
+- [[tags/quartz\|Quartz]]
+
+## Quartz settings
+
+- [[tags/settings/quartz\|Quartz settings]]
+
+## Quartz Syncer Documentation
+
+- [[index\|Quartz Syncer Documentation]]
+
+## Repository Name
+
+- [[Settings/GitHub/Repository name\|Repository Name]]
+
+## Resources
+
+- [[tags/resources\|Resources]]
+
+## Roadmap
+
+- [[Changelog\|Roadmap]]
+
+## Settings
+
+- [[Settings/index\|Settings]]
+- [[tags/settings/index\|Settings]]
+
+## Setup Guide
+
+- [[Setup Guide\|Setup Guide]]
+
+## Tags
+
+- [[tags/index\|Tags]]
+
+## Themes
+
+- [[Settings/Themes/index\|Themes]]
+- [[tags/themes\|Themes]]
+
+## Themes settings
+
+- [[tags/settings/themes\|Themes settings]]
+
+## Troubleshooting
+
+- [[Troubleshooting/index\|Troubleshooting]]
+
+## Usage Guide
+
+- [[Usage Guide\|Usage Guide]]
+
+## Use full image resolution
+
+- [[Settings/Quartz/Use full image resolution\|Use full image resolution]]
+
+## Useful resources
+
+- [[Useful resources/index\|Useful resources]]
+
+## Username
+
+- [[Settings/GitHub/Username\|Username]]
+
+## Using an Obsidian theme in Quartz
+
+- [[Guides/Using an Obsidian theme in Quartz\|Using an Obsidian theme in Quartz]]
+
+## Vault root folder name
+
+- [[Settings/GitHub/Vault root folder name\|Vault root folder name]]
