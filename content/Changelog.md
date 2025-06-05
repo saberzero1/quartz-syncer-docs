@@ -1,5 +1,5 @@
 ---
-{"publish":true,"title":"Roadmap","description":"Changelog and feature roadmap for Quartz Syncer.","created":"2025-05-16T12:59:31Z+0200","modified":"2025-06-05T16:27:45Z+0200","cssclasses":""}
+{"publish":true,"title":"Roadmap","description":"Changelog and feature roadmap for Quartz Syncer.","created":"2025-05-16T12:59:31Z+0200","modified":"2025-06-05T16:48:08Z+0200","cssclasses":""}
 ---
 
 
@@ -171,248 +171,248 @@
 
 |Name1|Blurb|
 |---|---|
-|[Access token](Settings/GitHub/Access token.md)|Access token|
+|[[Settings/GitHub/Access token\|Access token]]|Access token|
 
 ## Apply embeds
 
 |Name1|Blurb|
 |---|---|
-|[Apply embeds](Settings/Quartz/Apply embeds.md)|Apply embeds|
+|[[Settings/Quartz/Apply embeds\|Apply embeds]]|Apply embeds|
 
 ## Authentication
 
 |Name1|Blurb|
 |---|---|
-|[Authentication](Troubleshooting/Authentication.md)|Authentication|
+|[[Troubleshooting/Authentication\|Authentication]]|Authentication|
 
 ## Configuring a specific folder for Quartz content
 
 |Name1|Blurb|
 |---|---|
-|[Configuring a specific folder for Quartz content](Guides/Configuring a specific folder for Quartz content.md)|Configuring a specific folder for Quartz content|
+|[[Guides/Configuring a specific folder for Quartz content\|Configuring a specific folder for Quartz content]]|Configuring a specific folder for Quartz content|
 
 ## Content folder
 
 |Name1|Blurb|
 |---|---|
-|[Content folder](Settings/Quartz/Content folder.md)|Content folder|
+|[[Settings/Quartz/Content folder\|Content folder]]|Content folder|
 
 ## Dataview
 
 |Name3|Blurb|
 |---|---|
-|[Dataview](Settings/Integrations/Dataview.md)|Dataview|
-|[Dataview](Troubleshooting/Dataview.md)|Dataview|
-|[Dataview](tags/dataview.md)|Dataview|
+|[[Settings/Integrations/Dataview\|Dataview]]|Dataview|
+|[[Troubleshooting/Dataview\|Dataview]]|Dataview|
+|[[tags/dataview\|Dataview]]|Dataview|
 
 ## Excalidraw
 
 |Name3|Blurb|
 |---|---|
-|[Excalidraw](Settings/Integrations/Excalidraw.md)|Excalidraw|
-|[Excalidraw](Troubleshooting/Excalidraw.md)|Excalidraw|
-|[Excalidraw](tags/excalidraw.md)|Excalidraw|
+|[[Settings/Integrations/Excalidraw\|Excalidraw]]|Excalidraw|
+|[[Troubleshooting/Excalidraw\|Excalidraw]]|Excalidraw|
+|[[tags/excalidraw\|Excalidraw]]|Excalidraw|
 
 ## Frontmatter
 
 |Name2|Blurb|
 |---|---|
-|[Frontmatter](Troubleshooting/Frontmatter.md)|Frontmatter|
-|[Frontmatter](tags/frontmatter.md)|Frontmatter|
+|[[Troubleshooting/Frontmatter\|Frontmatter]]|Frontmatter|
+|[[tags/frontmatter\|Frontmatter]]|Frontmatter|
 
 ## Frontmatter settings
 
 |Name1|Blurb|
 |---|---|
-|[Frontmatter settings](tags/settings/frontmatter.md)|Frontmatter settings|
+|[[tags/settings/frontmatter\|Frontmatter settings]]|Frontmatter settings|
 
 ## Generating a fine-grained access token
 
 |Name1|Blurb|
 |---|---|
-|[Generating a fine-grained access token](Guides/Generating an access token.md)|Generating a fine-grained access token|
+|[[Guides/Generating an access token\|Generating a fine-grained access token]]|Generating a fine-grained access token|
 
 ## GitHub
 
 |Name1|Blurb|
 |---|---|
-|[GitHub](Settings/GitHub/index.md)|GitHub|
+|[[Settings/GitHub/index\|GitHub]]|GitHub|
 
 ## GitHub settings
 
 |Name1|Blurb|
 |---|---|
-|[GitHub settings](tags/settings/github.md)|GitHub settings|
+|[[tags/settings/github\|GitHub settings]]|GitHub settings|
 
 ## Guides
 
 |Name2|Blurb|
 |---|---|
-|[Guides](Guides/index.md)|Guides|
-|[Guides](tags/guides.md)|Guides|
+|[[Guides/index\|Guides]]|Guides|
+|[[tags/guides\|Guides]]|Guides|
 
 ## Include all properties
 
 |Name1|Blurb|
 |---|---|
-|[Include all properties](Settings/Note properties/Include all properties.md)|Include all properties|
+|[[Settings/Note properties/Include all properties\|Include all properties]]|Include all properties|
 
 ## Include created timestamp
 
 |Name1|Blurb|
 |---|---|
-|[Include created timestamp](Settings/Note properties/Include created timestamp.md)|Include created timestamp|
+|[[Settings/Note properties/Include created timestamp\|Include created timestamp]]|Include created timestamp|
 
 ## Include modified timestamp
 
 |Name1|Blurb|
 |---|---|
-|[Include modified timestamp](Settings/Note properties/Include modified timestamp.md)|Include modified timestamp|
+|[[Settings/Note properties/Include modified timestamp\|Include modified timestamp]]|Include modified timestamp|
 
 ## Include published timestamp
 
 |Name1|Blurb|
 |---|---|
-|[Include published timestamp](Settings/Note properties/Include published timestamp.md)|Include published timestamp|
+|[[Settings/Note properties/Include published timestamp\|Include published timestamp]]|Include published timestamp|
 
 ## Integration
 
 |Name1|Blurb|
 |---|---|
-|[Integration](tags/integration.md)|Integration|
+|[[tags/integration\|Integration]]|Integration|
 
 ## Integration settings
 
 |Name1|Blurb|
 |---|---|
-|[Integration settings](tags/settings/integrations.md)|Integration settings|
+|[[tags/settings/integrations\|Integration settings]]|Integration settings|
 
 ## Integrations
 
 |Name1|Blurb|
 |---|---|
-|[Integrations](Settings/Integrations/index.md)|Integrations|
+|[[Settings/Integrations/index\|Integrations]]|Integrations|
 
 ## Note properties (frontmatter)
 
 |Name1|Blurb|
 |---|---|
-|[Note properties (frontmatter)](Settings/Note properties/index.md)|Note properties (frontmatter)|
+|[[Settings/Note properties/index\|Note properties (frontmatter)]]|Note properties (frontmatter)|
 
 ## Publish key
 
 |Name1|Blurb|
 |---|---|
-|[Publish key](Settings/Note properties/Publish key.md)|Publish key|
+|[[Settings/Note properties/Publish key\|Publish key]]|Publish key|
 
 ## Quartz
 
 |Name3|Blurb|
 |---|---|
-|[Quartz](Settings/Quartz/index.md)|Quartz|
-|[Quartz](Troubleshooting/Quartz.md)|Quartz|
-|[Quartz](tags/quartz.md)|Quartz|
+|[[Settings/Quartz/index\|Quartz]]|Quartz|
+|[[Troubleshooting/Quartz\|Quartz]]|Quartz|
+|[[tags/quartz\|Quartz]]|Quartz|
 
 ## Quartz settings
 
 |Name1|Blurb|
 |---|---|
-|[Quartz settings](tags/settings/quartz.md)|Quartz settings|
+|[[tags/settings/quartz\|Quartz settings]]|Quartz settings|
 
 ## Quartz Syncer Documentation
 
 |Name1|Blurb|
 |---|---|
-|[Quartz Syncer Documentation](index.md)|Quartz Syncer Documentation|
+|[[index\|Quartz Syncer Documentation]]|Quartz Syncer Documentation|
 
 ## Repository Name
 
 |Name1|Blurb|
 |---|---|
-|[Repository Name](Settings/GitHub/Repository name.md)|Repository Name|
+|[[Settings/GitHub/Repository name\|Repository Name]]|Repository Name|
 
 ## Resources
 
 |Name1|Blurb|
 |---|---|
-|[Resources](tags/resources.md)|Resources|
+|[[tags/resources\|Resources]]|Resources|
 
 ## Roadmap
 
 |Name1|Blurb|
 |---|---|
-|[Roadmap](Changelog.md)|Roadmap|
+|[[Changelog\|Roadmap]]|Roadmap|
 
 ## Settings
 
 |Name2|Blurb|
 |---|---|
-|[Settings](Settings/index.md)|Settings|
-|[Settings](tags/settings/index.md)|Settings|
+|[[Settings/index\|Settings]]|Settings|
+|[[tags/settings/index\|Settings]]|Settings|
 
 ## Setup Guide
 
 |Name1|Blurb|
 |---|---|
-|[Setup Guide](Setup Guide.md)|Setup Guide|
+|[[Setup Guide\|Setup Guide]]|Setup Guide|
 
 ## Tags
 
 |Name1|Blurb|
 |---|---|
-|[Tags](tags/index.md)|Tags|
+|[[tags/index\|Tags]]|Tags|
 
 ## Themes
 
 |Name2|Blurb|
 |---|---|
-|[Themes](Settings/Themes/index.md)|Themes|
-|[Themes](tags/themes.md)|Themes|
+|[[Settings/Themes/index\|Themes]]|Themes|
+|[[tags/themes\|Themes]]|Themes|
 
 ## Themes settings
 
 |Name1|Blurb|
 |---|---|
-|[Themes settings](tags/settings/themes.md)|Themes settings|
+|[[tags/settings/themes\|Themes settings]]|Themes settings|
 
 ## Troubleshooting
 
 |Name1|Blurb|
 |---|---|
-|[Troubleshooting](Troubleshooting/index.md)|Troubleshooting|
+|[[Troubleshooting/index\|Troubleshooting]]|Troubleshooting|
 
 ## Usage Guide
 
 |Name1|Blurb|
 |---|---|
-|[Usage Guide](Usage Guide.md)|Usage Guide|
+|[[Usage Guide\|Usage Guide]]|Usage Guide|
 
 ## Use full image resolution
 
 |Name1|Blurb|
 |---|---|
-|[Use full image resolution](Settings/Quartz/Use full image resolution.md)|Use full image resolution|
+|[[Settings/Quartz/Use full image resolution\|Use full image resolution]]|Use full image resolution|
 
 ## Useful resources
 
 |Name1|Blurb|
 |---|---|
-|[Useful resources](Useful resources/index.md)|Useful resources|
+|[[Useful resources/index\|Useful resources]]|Useful resources|
 
 ## Username
 
 |Name1|Blurb|
 |---|---|
-|[Username](Settings/GitHub/Username.md)|Username|
+|[[Settings/GitHub/Username\|Username]]|Username|
 
 ## Using an Obsidian theme in Quartz
 
 |Name1|Blurb|
 |---|---|
-|[Using an Obsidian theme in Quartz](Guides/Using an Obsidian theme in Quartz.md)|Using an Obsidian theme in Quartz|
+|[[Guides/Using an Obsidian theme in Quartz\|Using an Obsidian theme in Quartz]]|Using an Obsidian theme in Quartz|
 
 ## Vault root folder name
 
 |Name1|Blurb|
 |---|---|
-|[Vault root folder name](Settings/GitHub/Vault root folder name.md)|Vault root folder name|
+|[[Settings/GitHub/Vault root folder name\|Vault root folder name]]|Vault root folder name|
