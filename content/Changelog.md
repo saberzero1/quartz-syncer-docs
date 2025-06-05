@@ -167,4 +167,252 @@
 
 - Forked from [Ole Eskild Steensen](https://github.com/oleeskild)'s [Digital Garden plugin](https://github.com/oleeskild/obsidian-digital-garden).
 
-<h2><span>Access token</span></h2><div><table class="dataview table-view-table"><thead class="table-view-thead"><tr class="table-view-tr-header"><th class="table-view-th"><span>Name</span><span class="dataview small-text">1</span></th><th class="table-view-th"><span>Blurb</span></th></tr></thead><tbody class="table-view-tbody"><tr><td><span><a data-tooltip-position="top" aria-label="Settings/GitHub/Access token.md" data-href="Settings/GitHub/Access token.md" href="Settings/GitHub/Access token.md" class="internal-link" target="_blank" rel="noopener nofollow">Access token</a></span></td><td><span>Access token</span></td></tr></tbody></table></div><h2><span>Apply embeds</span></h2><div><table class="dataview table-view-table"><thead class="table-view-thead"><tr class="table-view-tr-header"><th class="table-view-th"><span>Name</span><span class="dataview small-text">1</span></th><th class="table-view-th"><span>Blurb</span></th></tr></thead><tbody class="table-view-tbody"><tr><td><span><a data-tooltip-position="top" aria-label="Settings/Quartz/Apply embeds.md" data-href="Settings/Quartz/Apply embeds.md" href="Settings/Quartz/Apply embeds.md" class="internal-link" target="_blank" rel="noopener nofollow">Apply embeds</a></span></td><td><span>Apply embeds</span></td></tr></tbody></table></div><h2><span>Authentication</span></h2><div><table class="dataview table-view-table"><thead class="table-view-thead"><tr class="table-view-tr-header"><th class="table-view-th"><span>Name</span><span class="dataview small-text">1</span></th><th class="table-view-th"><span>Blurb</span></th></tr></thead><tbody class="table-view-tbody"><tr><td><span><a data-tooltip-position="top" aria-label="Troubleshooting/Authentication.md" data-href="Troubleshooting/Authentication.md" href="Troubleshooting/Authentication.md" class="internal-link" target="_blank" rel="noopener nofollow">Authentication</a></span></td><td><span>Authentication</span></td></tr></tbody></table></div><h2><span>Configuring a specific folder for Quartz content</span></h2><div><table class="dataview table-view-table"><thead class="table-view-thead"><tr class="table-view-tr-header"><th class="table-view-th"><span>Name</span><span class="dataview small-text">1</span></th><th class="table-view-th"><span>Blurb</span></th></tr></thead><tbody class="table-view-tbody"><tr><td><span><a data-tooltip-position="top" aria-label="Guides/Configuring a specific folder for Quartz content.md" data-href="Guides/Configuring a specific folder for Quartz content.md" href="Guides/Configuring a specific folder for Quartz content.md" class="internal-link" target="_blank" rel="noopener nofollow">Configuring a specific folder for Quartz content</a></span></td><td><span>Configuring a specific folder for Quartz content</span></td></tr></tbody></table></div><h2><span>Content folder</span></h2><div><table class="dataview table-view-table"><thead class="table-view-thead"><tr class="table-view-tr-header"><th class="table-view-th"><span>Name</span><span class="dataview small-text">1</span></th><th class="table-view-th"><span>Blurb</span></th></tr></thead><tbody class="table-view-tbody"><tr><td><span><a data-tooltip-position="top" aria-label="Settings/Quartz/Content folder.md" data-href="Settings/Quartz/Content folder.md" href="Settings/Quartz/Content folder.md" class="internal-link" target="_blank" rel="noopener nofollow">Content folder</a></span></td><td><span>Content folder</span></td></tr></tbody></table></div><h2><span>Dataview</span></h2><div><table class="dataview table-view-table"><thead class="table-view-thead"><tr class="table-view-tr-header"><th class="table-view-th"><span>Name</span><span class="dataview small-text">3</span></th><th class="table-view-th"><span>Blurb</span></th></tr></thead><tbody class="table-view-tbody"><tr><td><span><a data-tooltip-position="top" aria-label="Settings/Integrations/Dataview.md" data-href="Settings/Integrations/Dataview.md" href="Settings/Integrations/Dataview.md" class="internal-link" target="_blank" rel="noopener nofollow">Dataview</a></span></td><td><span>Dataview</span></td></tr><tr><td><span><a data-tooltip-position="top" aria-label="Troubleshooting/Dataview.md" data-href="Troubleshooting/Dataview.md" href="Troubleshooting/Dataview.md" class="internal-link" target="_blank" rel="noopener nofollow">Dataview</a></span></td><td><span>Dataview</span></td></tr><tr><td><span><a data-tooltip-position="top" aria-label="tags/dataview.md" data-href="tags/dataview.md" href="tags/dataview.md" class="internal-link" target="_blank" rel="noopener nofollow">Dataview</a></span></td><td><span>Dataview</span></td></tr></tbody></table></div><h2><span>Excalidraw</span></h2><div><table class="dataview table-view-table"><thead class="table-view-thead"><tr class="table-view-tr-header"><th class="table-view-th"><span>Name</span><span class="dataview small-text">3</span></th><th class="table-view-th"><span>Blurb</span></th></tr></thead><tbody class="table-view-tbody"><tr><td><span><a data-tooltip-position="top" aria-label="Settings/Integrations/Excalidraw.md" data-href="Settings/Integrations/Excalidraw.md" href="Settings/Integrations/Excalidraw.md" class="internal-link" target="_blank" rel="noopener nofollow">Excalidraw</a></span></td><td><span>Excalidraw</span></td></tr><tr><td><span><a data-tooltip-position="top" aria-label="Troubleshooting/Excalidraw.md" data-href="Troubleshooting/Excalidraw.md" href="Troubleshooting/Excalidraw.md" class="internal-link" target="_blank" rel="noopener nofollow">Excalidraw</a></span></td><td><span>Excalidraw</span></td></tr><tr><td><span><a data-tooltip-position="top" aria-label="tags/excalidraw.md" data-href="tags/excalidraw.md" href="tags/excalidraw.md" class="internal-link" target="_blank" rel="noopener nofollow">Excalidraw</a></span></td><td><span>Excalidraw</span></td></tr></tbody></table></div><h2><span>Frontmatter</span></h2><div><table class="dataview table-view-table"><thead class="table-view-thead"><tr class="table-view-tr-header"><th class="table-view-th"><span>Name</span><span class="dataview small-text">2</span></th><th class="table-view-th"><span>Blurb</span></th></tr></thead><tbody class="table-view-tbody"><tr><td><span><a data-tooltip-position="top" aria-label="Troubleshooting/Frontmatter.md" data-href="Troubleshooting/Frontmatter.md" href="Troubleshooting/Frontmatter.md" class="internal-link" target="_blank" rel="noopener nofollow">Frontmatter</a></span></td><td><span>Frontmatter</span></td></tr><tr><td><span><a data-tooltip-position="top" aria-label="tags/frontmatter.md" data-href="tags/frontmatter.md" href="tags/frontmatter.md" class="internal-link" target="_blank" rel="noopener nofollow">Frontmatter</a></span></td><td><span>Frontmatter</span></td></tr></tbody></table></div><h2><span>Frontmatter settings</span></h2><div><table class="dataview table-view-table"><thead class="table-view-thead"><tr class="table-view-tr-header"><th class="table-view-th"><span>Name</span><span class="dataview small-text">1</span></th><th class="table-view-th"><span>Blurb</span></th></tr></thead><tbody class="table-view-tbody"><tr><td><span><a data-tooltip-position="top" aria-label="tags/settings/frontmatter.md" data-href="tags/settings/frontmatter.md" href="tags/settings/frontmatter.md" class="internal-link" target="_blank" rel="noopener nofollow">Frontmatter settings</a></span></td><td><span>Frontmatter settings</span></td></tr></tbody></table></div><h2><span>Generating a fine-grained access token</span></h2><div><table class="dataview table-view-table"><thead class="table-view-thead"><tr class="table-view-tr-header"><th class="table-view-th"><span>Name</span><span class="dataview small-text">1</span></th><th class="table-view-th"><span>Blurb</span></th></tr></thead><tbody class="table-view-tbody"><tr><td><span><a data-tooltip-position="top" aria-label="Guides/Generating an access token.md" data-href="Guides/Generating an access token.md" href="Guides/Generating an access token.md" class="internal-link" target="_blank" rel="noopener nofollow">Generating a fine-grained access token</a></span></td><td><span>Generating a fine-grained access token</span></td></tr></tbody></table></div><h2><span>GitHub</span></h2><div><table class="dataview table-view-table"><thead class="table-view-thead"><tr class="table-view-tr-header"><th class="table-view-th"><span>Name</span><span class="dataview small-text">1</span></th><th class="table-view-th"><span>Blurb</span></th></tr></thead><tbody class="table-view-tbody"><tr><td><span><a data-tooltip-position="top" aria-label="Settings/GitHub/index.md" data-href="Settings/GitHub/index.md" href="Settings/GitHub/index.md" class="internal-link" target="_blank" rel="noopener nofollow">GitHub</a></span></td><td><span>GitHub</span></td></tr></tbody></table></div><h2><span>GitHub settings</span></h2><div><table class="dataview table-view-table"><thead class="table-view-thead"><tr class="table-view-tr-header"><th class="table-view-th"><span>Name</span><span class="dataview small-text">1</span></th><th class="table-view-th"><span>Blurb</span></th></tr></thead><tbody class="table-view-tbody"><tr><td><span><a data-tooltip-position="top" aria-label="tags/settings/github.md" data-href="tags/settings/github.md" href="tags/settings/github.md" class="internal-link" target="_blank" rel="noopener nofollow">GitHub settings</a></span></td><td><span>GitHub settings</span></td></tr></tbody></table></div><h2><span>Guides</span></h2><div><table class="dataview table-view-table"><thead class="table-view-thead"><tr class="table-view-tr-header"><th class="table-view-th"><span>Name</span><span class="dataview small-text">2</span></th><th class="table-view-th"><span>Blurb</span></th></tr></thead><tbody class="table-view-tbody"><tr><td><span><a data-tooltip-position="top" aria-label="Guides/index.md" data-href="Guides/index.md" href="Guides/index.md" class="internal-link" target="_blank" rel="noopener nofollow">Guides</a></span></td><td><span>Guides</span></td></tr><tr><td><span><a data-tooltip-position="top" aria-label="tags/guides.md" data-href="tags/guides.md" href="tags/guides.md" class="internal-link" target="_blank" rel="noopener nofollow">Guides</a></span></td><td><span>Guides</span></td></tr></tbody></table></div><h2><span>Include all properties</span></h2><div><table class="dataview table-view-table"><thead class="table-view-thead"><tr class="table-view-tr-header"><th class="table-view-th"><span>Name</span><span class="dataview small-text">1</span></th><th class="table-view-th"><span>Blurb</span></th></tr></thead><tbody class="table-view-tbody"><tr><td><span><a data-tooltip-position="top" aria-label="Settings/Note properties/Include all properties.md" data-href="Settings/Note properties/Include all properties.md" href="Settings/Note properties/Include all properties.md" class="internal-link" target="_blank" rel="noopener nofollow">Include all properties</a></span></td><td><span>Include all properties</span></td></tr></tbody></table></div><h2><span>Include created timestamp</span></h2><div><table class="dataview table-view-table"><thead class="table-view-thead"><tr class="table-view-tr-header"><th class="table-view-th"><span>Name</span><span class="dataview small-text">1</span></th><th class="table-view-th"><span>Blurb</span></th></tr></thead><tbody class="table-view-tbody"><tr><td><span><a data-tooltip-position="top" aria-label="Settings/Note properties/Include created timestamp.md" data-href="Settings/Note properties/Include created timestamp.md" href="Settings/Note properties/Include created timestamp.md" class="internal-link" target="_blank" rel="noopener nofollow">Include created timestamp</a></span></td><td><span>Include created timestamp</span></td></tr></tbody></table></div><h2><span>Include modified timestamp</span></h2><div><table class="dataview table-view-table"><thead class="table-view-thead"><tr class="table-view-tr-header"><th class="table-view-th"><span>Name</span><span class="dataview small-text">1</span></th><th class="table-view-th"><span>Blurb</span></th></tr></thead><tbody class="table-view-tbody"><tr><td><span><a data-tooltip-position="top" aria-label="Settings/Note properties/Include modified timestamp.md" data-href="Settings/Note properties/Include modified timestamp.md" href="Settings/Note properties/Include modified timestamp.md" class="internal-link" target="_blank" rel="noopener nofollow">Include modified timestamp</a></span></td><td><span>Include modified timestamp</span></td></tr></tbody></table></div><h2><span>Include published timestamp</span></h2><div><table class="dataview table-view-table"><thead class="table-view-thead"><tr class="table-view-tr-header"><th class="table-view-th"><span>Name</span><span class="dataview small-text">1</span></th><th class="table-view-th"><span>Blurb</span></th></tr></thead><tbody class="table-view-tbody"><tr><td><span><a data-tooltip-position="top" aria-label="Settings/Note properties/Include published timestamp.md" data-href="Settings/Note properties/Include published timestamp.md" href="Settings/Note properties/Include published timestamp.md" class="internal-link" target="_blank" rel="noopener nofollow">Include published timestamp</a></span></td><td><span>Include published timestamp</span></td></tr></tbody></table></div><h2><span>Integration</span></h2><div><table class="dataview table-view-table"><thead class="table-view-thead"><tr class="table-view-tr-header"><th class="table-view-th"><span>Name</span><span class="dataview small-text">1</span></th><th class="table-view-th"><span>Blurb</span></th></tr></thead><tbody class="table-view-tbody"><tr><td><span><a data-tooltip-position="top" aria-label="tags/integration.md" data-href="tags/integration.md" href="tags/integration.md" class="internal-link" target="_blank" rel="noopener nofollow">Integration</a></span></td><td><span>Integration</span></td></tr></tbody></table></div><h2><span>Integration settings</span></h2><div><table class="dataview table-view-table"><thead class="table-view-thead"><tr class="table-view-tr-header"><th class="table-view-th"><span>Name</span><span class="dataview small-text">1</span></th><th class="table-view-th"><span>Blurb</span></th></tr></thead><tbody class="table-view-tbody"><tr><td><span><a data-tooltip-position="top" aria-label="tags/settings/integrations.md" data-href="tags/settings/integrations.md" href="tags/settings/integrations.md" class="internal-link" target="_blank" rel="noopener nofollow">Integration settings</a></span></td><td><span>Integration settings</span></td></tr></tbody></table></div><h2><span>Integrations</span></h2><div><table class="dataview table-view-table"><thead class="table-view-thead"><tr class="table-view-tr-header"><th class="table-view-th"><span>Name</span><span class="dataview small-text">1</span></th><th class="table-view-th"><span>Blurb</span></th></tr></thead><tbody class="table-view-tbody"><tr><td><span><a data-tooltip-position="top" aria-label="Settings/Integrations/index.md" data-href="Settings/Integrations/index.md" href="Settings/Integrations/index.md" class="internal-link" target="_blank" rel="noopener nofollow">Integrations</a></span></td><td><span>Integrations</span></td></tr></tbody></table></div><h2><span>Note properties (frontmatter)</span></h2><div><table class="dataview table-view-table"><thead class="table-view-thead"><tr class="table-view-tr-header"><th class="table-view-th"><span>Name</span><span class="dataview small-text">1</span></th><th class="table-view-th"><span>Blurb</span></th></tr></thead><tbody class="table-view-tbody"><tr><td><span><a data-tooltip-position="top" aria-label="Settings/Note properties/index.md" data-href="Settings/Note properties/index.md" href="Settings/Note properties/index.md" class="internal-link" target="_blank" rel="noopener nofollow">Note properties (frontmatter)</a></span></td><td><span>Note properties (frontmatter)</span></td></tr></tbody></table></div><h2><span>Publish key</span></h2><div><table class="dataview table-view-table"><thead class="table-view-thead"><tr class="table-view-tr-header"><th class="table-view-th"><span>Name</span><span class="dataview small-text">1</span></th><th class="table-view-th"><span>Blurb</span></th></tr></thead><tbody class="table-view-tbody"><tr><td><span><a data-tooltip-position="top" aria-label="Settings/Note properties/Publish key.md" data-href="Settings/Note properties/Publish key.md" href="Settings/Note properties/Publish key.md" class="internal-link" target="_blank" rel="noopener nofollow">Publish key</a></span></td><td><span>Publish key</span></td></tr></tbody></table></div><h2><span>Quartz</span></h2><div><table class="dataview table-view-table"><thead class="table-view-thead"><tr class="table-view-tr-header"><th class="table-view-th"><span>Name</span><span class="dataview small-text">3</span></th><th class="table-view-th"><span>Blurb</span></th></tr></thead><tbody class="table-view-tbody"><tr><td><span><a data-tooltip-position="top" aria-label="Settings/Quartz/index.md" data-href="Settings/Quartz/index.md" href="Settings/Quartz/index.md" class="internal-link" target="_blank" rel="noopener nofollow">Quartz</a></span></td><td><span>Quartz</span></td></tr><tr><td><span><a data-tooltip-position="top" aria-label="Troubleshooting/Quartz.md" data-href="Troubleshooting/Quartz.md" href="Troubleshooting/Quartz.md" class="internal-link" target="_blank" rel="noopener nofollow">Quartz</a></span></td><td><span>Quartz</span></td></tr><tr><td><span><a data-tooltip-position="top" aria-label="tags/quartz.md" data-href="tags/quartz.md" href="tags/quartz.md" class="internal-link" target="_blank" rel="noopener nofollow">Quartz</a></span></td><td><span>Quartz</span></td></tr></tbody></table></div><h2><span>Quartz settings</span></h2><div><table class="dataview table-view-table"><thead class="table-view-thead"><tr class="table-view-tr-header"><th class="table-view-th"><span>Name</span><span class="dataview small-text">1</span></th><th class="table-view-th"><span>Blurb</span></th></tr></thead><tbody class="table-view-tbody"><tr><td><span><a data-tooltip-position="top" aria-label="tags/settings/quartz.md" data-href="tags/settings/quartz.md" href="tags/settings/quartz.md" class="internal-link" target="_blank" rel="noopener nofollow">Quartz settings</a></span></td><td><span>Quartz settings</span></td></tr></tbody></table></div><h2><span>Quartz Syncer Documentation</span></h2><div><table class="dataview table-view-table"><thead class="table-view-thead"><tr class="table-view-tr-header"><th class="table-view-th"><span>Name</span><span class="dataview small-text">1</span></th><th class="table-view-th"><span>Blurb</span></th></tr></thead><tbody class="table-view-tbody"><tr><td><span><a data-tooltip-position="top" aria-label="index.md" data-href="index.md" href="index.md" class="internal-link" target="_blank" rel="noopener nofollow">Quartz Syncer Documentation</a></span></td><td><span>Quartz Syncer Documentation</span></td></tr></tbody></table></div><h2><span>Repository Name</span></h2><div><table class="dataview table-view-table"><thead class="table-view-thead"><tr class="table-view-tr-header"><th class="table-view-th"><span>Name</span><span class="dataview small-text">1</span></th><th class="table-view-th"><span>Blurb</span></th></tr></thead><tbody class="table-view-tbody"><tr><td><span><a data-tooltip-position="top" aria-label="Settings/GitHub/Repository name.md" data-href="Settings/GitHub/Repository name.md" href="Settings/GitHub/Repository name.md" class="internal-link" target="_blank" rel="noopener nofollow">Repository Name</a></span></td><td><span>Repository Name</span></td></tr></tbody></table></div><h2><span>Resources</span></h2><div><table class="dataview table-view-table"><thead class="table-view-thead"><tr class="table-view-tr-header"><th class="table-view-th"><span>Name</span><span class="dataview small-text">1</span></th><th class="table-view-th"><span>Blurb</span></th></tr></thead><tbody class="table-view-tbody"><tr><td><span><a data-tooltip-position="top" aria-label="tags/resources.md" data-href="tags/resources.md" href="tags/resources.md" class="internal-link" target="_blank" rel="noopener nofollow">Resources</a></span></td><td><span>Resources</span></td></tr></tbody></table></div><h2><span>Roadmap</span></h2><div><table class="dataview table-view-table"><thead class="table-view-thead"><tr class="table-view-tr-header"><th class="table-view-th"><span>Name</span><span class="dataview small-text">1</span></th><th class="table-view-th"><span>Blurb</span></th></tr></thead><tbody class="table-view-tbody"><tr><td><span><a data-tooltip-position="top" aria-label="Changelog.md" data-href="Changelog.md" href="Changelog.md" class="internal-link" target="_blank" rel="noopener nofollow">Roadmap</a></span></td><td><span>Roadmap</span></td></tr></tbody></table></div><h2><span>Settings</span></h2><div><table class="dataview table-view-table"><thead class="table-view-thead"><tr class="table-view-tr-header"><th class="table-view-th"><span>Name</span><span class="dataview small-text">2</span></th><th class="table-view-th"><span>Blurb</span></th></tr></thead><tbody class="table-view-tbody"><tr><td><span><a data-tooltip-position="top" aria-label="Settings/index.md" data-href="Settings/index.md" href="Settings/index.md" class="internal-link" target="_blank" rel="noopener nofollow">Settings</a></span></td><td><span>Settings</span></td></tr><tr><td><span><a data-tooltip-position="top" aria-label="tags/settings/index.md" data-href="tags/settings/index.md" href="tags/settings/index.md" class="internal-link" target="_blank" rel="noopener nofollow">Settings</a></span></td><td><span>Settings</span></td></tr></tbody></table></div><h2><span>Setup Guide</span></h2><div><table class="dataview table-view-table"><thead class="table-view-thead"><tr class="table-view-tr-header"><th class="table-view-th"><span>Name</span><span class="dataview small-text">1</span></th><th class="table-view-th"><span>Blurb</span></th></tr></thead><tbody class="table-view-tbody"><tr><td><span><a data-tooltip-position="top" aria-label="Setup Guide.md" data-href="Setup Guide.md" href="Setup Guide.md" class="internal-link" target="_blank" rel="noopener nofollow">Setup Guide</a></span></td><td><span>Setup Guide</span></td></tr></tbody></table></div><h2><span>Tags</span></h2><div><table class="dataview table-view-table"><thead class="table-view-thead"><tr class="table-view-tr-header"><th class="table-view-th"><span>Name</span><span class="dataview small-text">1</span></th><th class="table-view-th"><span>Blurb</span></th></tr></thead><tbody class="table-view-tbody"><tr><td><span><a data-tooltip-position="top" aria-label="tags/index.md" data-href="tags/index.md" href="tags/index.md" class="internal-link" target="_blank" rel="noopener nofollow">Tags</a></span></td><td><span>Tags</span></td></tr></tbody></table></div><h2><span>Themes</span></h2><div><table class="dataview table-view-table"><thead class="table-view-thead"><tr class="table-view-tr-header"><th class="table-view-th"><span>Name</span><span class="dataview small-text">2</span></th><th class="table-view-th"><span>Blurb</span></th></tr></thead><tbody class="table-view-tbody"><tr><td><span><a data-tooltip-position="top" aria-label="Settings/Themes/index.md" data-href="Settings/Themes/index.md" href="Settings/Themes/index.md" class="internal-link" target="_blank" rel="noopener nofollow">Themes</a></span></td><td><span>Themes</span></td></tr><tr><td><span><a data-tooltip-position="top" aria-label="tags/themes.md" data-href="tags/themes.md" href="tags/themes.md" class="internal-link" target="_blank" rel="noopener nofollow">Themes</a></span></td><td><span>Themes</span></td></tr></tbody></table></div><h2><span>Themes settings</span></h2><div><table class="dataview table-view-table"><thead class="table-view-thead"><tr class="table-view-tr-header"><th class="table-view-th"><span>Name</span><span class="dataview small-text">1</span></th><th class="table-view-th"><span>Blurb</span></th></tr></thead><tbody class="table-view-tbody"><tr><td><span><a data-tooltip-position="top" aria-label="tags/settings/themes.md" data-href="tags/settings/themes.md" href="tags/settings/themes.md" class="internal-link" target="_blank" rel="noopener nofollow">Themes settings</a></span></td><td><span>Themes settings</span></td></tr></tbody></table></div><h2><span>Troubleshooting</span></h2><div><table class="dataview table-view-table"><thead class="table-view-thead"><tr class="table-view-tr-header"><th class="table-view-th"><span>Name</span><span class="dataview small-text">1</span></th><th class="table-view-th"><span>Blurb</span></th></tr></thead><tbody class="table-view-tbody"><tr><td><span><a data-tooltip-position="top" aria-label="Troubleshooting/index.md" data-href="Troubleshooting/index.md" href="Troubleshooting/index.md" class="internal-link" target="_blank" rel="noopener nofollow">Troubleshooting</a></span></td><td><span>Troubleshooting</span></td></tr></tbody></table></div><h2><span>Usage Guide</span></h2><div><table class="dataview table-view-table"><thead class="table-view-thead"><tr class="table-view-tr-header"><th class="table-view-th"><span>Name</span><span class="dataview small-text">1</span></th><th class="table-view-th"><span>Blurb</span></th></tr></thead><tbody class="table-view-tbody"><tr><td><span><a data-tooltip-position="top" aria-label="Usage Guide.md" data-href="Usage Guide.md" href="Usage Guide.md" class="internal-link" target="_blank" rel="noopener nofollow">Usage Guide</a></span></td><td><span>Usage Guide</span></td></tr></tbody></table></div><h2><span>Use full image resolution</span></h2><div><table class="dataview table-view-table"><thead class="table-view-thead"><tr class="table-view-tr-header"><th class="table-view-th"><span>Name</span><span class="dataview small-text">1</span></th><th class="table-view-th"><span>Blurb</span></th></tr></thead><tbody class="table-view-tbody"><tr><td><span><a data-tooltip-position="top" aria-label="Settings/Quartz/Use full image resolution.md" data-href="Settings/Quartz/Use full image resolution.md" href="Settings/Quartz/Use full image resolution.md" class="internal-link" target="_blank" rel="noopener nofollow">Use full image resolution</a></span></td><td><span>Use full image resolution</span></td></tr></tbody></table></div><h2><span>Useful resources</span></h2><div><table class="dataview table-view-table"><thead class="table-view-thead"><tr class="table-view-tr-header"><th class="table-view-th"><span>Name</span><span class="dataview small-text">1</span></th><th class="table-view-th"><span>Blurb</span></th></tr></thead><tbody class="table-view-tbody"><tr><td><span><a data-tooltip-position="top" aria-label="Useful resources/index.md" data-href="Useful resources/index.md" href="Useful resources/index.md" class="internal-link" target="_blank" rel="noopener nofollow">Useful resources</a></span></td><td><span>Useful resources</span></td></tr></tbody></table></div><h2><span>Username</span></h2><div><table class="dataview table-view-table"><thead class="table-view-thead"><tr class="table-view-tr-header"><th class="table-view-th"><span>Name</span><span class="dataview small-text">1</span></th><th class="table-view-th"><span>Blurb</span></th></tr></thead><tbody class="table-view-tbody"><tr><td><span><a data-tooltip-position="top" aria-label="Settings/GitHub/Username.md" data-href="Settings/GitHub/Username.md" href="Settings/GitHub/Username.md" class="internal-link" target="_blank" rel="noopener nofollow">Username</a></span></td><td><span>Username</span></td></tr></tbody></table></div><h2><span>Using an Obsidian theme in Quartz</span></h2><div><table class="dataview table-view-table"><thead class="table-view-thead"><tr class="table-view-tr-header"><th class="table-view-th"><span>Name</span><span class="dataview small-text">1</span></th><th class="table-view-th"><span>Blurb</span></th></tr></thead><tbody class="table-view-tbody"><tr><td><span><a data-tooltip-position="top" aria-label="Guides/Using an Obsidian theme in Quartz.md" data-href="Guides/Using an Obsidian theme in Quartz.md" href="Guides/Using an Obsidian theme in Quartz.md" class="internal-link" target="_blank" rel="noopener nofollow">Using an Obsidian theme in Quartz</a></span></td><td><span>Using an Obsidian theme in Quartz</span></td></tr></tbody></table></div><h2><span>Vault root folder name</span></h2><div><table class="dataview table-view-table"><thead class="table-view-thead"><tr class="table-view-tr-header"><th class="table-view-th"><span>Name</span><span class="dataview small-text">1</span></th><th class="table-view-th"><span>Blurb</span></th></tr></thead><tbody class="table-view-tbody"><tr><td><span><a data-tooltip-position="top" aria-label="Settings/GitHub/Vault root folder name.md" data-href="Settings/GitHub/Vault root folder name.md" href="Settings/GitHub/Vault root folder name.md" class="internal-link" target="_blank" rel="noopener nofollow">Vault root folder name</a></span></td><td><span>Vault root folder name</span></td></tr></tbody></table></div>
+## Access token
+
+|Name1|Blurb|
+|---|---|
+|[Access token](Settings/GitHub/Access token.md)|Access token|
+
+## Apply embeds
+
+|Name1|Blurb|
+|---|---|
+|[Apply embeds](Settings/Quartz/Apply embeds.md)|Apply embeds|
+
+## Authentication
+
+|Name1|Blurb|
+|---|---|
+|[Authentication](Troubleshooting/Authentication.md)|Authentication|
+
+## Configuring a specific folder for Quartz content
+
+|Name1|Blurb|
+|---|---|
+|[Configuring a specific folder for Quartz content](Guides/Configuring a specific folder for Quartz content.md)|Configuring a specific folder for Quartz content|
+
+## Content folder
+
+|Name1|Blurb|
+|---|---|
+|[Content folder](Settings/Quartz/Content folder.md)|Content folder|
+
+## Dataview
+
+|Name3|Blurb|
+|---|---|
+|[Dataview](Settings/Integrations/Dataview.md)|Dataview|
+|[Dataview](Troubleshooting/Dataview.md)|Dataview|
+|[Dataview](tags/dataview.md)|Dataview|
+
+## Excalidraw
+
+|Name3|Blurb|
+|---|---|
+|[Excalidraw](Settings/Integrations/Excalidraw.md)|Excalidraw|
+|[Excalidraw](Troubleshooting/Excalidraw.md)|Excalidraw|
+|[Excalidraw](tags/excalidraw.md)|Excalidraw|
+
+## Frontmatter
+
+|Name2|Blurb|
+|---|---|
+|[Frontmatter](Troubleshooting/Frontmatter.md)|Frontmatter|
+|[Frontmatter](tags/frontmatter.md)|Frontmatter|
+
+## Frontmatter settings
+
+|Name1|Blurb|
+|---|---|
+|[Frontmatter settings](tags/settings/frontmatter.md)|Frontmatter settings|
+
+## Generating a fine-grained access token
+
+|Name1|Blurb|
+|---|---|
+|[Generating a fine-grained access token](Guides/Generating an access token.md)|Generating a fine-grained access token|
+
+## GitHub
+
+|Name1|Blurb|
+|---|---|
+|[GitHub](Settings/GitHub/index.md)|GitHub|
+
+## GitHub settings
+
+|Name1|Blurb|
+|---|---|
+|[GitHub settings](tags/settings/github.md)|GitHub settings|
+
+## Guides
+
+|Name2|Blurb|
+|---|---|
+|[Guides](Guides/index.md)|Guides|
+|[Guides](tags/guides.md)|Guides|
+
+## Include all properties
+
+|Name1|Blurb|
+|---|---|
+|[Include all properties](Settings/Note properties/Include all properties.md)|Include all properties|
+
+## Include created timestamp
+
+|Name1|Blurb|
+|---|---|
+|[Include created timestamp](Settings/Note properties/Include created timestamp.md)|Include created timestamp|
+
+## Include modified timestamp
+
+|Name1|Blurb|
+|---|---|
+|[Include modified timestamp](Settings/Note properties/Include modified timestamp.md)|Include modified timestamp|
+
+## Include published timestamp
+
+|Name1|Blurb|
+|---|---|
+|[Include published timestamp](Settings/Note properties/Include published timestamp.md)|Include published timestamp|
+
+## Integration
+
+|Name1|Blurb|
+|---|---|
+|[Integration](tags/integration.md)|Integration|
+
+## Integration settings
+
+|Name1|Blurb|
+|---|---|
+|[Integration settings](tags/settings/integrations.md)|Integration settings|
+
+## Integrations
+
+|Name1|Blurb|
+|---|---|
+|[Integrations](Settings/Integrations/index.md)|Integrations|
+
+## Note properties (frontmatter)
+
+|Name1|Blurb|
+|---|---|
+|[Note properties (frontmatter)](Settings/Note properties/index.md)|Note properties (frontmatter)|
+
+## Publish key
+
+|Name1|Blurb|
+|---|---|
+|[Publish key](Settings/Note properties/Publish key.md)|Publish key|
+
+## Quartz
+
+|Name3|Blurb|
+|---|---|
+|[Quartz](Settings/Quartz/index.md)|Quartz|
+|[Quartz](Troubleshooting/Quartz.md)|Quartz|
+|[Quartz](tags/quartz.md)|Quartz|
+
+## Quartz settings
+
+|Name1|Blurb|
+|---|---|
+|[Quartz settings](tags/settings/quartz.md)|Quartz settings|
+
+## Quartz Syncer Documentation
+
+|Name1|Blurb|
+|---|---|
+|[Quartz Syncer Documentation](index.md)|Quartz Syncer Documentation|
+
+## Repository Name
+
+|Name1|Blurb|
+|---|---|
+|[Repository Name](Settings/GitHub/Repository name.md)|Repository Name|
+
+## Resources
+
+|Name1|Blurb|
+|---|---|
+|[Resources](tags/resources.md)|Resources|
+
+## Roadmap
+
+|Name1|Blurb|
+|---|---|
+|[Roadmap](Changelog.md)|Roadmap|
+
+## Settings
+
+|Name2|Blurb|
+|---|---|
+|[Settings](Settings/index.md)|Settings|
+|[Settings](tags/settings/index.md)|Settings|
+
+## Setup Guide
+
+|Name1|Blurb|
+|---|---|
+|[Setup Guide](Setup Guide.md)|Setup Guide|
+
+## Tags
+
+|Name1|Blurb|
+|---|---|
+|[Tags](tags/index.md)|Tags|
+
+## Themes
+
+|Name2|Blurb|
+|---|---|
+|[Themes](Settings/Themes/index.md)|Themes|
+|[Themes](tags/themes.md)|Themes|
+
+## Themes settings
+
+|Name1|Blurb|
+|---|---|
+|[Themes settings](tags/settings/themes.md)|Themes settings|
+
+## Troubleshooting
+
+|Name1|Blurb|
+|---|---|
+|[Troubleshooting](Troubleshooting/index.md)|Troubleshooting|
+
+## Usage Guide
+
+|Name1|Blurb|
+|---|---|
+|[Usage Guide](Usage Guide.md)|Usage Guide|
+
+## Use full image resolution
+
+|Name1|Blurb|
+|---|---|
+|[Use full image resolution](Settings/Quartz/Use full image resolution.md)|Use full image resolution|
+
+## Useful resources
+
+|Name1|Blurb|
+|---|---|
+|[Useful resources](Useful resources/index.md)|Useful resources|
+
+## Username
+
+|Name1|Blurb|
+|---|---|
+|[Username](Settings/GitHub/Username.md)|Username|
+
+## Using an Obsidian theme in Quartz
+
+|Name1|Blurb|
+|---|---|
+|[Using an Obsidian theme in Quartz](Guides/Using an Obsidian theme in Quartz.md)|Using an Obsidian theme in Quartz|
+
+## Vault root folder name
+
+|Name1|Blurb|
+|---|---|
+|[Vault root folder name](Settings/GitHub/Vault root folder name.md)|Vault root folder name|
