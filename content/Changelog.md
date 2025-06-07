@@ -1,5 +1,5 @@
 ---
-{"publish":true,"title":"Roadmap","description":"Changelog and feature roadmap for Quartz Syncer.","created":"2025-05-16T12:59:31Z+0200","modified":"2025-06-07T12:52:59Z+0200","cssclasses":""}
+{"publish":true,"title":"Roadmap","description":"Changelog and feature roadmap for Quartz Syncer.","created":"2025-05-16T12:59:31Z+0200","modified":"2025-06-07T13:29:35Z+0200","cssclasses":""}
 ---
 
 
@@ -22,7 +22,7 @@
 
 ### Version 1.6.9
 
-- Fixed MathJax embedding inside callouts and multi-layer embbeddings.
+- Fixed MathJax embedding inside callouts and multi-layer embeddings.
 - Updated documentation.
 
 ### Version 1.6.8
