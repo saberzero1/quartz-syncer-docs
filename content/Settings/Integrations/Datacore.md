@@ -1,5 +1,5 @@
 ---
-{"publish":true,"title":"Datacore","description":"Whether to enable support for the Datacore plugin. Requires Datacore to be installed and enabled.","created":"2025-06-09T20:48:56Z+0200","modified":"2025-06-10T19:42:14Z+0200","tags":["datacore","integration","settings/integrations"],"cssclasses":""}
+{"publish":true,"title":"Datacore","description":"Whether to enable support for the Datacore plugin. Requires Datacore to be installed and enabled.","created":"2025-06-09T20:48:56Z+0200","modified":"2025-06-10T21:16:47Z+0200","tags":["datacore","integration","settings/integrations"],"cssclasses":""}
 ---
 
 
@@ -48,7 +48,7 @@ return function View() {
 
 |Name|Tags|
 |---|---|
-|[[Settings/Integrations/Datacore\|Datacore]]|<a href="tags/datacore" class="tag-link">datacore</a>, <a href="tags/integration" class="tag-link">integration</a>, <a href="tags/settings/integrations" class="tag-link">settings/integrations</a>|
+|[[Settings/Integrations/Datacore\|Datacore]]|<a href="tags/datacore" class="tag-link">"datacore"</a>, <a href="tags/integration" class="tag-link">"integration"</a>, <a href="tags/settings/integrations" class="tag-link">"settings/integrations"</a>|
 
 ### Datacore Cards
 
