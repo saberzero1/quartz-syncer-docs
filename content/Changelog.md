@@ -1,16 +1,9 @@
 ---
-{"publish":true,"title":"Roadmap and Changelog","description":"Changelog and feature roadmap for Quartz Syncer.","created":"2025-05-16T12:59:31Z+0200","modified":"2025-06-10T22:05:17Z+0200","cssclasses":""}
+{"publish":true,"title":"Roadmap and Changelog","description":"Changelog and feature roadmap for Quartz Syncer.","created":"2025-05-16T12:59:31Z+0200","modified":"2025-06-10T22:47:21Z+0200","cssclasses":""}
 ---
 
 
 ## Upcoming
-
-### Version 1.7.1
-
-- Datacore integration improvements.
-- Fixed Datacore callouts.
-- Fixed aliases and permalinks not passing through when set inside note properties.
-- Updated documentation.
 
 ## Planned
 
@@ -26,6 +19,13 @@
 - Manage Quartz components.
 
 ## Released
+
+### Version 1.7.1
+
+- Datacore integration improvements.
+- Fixed Datacore callouts.
+- Fixed aliases and permalinks not passing through when set inside note properties.
+- Updated documentation.
 
 ### Version 1.7.0
 
