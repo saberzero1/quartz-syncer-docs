@@ -48,7 +48,7 @@ return function View() {
 
 |Name|Tags|
 |---|---|
-|[[Settings/Integrations/Datacore\|Datacore]]|datacore, integration, settings/integrations|
+|[[Settings/Integrations/Datacore\|Datacore]]|#datacore, #integration, #settings/integrations|
 
 ### Datacore Cards
 
