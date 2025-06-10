@@ -1,5 +1,5 @@
 ---
-{"publish":true,"title":"Datacore","description":"Whether to enable support for the Datacore plugin. Requires Datacore to be installed and enabled.","created":"2025-06-09T20:48:56Z+0200","modified":"2025-06-10T13:12:21Z+0200","tags":["datacore","integration","settings/integrations"],"cssclasses":""}
+{"publish":true,"title":"Datacore","description":"Whether to enable support for the Datacore plugin. Requires Datacore to be installed and enabled.","created":"2025-06-09T20:48:56Z+0200","modified":"2025-06-10T17:42:08Z+0200","tags":["datacore","integration","settings/integrations"],"cssclasses":""}
 ---
 
 
@@ -68,7 +68,7 @@ return function View() {
 }
 ```
 
-<blockquote class="callout is-collapsible" data-callout-fold=""><div class="callout-title"><div class="callout-icon"></div><div class="callout-title-inner">Test</div><div class="callout-fold-icon"></div></div><div class="callout-content"><div class="callout-content-inner">Hello!</div></div></blockquote>
+<blockquote class="callout is-collapsible" data-callout-fold="" data-callout="note"><div class="callout-title"><div class="callout-icon"></div><div class="callout-title-inner">Test</div><div class="fold-callout-icon"></div></div><div class="callout-content"><div class="callout-content-inner">Hello!</div></div></blockquote>
 
 ## See also
 
