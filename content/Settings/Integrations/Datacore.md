@@ -1,5 +1,5 @@
 ---
-{"publish":true,"title":"Datacore","description":"Whether to enable support for the Datacore plugin. Requires Datacore to be installed and enabled.","created":"2025-06-09T20:48:56Z+0200","modified":"2025-06-10T13:12:16Z+0200","tags":["datacore","integration","settings/integrations"],"cssclasses":""}
+{"publish":true,"title":"Datacore","description":"Whether to enable support for the Datacore plugin. Requires Datacore to be installed and enabled.","created":"2025-06-09T20:48:56Z+0200","modified":"2025-06-10T13:12:21Z+0200","tags":["datacore","integration","settings/integrations"],"cssclasses":""}
 ---
 
 
@@ -29,7 +29,7 @@ return function View() {
 }
 ```
 
-<div class="datacore-list"><ul class="datacore-list datacore-list-unordered"><li class="datacore-list-item"><a class="internal-link" href="Settings/Integrations/Datacore.md" data-href="Settings/Integrations/Datacore.md" data-tooltip-position="top" rel="noopener" aria-label="Datacore" target="_blank">Datacore</a><ul class="datacore-list datacore-list-unordered"></ul></li></ul></div>
+<div class="datacore-list"><ul class="datacore-list datacore-list-unordered"><li class="datacore-list-item"><a class="internal-link" href="Settings/Integrations/Datacore.md" data-tooltip-position="top" aria-label="Datacore">Datacore</a><ul class="datacore-list datacore-list-unordered"></ul></li></ul></div>
 
 ### Datacore Tables
 
@@ -46,7 +46,7 @@ return function View() {
 }
 ```
 
-<div><table class="datacore-table"><thead><tr class="datacore-table-header-row"><th class="datacore-table-header-cell"><div class="datacore-table-header-title">Name</div></th><th class="datacore-table-header-cell"><div class="datacore-table-header-title">Tags</div></th></tr></thead><tbody><tr class="datacore-table-row"><td class="datacore-table-cell"><a class="internal-link" href="Settings/Integrations/Datacore.md" data-href="Settings/Integrations/Datacore.md" data-tooltip-position="top" rel="noopener" aria-label="Datacore" target="_blank">Datacore</a></td><td class="datacore-table-cell"><span class="dataview dataview-result-list-span"><span><a rel="noopener nofollow" class="tag" href="#datacore" target="_blank">#datacore</a></span>, <span><a rel="noopener nofollow" class="tag" href="#integration" target="_blank">#integration</a></span>, <span><a rel="noopener nofollow" class="tag" href="#settings/integrations" target="_blank">#settings/integrations</a></span></span></td></tr></tbody></table></div>
+<table class="datacore-table"><thead><tr class="datacore-table-header-row"><th class="datacore-table-header-cell"><div class="datacore-table-header-title">Name</div></th><th class="datacore-table-header-cell"><div class="datacore-table-header-title">Tags</div></th></tr></thead><tbody><tr class="datacore-table-row"><td class="datacore-table-cell"><a class="internal-link" href="Settings/Integrations/Datacore.md" data-tooltip-position="top" aria-label="Datacore">Datacore</a></td><td class="datacore-table-cell"><span class="dataview dataview-result-list-span"><span><a class="tag" href="#datacore">#datacore</a></span>, <span><a class="tag" href="#integration">#integration</a></span>, <span><a class="tag" href="#settings/integrations">#settings/integrations</a></span></span></td></tr></tbody></table>
 
 ### Datacore Cards
 
@@ -66,7 +66,7 @@ return function View() {
 }
 ```
 
-<div class="datacore callout is-collapsible" data-callout-fold="+"><div class="callout-title"><div class="callout-title-inner">Test</div><div class="callout-fold"><svg class="svg-icon lucide-chevron-down" stroke-linejoin="round" stroke-linecap="round" stroke-width="2" stroke="currentColor" fill="none" viewBox="0 0 24 24" height="24" width="24" xmlns="http://www.w3.org/2000/svg"><path d="m6 9 6 6 6-6"/></svg></div></div><div class="callout-content">Hello!</div></div>
+<blockquote class="datacore callout is-collapsible" data-callout-fold="+"><div class="callout-title"><div class="callout-title-inner">Test</div><div class="callout-fold"><svg class="svg-icon lucide-chevron-down" stroke-linejoin="round" stroke-linecap="round" stroke-width="2" stroke="currentColor" fill="none" viewBox="0 0 24 24" height="24" width="24" xmlns="http://www.w3.org/2000/svg"><path d="m6 9 6 6 6-6"/></svg></div></div><div class="callout-content">Hello!</div></blockquote>
 
 ## See also
 
