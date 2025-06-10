@@ -1,5 +1,5 @@
 ---
-{"publish":true,"title":"Datacore","description":"Whether to enable support for the Datacore plugin. Requires Datacore to be installed and enabled.","created":"2025-06-09T20:48:56Z+0200","modified":"2025-06-10T17:42:08Z+0200","tags":["datacore","integration","settings/integrations"],"cssclasses":""}
+{"publish":true,"title":"Datacore","description":"Whether to enable support for the Datacore plugin. Requires Datacore to be installed and enabled.","created":"2025-06-09T20:48:56Z+0200","modified":"2025-06-10T19:42:14Z+0200","tags":["datacore","integration","settings/integrations"],"cssclasses":""}
 ---
 
 
@@ -29,7 +29,7 @@ return function View() {
 }
 ```
 
-- [Datacore](Settings/Integrations/Datacore.md)
+- [[Settings/Integrations/Datacore\|Datacore]]
 
 ### Datacore Tables
 
@@ -42,13 +42,13 @@ return function View() {
     {id: "Tags", value: page => page.$tags}
   ];
   
-  return <dc.Table rows={pages} columns={COLUMNS} />
+  return <dc.Table rows={pages} columns={COLUMNS} />;
 }
 ```
 
 |Name|Tags|
 |---|---|
-|[Datacore](Settings/Integrations/Datacore.md)|[#datacore](#datacore), [#integration](#integration), [#settings/integrations](#settings/integrations)|
+|[[Settings/Integrations/Datacore\|Datacore]]|[[tags/datacore\|#datacore]], [[tags/integration\|#integration]], [[tags/settings/integrations\|#settings/integrations]]|
 
 ### Datacore Cards
 
