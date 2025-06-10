@@ -48,7 +48,7 @@ return function View() {
 
 |Name|Tags|
 |---|---|
-|[[Settings/Integrations/Datacore\|Datacore]]|<a href="tags/datacore" class="tag-link">"datacore"</a>, <a href="tags/integration" class="tag-link">"integration"</a>, <a href="tags/settings/integrations" class="tag-link">"settings/integrations"</a>|
+|[[Settings/Integrations/Datacore\|Datacore]]|<a href="tags/datacore" class="internal tag-link">datacore</a>, <a href="tags/integration" class="internal tag-link">integration</a>, <a href="tags/settings/integrations" class="internal tag-link">settings/integrations</a>|
 
 ### Datacore Cards
 
