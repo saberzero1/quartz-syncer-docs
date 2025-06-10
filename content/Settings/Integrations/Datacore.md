@@ -17,7 +17,7 @@ return function View() {
 }
 ```
 
-<p>Hello!</p>
+Hello!
 
 ### Datacore Lists
 
@@ -29,7 +29,7 @@ return function View() {
 }
 ```
 
-<div class="datacore-list"><ul class="datacore-list datacore-list-unordered"><li class="datacore-list-item"><a class="internal-link" href="Settings/Integrations/Datacore.md" data-tooltip-position="top" aria-label="Datacore">Datacore</a><ul class="datacore-list datacore-list-unordered"></ul></li></ul></div>
+- [Datacore](Settings/Integrations/Datacore.md)
 
 ### Datacore Tables
 
@@ -46,7 +46,9 @@ return function View() {
 }
 ```
 
-<table class="datacore-table"><thead><tr class="datacore-table-header-row"><th class="datacore-table-header-cell"><div class="datacore-table-header-title">Name</div></th><th class="datacore-table-header-cell"><div class="datacore-table-header-title">Tags</div></th></tr></thead><tbody><tr class="datacore-table-row"><td class="datacore-table-cell"><a class="internal-link" href="Settings/Integrations/Datacore.md" data-tooltip-position="top" aria-label="Datacore">Datacore</a></td><td class="datacore-table-cell"><span class="dataview dataview-result-list-span"><span><a class="tag" href="#datacore">#datacore</a></span>, <span><a class="tag" href="#integration">#integration</a></span>, <span><a class="tag" href="#settings/integrations">#settings/integrations</a></span></span></td></tr></tbody></table>
+|Name|Tags|
+|---|---|
+|[Datacore](Settings/Integrations/Datacore.md)|[#datacore](#datacore), [#integration](#integration), [#settings/integrations](#settings/integrations)|
 
 ### Datacore Cards
 
@@ -66,7 +68,7 @@ return function View() {
 }
 ```
 
-<blockquote class="datacore callout is-collapsible" data-callout-fold="+"><div class="callout-title"><div class="callout-title-inner">Test</div><div class="callout-fold"><svg class="svg-icon lucide-chevron-down" stroke-linejoin="round" stroke-linecap="round" stroke-width="2" stroke="currentColor" fill="none" viewBox="0 0 24 24" height="24" width="24" xmlns="http://www.w3.org/2000/svg"><path d="m6 9 6 6 6-6"/></svg></div></div><div class="callout-content">Hello!</div></blockquote>
+<blockquote class="callout is-collapsible" data-callout-fold=""><div class="callout-title"><div class="callout-icon"></div><div class="callout-title-inner">Test</div><div class="callout-fold-icon"></div></div><div class="callout-content"><div class="callout-content-inner">Hello!</div></div></blockquote>
 
 ## See also
 
