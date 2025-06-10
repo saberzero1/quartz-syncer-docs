@@ -1,9 +1,15 @@
 ---
-{"publish":true,"title":"Roadmap and Changelog","description":"Changelog and feature roadmap for Quartz Syncer.","created":"2025-05-16T12:59:31Z+0200","modified":"2025-06-09T22:26:42Z+0200","cssclasses":""}
+{"publish":true,"title":"Roadmap and Changelog","description":"Changelog and feature roadmap for Quartz Syncer.","created":"2025-05-16T12:59:31Z+0200","modified":"2025-06-10T21:50:12Z+0200","cssclasses":""}
 ---
 
 
 ## Upcoming
+
+### Version 1.7.1
+
+- Datacore integration improvements.
+- Fixed Datacore callouts.
+- Updated documentation.
 
 ## Planned
 
