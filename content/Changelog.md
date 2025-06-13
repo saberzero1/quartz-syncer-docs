@@ -1,5 +1,5 @@
 ---
-{"publish":true,"title":"Roadmap and Changelog","description":"Changelog and feature roadmap for Quartz Syncer.","created":"2025-05-16T12:59:31Z+0200","modified":"2025-06-11T22:46:36Z+0200","cssclasses":""}
+{"publish":true,"title":"Roadmap and Changelog","description":"Changelog and feature roadmap for Quartz Syncer.","created":"2025-05-16T12:59:31Z+0200","modified":"2025-06-12T15:04:09Z+0200","cssclasses":""}
 ---
 
 
@@ -8,7 +8,7 @@
 ### Version 1.8.0
 
 - Significant performance improvements.
-- Caching layer.
+- Caching of compiled files.
 - Visual indicators for progress.
 - Folder suggester no longer fetches all files instead of just folders.
 

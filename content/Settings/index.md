@@ -11,6 +11,7 @@
 | [[Settings/Integrations/index\|Integrations]]                     | Quartz Syncer settings related to integrations with other Obsidian plugins. |
 | [[Settings/Note properties/index\|Note properties (frontmatter)]] | Quartz Syncer settings related to note properties or frontmatter.           |
 | [[Settings/Quartz/index\|Quartz]]                                 | Quartz Syncer settings related to Quartz.                                   |
+| [[Settings/Syncer/index\|Syncer]]                                 | Quartz Syncer settings related to Syncer.                                   |
 | [[Settings/Themes/index\|Themes]]                                 | Quartz Syncer settings related to Quartz Themes.                            |
 
 
