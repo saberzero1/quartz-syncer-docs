@@ -1,8 +1,9 @@
 ---
-{"publish":true,"title":"Performance","description":"Quartz Syncer settings related to performance.","created":"2025-06-12T22:41:01Z+0200","modified":"2025-06-14T09:04:31Z+0200","tags":["settings","settings/performance"],"cssclasses":""}
+{"publish":true,"title":"Performance","description":"Quartz Syncer settings related to performance.","created":"2025-06-12T22:41:01Z+0200","modified":"2025-06-15T00:36:13Z+0200","tags":["settings","settings/performance"],"cssclasses":""}
 ---
 
 
 |Category|Description|Default value|
 |---|---|---|
 |[[Settings/Performance/Enable caching\|Enable caching]]|Whether to cache note compilation results to greatly improve performance.|true|
+|[[Settings/Performance/Synchronize cache between devices\|Synchronize cache between devices]]|Prevents caching inconsistencies by storing a serialized copy of the cache to the `data.json`. This allows for consistency between devices.|true|
