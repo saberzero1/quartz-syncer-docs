@@ -475,14 +475,6 @@ Whenever the charmed target takes damage, the target can repeat the saving throw
 	flex-flow: column nowrap;
 }
 
-.statblock-plugin-parent .calculated-modifier:before {
-	content: "(";
-}
-
-.statblock-plugin-parent .calculated-modifier:after {
-	content: ")";
-}
-
 /* TextContent */
 .statblock-plugin-parent .inline {
 	display: inline;
@@ -513,4 +505,8 @@ Whenever the charmed target takes damage, the target can repeat the saving throw
 
 .statblock-plugin-parent .statblock-nested-traits {
 	margin-left: 1rem;
-}</style>
+}
+.property-name.trait-name p {
+fofont-style: var(--active-traits-name-font-style, italic);
+}
+</style>
