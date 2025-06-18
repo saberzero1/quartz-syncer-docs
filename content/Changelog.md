@@ -1,5 +1,5 @@
 ---
-{"publish":true,"title":"Roadmap and Changelog","description":"Changelog and feature roadmap for Quartz Syncer.","created":"2025-05-16T12:59:31Z+0200","modified":"2025-06-18T13:17:40Z+0200","cssclasses":""}
+{"publish":true,"title":"Roadmap and Changelog","description":"Changelog and feature roadmap for Quartz Syncer.","created":"2025-05-16T12:59:31Z+0200","modified":"2025-06-18T13:34:53Z+0200","cssclasses":""}
 ---
 
 
@@ -23,7 +23,7 @@
 ### Version 1.8.1
 
 - Fixed caching to be vault-specific.
-- Updated documentation1.
+- Updated documentation.
 
 ### Version 1.8.0
 
