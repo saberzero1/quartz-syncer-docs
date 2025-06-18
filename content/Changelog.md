@@ -1,5 +1,5 @@
 ---
-{"publish":true,"title":"Roadmap and Changelog","description":"Changelog and feature roadmap for Quartz Syncer.","created":"2025-05-16T12:59:31Z+0200","modified":"2025-06-18T13:46:07Z+0200","cssclasses":""}
+{"publish":true,"title":"Roadmap and Changelog","description":"Changelog and feature roadmap for Quartz Syncer.","created":"2025-05-16T12:59:31Z+0200","modified":"2025-06-18T20:07:24Z+0200","cssclasses":""}
 ---
 
 
@@ -19,6 +19,11 @@
 - Manage Quartz components.
 
 ## Released
+
+### Version 1.8.2
+
+- Added support for the [Fantasy Statblocks](https://github.com/javalent/fantasy-statblocks) plugin.
+- Updated documentation.
 
 ### Version 1.8.1
 
