@@ -3,9 +3,10 @@
 ---
 
 
-| Category                                            | Description                                                                                       | Default value |
-| --------------------------------------------------- | ------------------------------------------------------------------------------------------------- | ------------- |
-| [[Settings/Integrations/Datacore\|Datacore]]     | Whether to enable support for the Datacore plugin. Requires Datacore to be installed and enabled. | false         |
-| [[Settings/Integrations/Dataview\|Dataview]]     | Whether to enable support for the Dataview plugin. Requires Dataview to be installed and enabled. | true          |
-| [[Settings/Integrations/Excalidraw\|Excalidraw]] | Whether to enable support for the Excalidraw plugin. Feature is currently disabled.               | false         |
+| Category                                                          | Description                                                                                                         | Default value |
+| ----------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------- | ------------- |
+| [[Settings/Integrations/Datacore\|Datacore]]                   | Whether to enable support for the Datacore plugin. Requires Datacore to be installed and enabled.                   | false         |
+| [[Settings/Integrations/Dataview\|Dataview]]                   | Whether to enable support for the Dataview plugin. Requires Dataview to be installed and enabled.                   | true          |
+| [[Settings/Integrations/Excalidraw\|Excalidraw]]               | Whether to enable support for the Excalidraw plugin. Feature is currently disabled.                                 | false         |
+| [[Settings/Integrations/Fantasy Statblock\|Fantasy Statblock]] | Whether to enable support for the Fantasy Statblock plugin. Requires Fantasy Statblock to be installed and enabled. | false         |
 
