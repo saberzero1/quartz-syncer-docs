@@ -425,6 +425,10 @@ Whenever the charmed target takes damage, the target can repeat the saving throw
 	break-after: avoid-column;
 }
 
+.statblock-plugin-parent .section-header .inline {
+	display: inline;
+}
+
 /* SpellItem */
 .statblock-plugin-parent ul.spell-item {
 	margin: 0;
@@ -471,11 +475,11 @@ Whenever the charmed target takes damage, the target can repeat the saving throw
 	flex-flow: column nowrap;
 }
 
-.statblock-plugin-parent .calculated-modifier::before {
+.statblock-plugin-parent .calculated-modifier:before {
 	content: "(";
 }
 
-.statblock-plugin-parent .calculated-modifier::after {
+.statblock-plugin-parent .calculated-modifier:after {
 	content: ")";
 }
 
