@@ -283,7 +283,7 @@ Whenever the charmed target takes damage, the target can repeat the saving throw
 	width: var(--statblock-column-width);
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 800px) {
 	.statblock-plugin-parent .statblock-content> .column {
 		width: 75vw;
 	}
