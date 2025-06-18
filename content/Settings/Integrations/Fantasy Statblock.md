@@ -1,7 +1,11 @@
 ---
-{"publish":true,"title":"Fantasy Statblock","description":"Whether to enable support for the Fantasy Statblock plugin. Requires Fantasy Statblock to be installed and enabled.","created":"2025-06-18T14:06:35Z+0200","modified":"2025-06-18T15:04:02Z+0200","tags":["integration","settings/integrations","ttrpg"],"cssclasses":""}
+{"publish":true,"title":"Fantasy Statblock","description":"Whether to enable support for the Fantasy Statblock plugin. Requires Fantasy Statblock to be installed and enabled.","created":"2025-06-18T14:06:35Z+0200","modified":"2025-06-18T17:21:23Z+0200","tags":["integration","settings/integrations","ttrpg"],"cssclasses":""}
 ---
 
+
+> [!warning] Upcoming feature
+>
+> This feature is in development and will be available in the next major release.
 
 ```yaml title="statblock"
 creature: Aboleth
@@ -185,7 +189,7 @@ Whenever the charmed target takes damage, the target can repeat the saving throw
 	--active-link-style: var(--statblock-link-style);
 }
 
-.statblock-plugin-parent .statblock :global(a) {
+.statblock-plugin-parent .statblock a {
 	font-style: var(--statblock-link-style);
 }
 
@@ -275,12 +279,12 @@ Whenever the charmed target takes damage, the target can repeat the saving throw
 	gap: 1rem;
 }
 
-.statblock-plugin-parent .statblock-content> :global(.column) {
+.statblock-plugin-parent .statblock-content> .column {
 	width: var(--statblock-column-width);
 }
 
 @media screen and (max-width: 400px) {
-	.statblock-plugin-parent .statblock-content> :global(.column) {
+	.statblock-plugin-parent .statblock-content> .column {
 		width: 75vw;
 	}
 }
@@ -330,12 +334,14 @@ Whenever the charmed target takes damage, the target can repeat the saving throw
 	display: inline;
 }
 
-.statblock-plugin-parent .statblock-markdown :global(p) {
+.statblock-plugin-parent .statblock-markdown p {
 	display: inline;
+	color: var(--active-font-color);
 }
 
-.statblock-plugin-parent .statblock-markdown :global(p ~ p) {
+.statblock-plugin-parent .statblock-markdown p ~ p {
 	display: inline-block;
+	color: var(--active-font-color);
 }
 
 /* PropertyLine */
