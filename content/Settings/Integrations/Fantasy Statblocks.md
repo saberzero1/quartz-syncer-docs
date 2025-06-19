@@ -1,5 +1,5 @@
 ---
-{"publish":true,"title":"Fantasy Statblocks","description":"Whether to enable support for the Fantasy Statblocks plugin. Requires Fantasy Statblocks to be installed and enabled.","created":"2025-06-18T14:06:35Z+0200","modified":"2025-06-18T20:19:26Z+0200","tags":["integration","settings/integrations","ttrpg"],"cssclasses":""}
+{"publish":true,"title":"Fantasy Statblocks","description":"Whether to enable support for the Fantasy Statblocks plugin. Requires Fantasy Statblocks to be installed and enabled.","created":"2025-06-18T14:06:35Z+0200","modified":"2025-06-19T11:27:01Z+0200","tags":["integration","settings/integrations","ttrpg"],"cssclasses":""}
 ---
 
 
