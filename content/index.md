@@ -1,5 +1,5 @@
 ---
-{"publish":true,"aliases":"home","title":"Quartz Syncer Documentation","description":"Quartz Syncer allows you to manage your Quartz site content from Obsidian.","created":"2025-04-20T00:00:00Z+0200","modified":"2025-06-10T22:01:34Z+0200","cssclasses":""}
+{"publish":true,"aliases":"home","title":"Quartz Syncer Documentation","description":"Quartz Syncer allows you to manage your Quartz site content from Obsidian.","created":"2025-04-20T00:00:00Z+0200","modified":"2025-06-20T23:16:50Z+0200","cssclasses":""}
 ---
 
 
@@ -7,7 +7,7 @@
 
 ## Installation
 
-~~Install the plugin by downloading it from the Obsidian Community plugins browser in Obsidian.~~ ([Quartz Syncer has been posted to the Obsidian plugin repository and is awaiting review](https://github.com/obsidianmd/obsidian-releases/pull/6427))
+Install the plugin by downloading it from the Obsidian Community plugins browser in Obsidian.
 
 Alternatively, install the plugin by downloading it from the [Release Tab](https://github.com/saberzero1/quartz-syncer/releases), or through the [Obsidian42 Brat plugin](https://github.com/TfTHacker/obsidian42-brat).
 
