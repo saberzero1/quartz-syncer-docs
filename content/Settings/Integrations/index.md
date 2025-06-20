@@ -1,7 +1,9 @@
 ---
-{"publish":true,"title":"Integrations","description":"Quartz Syncer settings related to integrations with other Obsidian plugins.","created":"2025-05-15T15:52:53Z+0200","modified":"2025-05-20T20:31:59Z+0200","tags":["settings/integrations"],"cssclasses":""}
+{"publish":true,"title":"Integrations","description":"Quartz Syncer settings related to integrations with other Obsidian plugins.","created":"2025-05-15T15:52:53Z+0200","modified":"2025-06-20T23:40:06Z+0200","tags":["settings/integrations"],"cssclasses":""}
 ---
 
+
+> [!info] Plugin integrations that are marked as default `true` are still only enabled if their respective plugin is also installed and enabled.
 
 | Category                                                            | Description                                                                                                           | Default value |
 | ------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------- | ------------- |
