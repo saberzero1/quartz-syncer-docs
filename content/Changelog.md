@@ -1,5 +1,5 @@
 ---
-{"publish":true,"title":"Roadmap and Changelog","description":"Changelog and feature roadmap for Quartz Syncer.","created":"2025-05-16T12:59:31Z+0200","modified":"2025-06-19T20:07:30Z+0200","cssclasses":""}
+{"publish":true,"title":"Roadmap and Changelog","description":"Changelog and feature roadmap for Quartz Syncer.","created":"2025-05-16T12:59:31Z+0200","modified":"2025-06-20T22:44:34Z+0200","cssclasses":""}
 ---
 
 
@@ -19,6 +19,12 @@
 - Manage Quartz components.
 
 ## Released
+
+### Version 1.8.4
+
+- Addressed feedback for initial Obsidian release.
+- Upgraded frontmatter engine to use Obsidian built-ins.
+- Updated documentation.
 
 ### Version 1.8.3
 
