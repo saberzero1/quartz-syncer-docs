@@ -3,11 +3,12 @@
 ---
 
 
-| Category                                                                                 | Description                                                                                                                         | Default value |
-| ---------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------- | ------------- |
-| [[Settings/Note properties/Include all properties\|Include all properties]]           | Whether to include all note properties instead of only note properties that are used by Quartz.                                     | false         |
-| [[Settings/Note properties/Include created timestamp\|Include created timestamp]]     | Whether to pass a note property to set creation date in Quartz. Required when `defaultDateType` in Quartz is set to "created".      | true          |
-| [[Settings/Note properties/Include modified timestamp\|Include modified timestamp]]   | Whether to pass a note property to set modification date in Quartz. Required when `defaultDateType` in Quartz is set to "modified". | true          |
-| [[Settings/Note properties/Include published timestamp\|Include published timestamp]] | Whether to pass a note property to set publication date in Quartz. Required when `defaultDateType` in Quartz is set to "published". | false         |
-| [[Settings/Note properties/Publish key\|Publish key]]                                 | What frontmatter key to check for to determine whether a note is visible to Quartz Syncer.                                          | `publish`     |
+| Category                                                                                   | Description                                                                                                                         | Default value |
+| ------------------------------------------------------------------------------------------ | ----------------------------------------------------------------------------------------------------------------------------------- | ------------- |
+| [[Settings/Note properties/Include all notes by default\|Include all notes by default]] | Whether to include all as publishable instead of only the notes with the configured publish flag set to true                        | false         |
+| [[Settings/Note properties/Include all properties\|Include all properties]]             | Whether to include all note properties instead of only note properties that are used by Quartz.                                     | false         |
+| [[Settings/Note properties/Include created timestamp\|Include created timestamp]]       | Whether to pass a note property to set creation date in Quartz. Required when `defaultDateType` in Quartz is set to "created".      | true          |
+| [[Settings/Note properties/Include modified timestamp\|Include modified timestamp]]     | Whether to pass a note property to set modification date in Quartz. Required when `defaultDateType` in Quartz is set to "modified". | true          |
+| [[Settings/Note properties/Include published timestamp\|Include published timestamp]]   | Whether to pass a note property to set publication date in Quartz. Required when `defaultDateType` in Quartz is set to "published". | false         |
+| [[Settings/Note properties/Publish key\|Publish key]]                                   | What frontmatter key to check for to determine whether a note is visible to Quartz Syncer.                                          | `publish`     |
 
