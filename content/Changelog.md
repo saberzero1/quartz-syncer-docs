@@ -1,9 +1,14 @@
 ---
-{"publish":true,"title":"Roadmap and Changelog","description":"Changelog and feature roadmap for Quartz Syncer.","created":"2025-05-16T12:59:31Z+0200","modified":"2025-06-20T22:44:34Z+0200","cssclasses":""}
+{"publish":true,"title":"Roadmap and Changelog","description":"Changelog and feature roadmap for Quartz Syncer.","created":"2025-05-16T12:59:31Z+0200","modified":"2025-06-29T15:55:32Z+0200","cssclasses":""}
 ---
 
 
 ## Upcoming
+
+### 1.8.5
+
+- Added setting option to override the need for a publish flag in the note properties.
+	- This option is disabled by default.
 
 ## Planned
 
