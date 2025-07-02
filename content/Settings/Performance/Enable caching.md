@@ -1,5 +1,5 @@
 ---
-{"publish":true,"title":"Enable caching","description":"Whether to cache note compilation results to greatly improve performance.","created":"2025-06-12T22:44:54Z+0200","modified":"2025-06-19T08:17:08Z+0200","tags":["settings/performance"],"cssclasses":""}
+{"publish":true,"title":"Enable caching","description":"Whether to cache note compilation results to greatly improve performance.","created":"2025-07-02T22:25:52.181+02:00","modified":"2025-07-02T22:25:52.181+02:00","tags":["settings/performance"],"cssclasses":""}
 ---
 
 

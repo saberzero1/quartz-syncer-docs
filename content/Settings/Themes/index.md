@@ -1,5 +1,5 @@
 ---
-{"publish":true,"title":"Themes","description":"Quartz Syncer settings related to Quartz Themes.","created":"2025-05-15T11:00:30Z+0200","modified":"2025-06-16T00:13:08Z+0200","tags":["settings/themes","themes"],"cssclasses":""}
+{"publish":true,"title":"Themes","description":"Quartz Syncer settings related to Quartz Themes.","created":"2025-07-02T22:25:52.184+02:00","modified":"2025-07-02T22:25:52.184+02:00","tags":["settings/themes","themes"],"cssclasses":""}
 ---
 
 

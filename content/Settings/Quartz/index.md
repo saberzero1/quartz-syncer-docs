@@ -1,5 +1,5 @@
 ---
-{"publish":true,"title":"Quartz","description":"Quartz Syncer settings related to Quartz.","created":"2025-05-15T16:03:13Z+0200","modified":"2025-05-20T20:31:59Z+0200","tags":["settings/quartz"],"cssclasses":""}
+{"publish":true,"title":"Quartz","description":"Quartz Syncer settings related to Quartz.","created":"2025-05-18T10:31:22.000+02:00","modified":"2025-05-20T20:31:59.195+02:00","tags":["settings/quartz"],"cssclasses":""}
 ---
 
 

@@ -1,4 +1,4 @@
 ---
-{"publish":true,"title":"Include all notes by default","description":"Whether to include all as publishable instead of only the notes with the configured publish flag set to true","created":"2025-06-29T17:23:42Z+0200","modified":"2025-06-29T17:34:18Z+0200","tags":["settings/frontmatter"],"cssclasses":""}
+{"publish":true,"title":"Include all notes by default","description":"Whether to include all as publishable instead of only the notes with the configured publish flag set to true","created":"2025-07-02T22:25:52.181+02:00","modified":"2025-07-02T22:25:52.181+02:00","tags":["settings/frontmatter"],"cssclasses":""}
 ---
 
