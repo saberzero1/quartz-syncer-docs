@@ -1,5 +1,5 @@
 ---
-{"publish":true,"title":"Dataview","description":"Troubleshooting issues related to using the Dataview Obsidian plugin.","created":"2025-05-18T10:31:22.000+02:00","modified":"2025-05-20T20:31:59.194+02:00","tags":["dataview"],"cssclasses":""}
+{"publish":true,"title":"Dataview","description":"Troubleshooting issues related to using the Dataview Obsidian plugin.","created":"2025-05-05T00:00:00Z+0200","modified":"2025-05-20T20:31:59Z+0200","tags":["dataview"],"cssclasses":""}
 ---
 
 

@@ -1,5 +1,5 @@
 ---
-{"publish":true,"title":"Configuring a specific folder for Quartz content","description":"Guide on how to configure a specific folder in your vault for Quartz instead of your entire vault.","created":"2025-05-18T10:31:21.997+02:00","modified":"2025-05-20T12:00:59.980+02:00","tags":["guides"],"cssclasses":""}
+{"publish":true,"title":"Configuring a specific folder for Quartz content","description":"Guide on how to configure a specific folder in your vault for Quartz instead of your entire vault.","created":"2025-05-16T11:22:39Z+0200","modified":"2025-05-20T12:00:57Z+0200","tags":["guides"],"cssclasses":""}
 ---
 
 

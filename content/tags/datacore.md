@@ -1,4 +1,4 @@
 ---
-{"publish":true,"title":"Datacore","description":"Overview of Datacore tag.","created":"2025-07-02T22:25:52.184+02:00","modified":"2025-07-02T22:25:52.184+02:00","cssclasses":""}
+{"publish":true,"title":"Datacore","description":"Overview of Datacore tag.","created":"2025-06-09T20:54:45Z+0200","modified":"2025-06-09T20:55:16Z+0200","cssclasses":""}
 ---
 

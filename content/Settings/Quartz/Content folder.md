@@ -1,5 +1,5 @@
 ---
-{"publish":true,"title":"Content folder","description":"What folder in your Quartz repository notes should be published to.","created":"2025-05-18T10:31:21.999+02:00","modified":"2025-05-20T20:31:59.196+02:00","tags":["settings/quartz"],"cssclasses":""}
+{"publish":true,"title":"Content folder","description":"What folder in your Quartz repository notes should be published to.","created":"2025-05-16T12:21:25Z+0200","modified":"2025-05-20T20:31:59Z+0200","tags":["settings/quartz"],"cssclasses":""}
 ---
 
 

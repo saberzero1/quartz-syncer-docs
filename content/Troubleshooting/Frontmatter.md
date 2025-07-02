@@ -1,5 +1,5 @@
 ---
-{"publish":true,"title":"Frontmatter","description":"Troubleshooting issues related to Frontmatter.","created":"2025-05-18T10:31:22.000+02:00","modified":"2025-05-20T20:31:59.193+02:00","tags":["frontmatter"],"cssclasses":""}
+{"publish":true,"title":"Frontmatter","description":"Troubleshooting issues related to Frontmatter.","created":"2025-05-05T00:00:00Z+0200","modified":"2025-05-20T20:31:59Z+0200","tags":["frontmatter"],"cssclasses":""}
 ---
 
 
