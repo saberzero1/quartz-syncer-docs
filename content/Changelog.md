@@ -1,5 +1,5 @@
 ---
-{"publish":true,"title":"Roadmap and Changelog","description":"Changelog and feature roadmap for Quartz Syncer.","created":"2025-05-16T12:59:31Z+0200","modified":"2025-07-05T16:07:05Z+0200","cssclasses":""}
+{"publish":true,"title":"Roadmap and Changelog","description":"Changelog and feature roadmap for Quartz Syncer.","created":"2025-05-16T12:59:31Z+0200","modified":"2025-07-05T16:20:21Z+0200","cssclasses":""}
 ---
 
 
@@ -252,6 +252,3 @@
 ### Version 1.0.0
 
 - Forked from [Ole Eskild Steensen](https://github.com/oleeskild)'s [Digital Garden plugin](https://github.com/oleeskild/obsidian-digital-garden).
-
-#guides #settings/themes
-
