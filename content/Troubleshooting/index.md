@@ -3,8 +3,8 @@
 ---
 
 
-| Category                                              | Description                                                             |
-| ----------------------------------------------------- | ----------------------------------------------------------------------- |
+| Category                                                   | Description                                                             |
+| ---------------------------------------------------------- | ----------------------------------------------------------------------- |
 | [[Troubleshooting/Authentication\|Authentication]] | Troubleshooting issues related to GitHub authentication.                |
 | [[Troubleshooting/Dataview\|Dataview]]             | Troubleshooting issues related to using the Dataview Obsidian plugin.   |
 | [[Troubleshooting/Excalidraw\|Excalidraw]]         | Troubleshooting issues related to using the Excalidraw Obsidian plugin. |

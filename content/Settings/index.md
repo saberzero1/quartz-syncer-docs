@@ -5,8 +5,8 @@
 
 ## Settings
 
-| Category                                                             | Description                                                                 |
-| -------------------------------------------------------------------- | --------------------------------------------------------------------------- |
+| Category                                                                  | Description                                                                 |
+| ------------------------------------------------------------------------- | --------------------------------------------------------------------------- |
 | [[Settings/GitHub/index\|GitHub]]                                 | Quartz Syncer settings related to GitHub.                                   |
 | [[Settings/Integrations/index\|Integrations]]                     | Quartz Syncer settings related to integrations with other Obsidian plugins. |
 | [[Settings/Note properties/index\|Note properties (frontmatter)]] | Quartz Syncer settings related to note properties or frontmatter.           |

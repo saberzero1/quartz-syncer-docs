@@ -5,8 +5,8 @@
 
 > [!info] Plugin integrations that are marked as default `true` are still only enabled if their respective plugin is also installed and enabled.
 
-| Category                                                            | Description                                                                                                           | Default value |
-| ------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------- | ------------- |
+| Category                                                                 | Description                                                                                                           | Default value |
+| ------------------------------------------------------------------------ | --------------------------------------------------------------------------------------------------------------------- | ------------- |
 | [[Settings/Integrations/Bases\|Bases]]                           | Whether to enable support for the Bases core plugin. Feature is currently disabled.                                   | \-            |
 | [[Settings/Integrations/Datacore\|Datacore]]                     | Whether to enable support for the Datacore plugin. Requires Datacore to be installed and enabled.                     | false         |
 | [[Settings/Integrations/Dataview\|Dataview]]                     | Whether to enable support for the Dataview plugin. Requires Dataview to be installed and enabled.                     | true          |
