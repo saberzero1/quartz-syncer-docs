@@ -3,8 +3,8 @@
 ---
 
 
-| Category                                                                   | Description                                                        | Default value      |
-| -------------------------------------------------------------------------- | ------------------------------------------------------------------ | ------------------ |
+| Category                                                              | Description                                                        | Default value      |
+| --------------------------------------------------------------------- | ------------------------------------------------------------------ | ------------------ |
 | [[Settings/GitHub/Access token\|Access token]]                     | Access token to authenticate to GitHub.                            | `""`               |
 | [[Settings/GitHub/Repository name\|Repository name]]               | Quartz repository name on GitHub.                                  | `"quartz"`         |
 | [[Settings/GitHub/Username\|Username]]                             | Username or organization that own the Quartz repository on GitHub. | `""`               |

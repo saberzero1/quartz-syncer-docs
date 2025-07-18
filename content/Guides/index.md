@@ -3,8 +3,8 @@
 ---
 
 
-| Category                                                                                                              | Description                                                                                        |
-| --------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------- |
+| Category                                                                                                         | Description                                                                                        |
+| ---------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------- |
 | [[Guides/Configuring a specific folder for Quartz content\|Configuring a specific folder for Quartz content]] | Guide on how to configure a specific folder in your vault for Quartz instead of your entire vault. |
 | [[Guides/Generating an access token\|Generating an access token]]                                             | Guide on how to generated an authentication token for GitHub.                                      |
 | [[Guides/Using an Obsidian theme in Quartz\|Using an Obsidian theme in Quartz]]                               | Guide on how to use Quartz Themes to use an Obsidian theme in Quartz.                              |
