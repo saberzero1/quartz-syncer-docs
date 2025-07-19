@@ -7,6 +7,7 @@
 
 | Category                                                            | Description                                                                                                           | Default value |
 | ------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------- | ------------- |
+| [[Settings/Integrations/Auto Card Link\|Auto Card Link]]         | Whether to enable support for the Auto Card Link plugin. Requires Auto Card Link to be installed and enabled.         | false         |
 | [[Settings/Integrations/Bases\|Bases]]                           | Whether to enable support for the Bases core plugin. Feature is currently disabled.                                   | \-            |
 | [[Settings/Integrations/Datacore\|Datacore]]                     | Whether to enable support for the Datacore plugin. Requires Datacore to be installed and enabled.                     | false         |
 | [[Settings/Integrations/Dataview\|Dataview]]                     | Whether to enable support for the Dataview plugin. Requires Dataview to be installed and enabled.                     | true          |
