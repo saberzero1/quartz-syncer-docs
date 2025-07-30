@@ -1,5 +1,5 @@
 ---
-{"publish":true,"title":"Roadmap","description":"Changelog and feature roadmap for Quartz Syncer.","created":"2025-05-16T12:59:31Z+0200","modified":"2025-06-05T17:11:19Z+0200","cssclasses":""}
+{"publish":true,"title":"Roadmap and Changelog","description":"Changelog and feature roadmap for Quartz Syncer.","created":"2025-05-16T12:59:31Z+0200","modified":"2025-07-20T20:24:24Z+0200","cssclasses":""}
 ---
 
 
@@ -20,11 +20,107 @@
 
 ## Released
 
+### Version 1.8.9
+
+- Added support for the [Auto Card Link](https://github.com/nekoshita/obsidian-auto-card-link) plugin.
+- Updated documentation.
+
+### Version 1.8.8
+
+- Fixed asset paths not getting rewritten correctly when the `vaultPath` setting was set to a non-root path.
+- Updated documentation.
+
+### Version 1.8.7
+
+- Added support for Dataview [inline fields](https://blacksmithgu.github.io/obsidian-dataview/annotation/add-metadata/#inline-fields)
+	- This works for inline fields defined inside Obsidian comment syntax as well (`%%`)
+- Updated documentation.
+
+### Version 1.8.6
+
+- Added options to configure the keys used for the created, updated, and published timestamps.
+	- Supports a comma-separated list of options to check. Quartz Syncer will use the first matching value per note.
+	- Defaults to the options recognized by Quartz.
+- Updated documentation.
+
+### Version 1.8.5
+
+- Added setting option to override the need for a publish flag in the note properties.
+	- This option is disabled by default.
+- Added documentation for previously undocumented functions.
+- Updated documentation.
+
+### Version 1.8.4
+
+- Addressed feedback for initial Obsidian release.
+- Upgraded frontmatter engine to use Obsidian built-ins.
+- Updated documentation.
+
+### Version 1.8.3
+
+- Rewrote plugin compiler logic.
+- Improved multi-device cache synchronization logic.
+- Cleaned up connection validation.
+- Updated documentation.
+
+### Version 1.8.2
+
+- Added support for the [Fantasy Statblocks](https://github.com/javalent/fantasy-statblocks) plugin.
+- Removed polling in favor of `MutationObserver`.
+- Updated documentation.
+
+### Version 1.8.1
+
+- Fixed caching to be vault-specific.
+- Updated documentation.
+
+### Version 1.8.0
+
+- Significant performance improvements.
+- Added caching of compiled files to reduce processing time and GitHub API calls.
+	- The processed files are stored in Obsidian's [localStorage](https://developer.mozilla.org/en-US/docs/Web/API/Window/localStorage).
+- Added settings related to performance.
+	- Enable cache: whether to save compiled files to cache. Defaults to true.
+	- Sync cache: whether to save compiled files to the plugin's `data.json` as well. This is recommend for users that synchronize their vaults between multiple devices to ensure consistency. Defaults to true.
+	- Persist cache: whether to keep the cache in the localStorage when the plugin unloads. This is only recommended for users that start Obsidian with plugins disabled, such as when using the [Lazy Plugins](https://github.com/alangrainger/obsidian-lazy-plugins) plugin. Defaults to false.
+	- Clear cache: Clears the cache when pressed.
+- Improved preview performance.
+- Visual indicators for loading and publishing.
+	- Added loading bars to indicate progress.
+	- Added partial indicators for folders that have both checked and unchecked files.
+	- Automatically flag files for deletion that are in the remote repository, but not in the local vault.
+		- These are generally deleted, renamed, or moved.
+- Rewrote link resolution logic.
+- New commands:
+	- Clear cache for current file.
+	- Clear cache for all files.
+		- Calling this command will prompt for confirmation.
+- Folder suggester no longer fetches all files instead of just folders.
+- Added release GitHub Action.
+- Updated documentation.
+
+### Version 1.7.1
+
+- Datacore integration improvements.
+- Fixed Datacore callouts.
+- Fixed aliases and permalinks not passing through when set inside note properties.
+- Updated documentation.
+
+### Version 1.7.0
+
+- Experimental [[Settings/Integrations/Datacore\|Datacore]] support.
+- Updated documentation.
+
+### Version 1.6.9
+
+- Fixed MathJax embedding inside callouts and multi-layer embeddings.
+- Updated documentation.
+
 ### Version 1.6.8
 
 - Fixed DataviewJS queries not always returning correct data.
 - Fixed MathJax collapsing to inline queries when embedded.
-- Updated documentations.
+- Updated documentation.
 
 ### Version 1.6.7
 
