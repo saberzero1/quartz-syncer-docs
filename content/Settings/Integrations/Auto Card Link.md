@@ -16,7 +16,7 @@ favicon: ./static/icon.png
 image: https://quartz.jzhao.xyz/index-og-image.webp
 ```
 
-<div data-auto-card-link-depth="-1" class="auto-card-link-container"><a href="https://quartz.jzhao.xyz" class="auto-card-link-card" target="_blank" rel="noopener nofollow"><div class="auto-card-link-main"><div class="auto-card-link-title">Welcome to Quartz 4</div><div class="auto-card-link-description">Quartz is a fast, batteries-included static-site generator that transforms Markdown content into fully functional websites.</div><div class="auto-card-link-host"><span>quartz.jzhao.xyz</span></div></div><img draggable="false" src="https://quartz.jzhao.xyz/index-og-image.webp" class="auto-card-link-thumbnail" /></a></div>
+<div data-auto-card-link-depth="-1" class="auto-card-link-container"><a href="https://quartz.jzhao.xyz" class="auto-card-link-card external-link"><div class="auto-card-link-main"><div class="auto-card-link-title">Welcome to Quartz 4</div><div class="auto-card-link-description">Quartz is a fast, batteries-included static-site generator that transforms Markdown content into fully functional websites.</div><div class="auto-card-link-host"><span>quartz.jzhao.xyz</span></div></div><img draggable="false" src="https://quartz.jzhao.xyz/index-og-image.webp" class="auto-card-link-thumbnail" /></a></div>
 
 ## See also
 
