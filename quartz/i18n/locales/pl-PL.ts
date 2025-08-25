@@ -48,7 +48,7 @@ export default {
     },
     search: {
       title: "Szukaj",
-      searchBarPlaceholder: "Search for something",
+      searchBarPlaceholder: "Wpisz frazę wyszukiwania",
     },
     tableOfContents: {
       title: "Spis treści",
