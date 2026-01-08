@@ -1,5 +1,5 @@
 ---
-{"publish":true,"title":"Roadmap and Changelog","description":"Changelog and feature roadmap for Quartz Syncer.","created":"2025-05-16T12:59:31Z+0200","modified":"2026-01-08T14:00:12Z+0100","cssclasses":""}
+{"publish":true,"title":"Roadmap and Changelog","description":"Changelog and feature roadmap for Quartz Syncer.","created":"2025-05-16T12:59:31Z+0200","modified":"2026-01-08T14:46:23Z+0100","cssclasses":""}
 ---
 
 
@@ -23,7 +23,12 @@
 
 ### Version 1.9.0
 
-- Replaced Octokit with Isomorphic Git.
+- Replaced Octokit-based implementation with Isomorphic Git-based implementation.
+	- This change resolves a few longstanding issues, as well as address a few frequent requests:
+		- No longer dependent on Octokit, and therefore GitHub as Git host.
+		- Significant performance improvements.
+		- No longer suffers from GitHub API rate limits, mostly due to direct Git calls.
+			- Please let us know if you still run into issue regarding rate limits.
 - Added support for GitLab, Bitbucket, Gitea, Codeberg, and Self-hosted instances.
 
 ### Version 1.8.10
