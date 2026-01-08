@@ -5,7 +5,7 @@
 
 > [!IMPORTANT] Mixed content vaults
 >
-> By default, Quartz Syncer assumes your entire vault is used for Quartz content. You can change this behavior by configuring a specific vault folder using the [[Settings/GitHub/Vault root folder name]] setting.
+> By default, Quartz Syncer assumes your entire vault is used for Quartz content. You can change this behavior by configuring a specific vault folder using the [[Vault root folder name]] setting.
 
 ## Configuring a specific vault folder
 

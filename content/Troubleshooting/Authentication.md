@@ -6,7 +6,7 @@
 > [!INFO] Expired authentication token?
 > The most frequent issue with authentication is an expired GitHub authentication token. You can check this in the Quartz Syncer settings inside Obsidian (`Settings > Community Plugins > Quartz Syncer`).
 >
-> If you see an authentication error, please follow the [[Guides/Generating an access token#Generating a fine-grained access token\|guide on generating an access token]].
+> If you see an authentication error, please follow the [[Generating an access token#Generating a fine-grained access token\|guide on generating an access token]].
 
 ## My Authentication Token is correct, but I get an error when publishing
 
