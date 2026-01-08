@@ -5,7 +5,7 @@
 
 | Category                                              | Description                                                             |
 | ----------------------------------------------------- | ----------------------------------------------------------------------- |
-| [[Troubleshooting/Authentication\|Authentication]] | Troubleshooting issues related to GitHub authentication.                |
+| [[Troubleshooting/Authentication\|Authentication]] | Troubleshooting issues related to Git authentication.                   |
 | [[Troubleshooting/Dataview\|Dataview]]             | Troubleshooting issues related to using the Dataview Obsidian plugin.   |
 | [[Troubleshooting/Excalidraw\|Excalidraw]]         | Troubleshooting issues related to using the Excalidraw Obsidian plugin. |
 | [[Troubleshooting/Frontmatter\|Frontmatter]]       | Troubleshooting issues related to Frontmatter.                          |
