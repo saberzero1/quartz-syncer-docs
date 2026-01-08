@@ -1,0 +1,37 @@
+---
+{"publish":true,"title":"GitHub Authentication","description":"Guide for setting up authentication with GitHub.","created":"2025-05-15T00:00:00Z+0200","modified":"2026-01-08T14:00:00Z+0100","tags":["guides"],"cssclasses":""}
+---
+
+
+> [!IMPORTANT] Expiration dates
+> A fine-grained authentication token expires after the specified date. Tokens always expire after one year, even if the expiration date is unset or set further in the future than one year.
+
+## GitHub Authentication
+
+### Generating a fine-grained access token
+
+1. Go to [this page](https://github.com/settings/personal-access-tokens/new) and apply the following settings:
+ 1. *Token name*: The name to identify this token. I'd recommend something that indicates it is for Quartz Syncer, like `Quartz Syncer token`. ![[Media/Access Token/access-token-name.png]]
+ 2. *Expiration*: When this token will expire. Defaults to 30 days from now. GitHub will send you an email when your token is about to expire. ![[Media/Access Token/access-token-expiration-date.png]]
+ 3. *Repository access*: Select **Only select repositories** and in the drop-down select your Quartz repository. ![[Media/Access Token/access-token-repository-access.png]]
+ 4. *Permissions*: Click **Repository permissions** to open all options. ![[Media/Access Token/access-token-permissions-options.png]]
+ 5. Scroll to the **Contents** option and change *Access: No access* to *Access: Read and write*. This will allow Quartz Syncer to manage your Quartz' content folder. ![[Media/Access Token/access-token-contents-permission.png]]
+2. Now scroll down and click the button that says **Generate token**. ![[Media/Access Token/access-token-generate-token-button.png]]
+3. A popup with show with the current settings. Click **Generate token** to confirm. ![[Media/Access Token/access-token-confirmation-popup.png]]
+4. Click the copy button to copy the generated access token. ![[Media/Access Token/access-token-copy-generated-token.png]]
+
+### Generating a classic access token
+
+> [!DANGER] Classic access tokens have access to all repositories. If possible, use a fine-grained access token!
+
+To generate a classic access token, [click here](https://github.com/settings/tokens/new?scopes=repo). Add a **Note** and click **Generate token** at the bottom.
+
+### Configuring Quartz Syncer
+
+1. Open Obsidian.
+2. Open Obsidian's settings and click on **Quartz Syncer** under *Community Plugins*.
+3. In the **Git Settings** section, enter your repository's full URL in the **Remote URL** field (e.g., `https://github.com/username/quartz.git`).
+4. Select **GitHub** as the **Provider**.
+5. Set **Authentication Type** to **Username & Token/Password**.
+6. Enter your GitHub username in the **Username** field.
+7. Paste the generated token in the **Access Token** field. ![[Media/Access Token/access-token-obsidian-settings.png]]
