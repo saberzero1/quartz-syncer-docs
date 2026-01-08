@@ -1,5 +1,5 @@
 ---
-{"publish":true,"title":"Bitbucket Setup","description":"Complete guide for setting up Quartz with Bitbucket and Bitbucket Pipelines.","created":"2026-01-08T14:00:00Z+0100","modified":"2026-01-08T17:24:14Z+0100","tags":["guides"],"cssclasses":""}
+{"publish":true,"title":"Bitbucket Setup","description":"Complete guide for setting up Quartz with Bitbucket and Bitbucket Pipelines.","created":"2026-01-08T14:00:00Z+0100","modified":"2026-01-08T18:10:06Z+0100","tags":["guides"],"cssclasses":""}
 ---
 
 

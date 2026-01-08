@@ -13,6 +13,7 @@
 | [[Settings/Performance/index\|Performance]]                       | Quartz Syncer settings related to performance.                              |
 | [[Settings/Quartz/index\|Quartz]]                                 | Quartz Syncer settings related to Quartz.                                   |
 | [[Settings/Themes/index\|Themes]]                                 | Quartz Syncer settings related to Quartz Themes.                            |
+| [[Settings/UI/index\|UI]]                                         | Quartz Syncer settings related to the user interface.                       |
 
 
 ## Commands
