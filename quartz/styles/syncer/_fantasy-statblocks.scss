@@ -1,12 +1,27 @@
 
 // Quartz fixes
-.statblock-item-container div {
-  display: inline;
-}
-
-.statblock p {
-  color: inherit;
-  display: inline;
+.statblock {
+  .statblock-item-container div {
+    display: inline;
+    &.tapered-rule,
+    span.statblock-table-header {
+      display: block;
+    }
+    &.statblock-table {
+      display: flex;
+    }
+    &.traits {
+      font-family: var(--active-traits-font);
+      color: var(--active-traits-font-color);
+      font-size: var(--active-traits-font-size);
+      font-weight: var(--active-traits-font-weight);
+      font-style: var(--active-traits-font-style);
+    }
+  }
+  p {
+    color: inherit;
+    display: inline;
+  }
 }
 // Quartz fixes end
 
