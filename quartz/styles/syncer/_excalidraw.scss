@@ -1,0 +1,14 @@
+
+.excalidraw-svg {
+  display: none;
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+:root[saved-theme="dark"] .excalidraw-dark {
+  display: block;
+}
+
+:root[saved-theme="light"] .excalidraw-light {
+  display: block;
+}

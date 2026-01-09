@@ -3,7 +3,7 @@ publish: true
 title: Fantasy Statblocks
 description: Whether to enable support for the Fantasy Statblocks plugin. Requires Fantasy Statblocks to be installed and enabled.
 created: 2025-06-18T14:06:35Z+0200
-modified: 2026-01-09T16:14:33Z+0100
+modified: 2026-01-09T16:15:37Z+0100
 tags:
   - integration
   - settings/integrations
