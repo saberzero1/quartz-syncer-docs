@@ -3,7 +3,7 @@ publish: true
 title: Integrations
 description: Quartz Syncer settings related to integrations with other Obsidian plugins.
 created: 2025-05-15T15:52:53Z+0200
-modified: 2025-10-21T11:46:43Z+0200
+modified: 2026-01-10T12:58:00Z+0100
 tags:
   - settings/integrations
 cssclasses: ""

@@ -3,7 +3,7 @@ publish: true
 title: Roadmap and Changelog
 description: Changelog and feature roadmap for Quartz Syncer.
 created: 2025-05-16T12:59:31Z+0200
-modified: 2026-01-10T00:03:10Z+0100
+modified: 2026-01-10T00:09:20Z+0100
 cssclasses: ""
 ---
 
@@ -25,7 +25,7 @@ cssclasses: ""
 
 ## Releases
 
-### Version 1.9.2 (upcoming)
+### Version 1.9.2
 
 - Added support for [Excalidraw](https://github.com/zsviczian/obsidian-excalidraw-plugin) drawings.
 	- Excalidraw files (`.excalidraw.md`) are automatically converted to embedded SVG images.
@@ -35,6 +35,8 @@ cssclasses: ""
 - Improved [Fantasy Statblocks](https://github.com/javalent/fantasy-statblocks) integration.
 	- Updated styles to match the plugin's Svelte component styling.
 	- Added complete CSS variable support for theming.
+- Improved [Datacore](https://github.com/blacksmithgu/datacore) integration.
+	- Updated styles with complete CSS from the plugin source (cards, tables, callouts, paging, embeds, errors, and layout).
 - Refactored plugin integration architecture for improved maintainability.
 	- All integrations now use a unified `PluginIntegration` interface.
 	- Integration styles are automatically managed via SCSS files in `quartz/styles/syncer/`.
