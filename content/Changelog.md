@@ -3,7 +3,7 @@ publish: true
 title: Roadmap and Changelog
 description: Changelog and feature roadmap for Quartz Syncer.
 created: 2025-05-16T12:59:31Z+0200
-modified: 2026-01-09T15:21:17Z+0100
+modified: 2026-01-09T15:40:41Z+0100
 cssclasses: ""
 ---
 
