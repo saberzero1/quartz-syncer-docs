@@ -3,7 +3,7 @@ publish: true
 title: Roadmap and Changelog
 description: Changelog and feature roadmap for Quartz Syncer.
 created: 2025-05-16T12:59:31Z+0200
-modified: 2026-01-09T14:18:27Z+0100
+modified: 2026-01-09T15:21:17Z+0100
 cssclasses: ""
 ---
 
@@ -14,7 +14,6 @@ cssclasses: ""
 
 ## Planned
 
-- Excalidraw support.
 - Canvas support.
 - TTRPG-related plugin support.
 
@@ -24,9 +23,22 @@ cssclasses: ""
 - Manage Quartz layout.
 - Manage Quartz components.
 
-## Released
+## Releases
 
-### Version 1.9.2
+### Version 1.9.2 (upcoming)
+
+- Added support for [Excalidraw](https://github.com/zsviczian/obsidian-excalidraw-plugin) drawings.
+	- Excalidraw files (`.excalidraw.md`) are automatically converted to embedded SVG images.
+	- Both light and dark theme variants are generated for proper theme support.
+	- Drawings maintain their visual fidelity when published to Quartz.
+- Refactored plugin integration architecture for improved maintainability.
+	- All integrations now use a unified `PluginIntegration` interface.
+	- Integration styles are automatically managed via SCSS files in `quartz/styles/syncer/`.
+- Added new setting: **Manage integration styles** (enabled by default).
+	- When enabled, Quartz Syncer automatically writes integration styles to your Quartz repository.
+	- Styles are written to `quartz/styles/syncer/` with automatic `custom.scss` import management.
+	- Disable this setting if you prefer to manage integration styles manually.
+- Updated documentation.
 
 ### Version 1.9.1
 
