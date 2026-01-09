@@ -1,5 +1,14 @@
 ---
-{"publish":true,"title":"Datacore","description":"Whether to enable support for the Datacore plugin. Requires Datacore to be installed and enabled.","created":"2025-06-09T20:48:56Z+0200","modified":"2026-01-08T13:30:00Z+0100","tags":["datacore","integration","settings/integrations"],"cssclasses":""}
+publish: true
+title: Datacore
+description: Whether to enable support for the Datacore plugin. Requires Datacore to be installed and enabled.
+created: 2025-06-09T20:48:56Z+0200
+modified: 2026-01-08T13:30:00Z+0100
+tags:
+  - datacore
+  - integration
+  - settings/integrations
+cssclasses: ""
 ---
 
 

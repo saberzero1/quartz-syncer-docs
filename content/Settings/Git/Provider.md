@@ -1,5 +1,12 @@
 ---
-{"publish":true,"title":"Provider","description":"Git provider for optimized authentication hints.","created":"2026-01-08T14:00:00Z+0100","modified":"2026-01-08T16:44:44Z+0100","tags":["settings/git"],"cssclasses":""}
+publish: true
+title: Provider
+description: Git provider for optimized authentication hints.
+created: 2026-01-08T14:00:00Z+0100
+modified: 2026-01-08T16:44:44Z+0100
+tags:
+  - settings/git
+cssclasses: ""
 ---
 
 

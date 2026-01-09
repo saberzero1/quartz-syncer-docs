@@ -1,5 +1,12 @@
 ---
-{"publish":true,"title":"Vault root folder","description":"Folder in vault to use for Quartz notes.","created":"2026-01-08T14:00:00Z+0100","modified":"2026-01-08T14:00:00Z+0100","tags":["settings/git"],"cssclasses":""}
+publish: true
+title: Vault root folder
+description: Folder in vault to use for Quartz notes.
+created: 2026-01-08T14:00:00Z+0100
+modified: 2026-01-08T14:00:00Z+0100
+tags:
+  - settings/git
+cssclasses: ""
 ---
 
 

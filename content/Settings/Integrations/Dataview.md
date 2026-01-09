@@ -1,5 +1,14 @@
 ---
-{"publish":true,"title":"Dataview","description":"Whether to enable support for the Dataview plugin. Requires Dataview to be installed and enabled.","created":"2025-05-15T15:53:42Z+0200","modified":"2026-01-08T13:30:00Z+0100","tags":["dataview","integration","settings/integrations"],"cssclasses":""}
+publish: true
+title: Dataview
+description: Whether to enable support for the Dataview plugin. Requires Dataview to be installed and enabled.
+created: 2025-05-15T15:53:42Z+0200
+modified: 2026-01-08T13:30:00Z+0100
+tags:
+  - dataview
+  - integration
+  - settings/integrations
+cssclasses: ""
 ---
 
 

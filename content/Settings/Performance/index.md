@@ -1,5 +1,13 @@
 ---
-{"publish":true,"title":"Performance","description":"Quartz Syncer settings related to performance.","created":"2025-06-12T22:41:01Z+0200","modified":"2025-10-21T11:33:32Z+0200","tags":["settings","settings/performance"],"cssclasses":""}
+publish: true
+title: Performance
+description: Quartz Syncer settings related to performance.
+created: 2025-06-12T22:41:01Z+0200
+modified: 2025-10-21T11:33:32Z+0200
+tags:
+  - settings
+  - settings/performance
+cssclasses: ""
 ---
 
 

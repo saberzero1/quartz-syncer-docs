@@ -1,5 +1,12 @@
 ---
-{"publish":true,"title":"GitHub Setup","description":"Complete guide for setting up Quartz with GitHub and GitHub Pages.","created":"2025-05-15T00:00:00Z+0200","modified":"2026-01-08T17:24:14Z+0100","tags":["guides"],"cssclasses":""}
+publish: true
+title: GitHub Setup
+description: Complete guide for setting up Quartz with GitHub and GitHub Pages.
+created: 2025-05-15T00:00:00Z+0200
+modified: 2026-01-08T17:24:14Z+0100
+tags:
+  - guides
+cssclasses: ""
 ---
 
 

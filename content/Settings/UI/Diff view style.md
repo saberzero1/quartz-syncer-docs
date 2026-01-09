@@ -1,5 +1,12 @@
 ---
-{"publish":true,"title":"Diff view style","description":"Choose the default layout for viewing differences between local and published files.","created":"2026-01-08T13:00:00Z+0100","modified":"2026-01-08T19:40:58Z+0100","tags":["settings/ui"],"cssclasses":""}
+publish: true
+title: Diff view style
+description: Choose the default layout for viewing differences between local and published files.
+created: 2026-01-08T13:00:00Z+0100
+modified: 2026-01-08T19:40:58Z+0100
+tags:
+  - settings/ui
+cssclasses: ""
 ---
 
 

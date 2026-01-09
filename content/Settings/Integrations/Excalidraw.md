@@ -1,5 +1,14 @@
 ---
-{"publish":true,"title":"Excalidraw","description":"Whether to enable support for the Excalidraw plugin. Feature is currently disabled.","created":"2025-05-15T20:32:34Z+0200","modified":"2025-10-21T14:44:55Z+0200","tags":["excalidraw","integration","settings/integrations"],"cssclasses":""}
+publish: true
+title: Excalidraw
+description: Whether to enable support for the Excalidraw plugin. Feature is currently disabled.
+created: 2025-05-15T20:32:34Z+0200
+modified: 2025-10-21T14:44:55Z+0200
+tags:
+  - excalidraw
+  - integration
+  - settings/integrations
+cssclasses: ""
 ---
 
 

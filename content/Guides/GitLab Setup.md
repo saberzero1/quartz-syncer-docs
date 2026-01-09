@@ -1,5 +1,12 @@
 ---
-{"publish":true,"title":"GitLab Setup","description":"Complete guide for setting up Quartz with GitLab and GitLab Pages.","created":"2026-01-08T14:00:00Z+0100","modified":"2026-01-08T17:24:14Z+0100","tags":["guides"],"cssclasses":""}
+publish: true
+title: GitLab Setup
+description: Complete guide for setting up Quartz with GitLab and GitLab Pages.
+created: 2026-01-08T14:00:00Z+0100
+modified: 2026-01-08T17:24:14Z+0100
+tags:
+  - guides
+cssclasses: ""
 ---
 
 
