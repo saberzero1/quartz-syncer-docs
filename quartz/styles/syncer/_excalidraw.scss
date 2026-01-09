@@ -1,22 +1,14 @@
 
-.excalidraw-svg-container {
-  width: 100%;
-  margin: 1rem 0;
-}
-
 .excalidraw-svg {
   display: none;
   max-width: 100%;
-  height: auto;
   margin: 0 auto;
 }
 
-/* Light theme - show light SVG */
 :root[saved-theme="light"] .excalidraw-svg.excalidraw-light {
   display: block;
 }
 
-/* Dark theme - show dark SVG */
 :root[saved-theme="dark"] .excalidraw-svg.excalidraw-dark {
   display: block;
 }
