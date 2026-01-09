@@ -11,25 +11,32 @@
   margin: 0 auto;
 }
 
+// Light theme - show light SVG
+:root[saved-theme="light"] .excalidraw-svg.excalidraw-light,
+[data-theme="light"] .excalidraw-svg.excalidraw-light,
+.light .excalidraw-svg.excalidraw-light {
+  display: block;
+}
+
+// Dark theme - show dark SVG
 :root[saved-theme="dark"] .excalidraw-svg.excalidraw-dark,
 [data-theme="dark"] .excalidraw-svg.excalidraw-dark,
 .dark .excalidraw-svg.excalidraw-dark {
   display: block;
 }
 
-:root[saved-theme="light"] .excalidraw-svg.excalidraw-light,
-[data-theme="light"] .excalidraw-svg.excalidraw-light,
-.light .excalidraw-svg.excalidraw-light,
-:root:not([saved-theme]) .excalidraw-svg.excalidraw-light,
-:root:not([data-theme]) .excalidraw-svg.excalidraw-light {
-  display: block;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root:not([saved-theme]):not([data-theme]) .excalidraw-svg.excalidraw-light {
-    display: none;
-  }
-  :root:not([saved-theme]):not([data-theme]) .excalidraw-svg.excalidraw-dark {
+// Default (no theme set) - show light, unless prefers dark
+:root:not([saved-theme]):not([data-theme]):not(.light):not(.dark) {
+  .excalidraw-svg.excalidraw-light {
     display: block;
+  }
+
+  @media (prefers-color-scheme: dark) {
+    .excalidraw-svg.excalidraw-light {
+      display: none;
+    }
+    .excalidraw-svg.excalidraw-dark {
+      display: block;
+    }
   }
 }
