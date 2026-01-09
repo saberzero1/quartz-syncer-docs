@@ -1,4 +1,15 @@
 
+// Quartz fixes
+.statblock-item-container div {
+  display: inline;
+}
+
+.statblock p {
+  color: inherit;
+  display: inline;
+}
+// Quartz fixes end
+
 :root {
   --statblock-primary-color: #7a200d;
   --statblock-rule-color: #922610;
@@ -368,14 +379,4 @@
     border: var(--active-image-border-size) solid var(--active-image-border-color);
     object-position: center;
   }
-}
-
-// Quartz fixes
-.statblock-table-header + span > div.statblock-markdown {
-  display: inline;
-}
-
-.statblock p {
-  color: inherit;
-  display: inline;
 }
