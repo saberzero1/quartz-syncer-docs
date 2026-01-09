@@ -3,7 +3,7 @@ publish: true
 title: Roadmap and Changelog
 description: Changelog and feature roadmap for Quartz Syncer.
 created: 2025-05-16T12:59:31Z+0200
-modified: 2026-01-09T09:51:37Z+0100
+modified: 2026-01-09T14:18:27Z+0100
 cssclasses: ""
 ---
 
@@ -25,6 +25,8 @@ cssclasses: ""
 - Manage Quartz components.
 
 ## Released
+
+### Version 1.9.2
 
 ### Version 1.9.1
 
