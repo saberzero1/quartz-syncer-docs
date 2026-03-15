@@ -3,7 +3,7 @@ publish: true
 title: Quartz
 description: Troubleshooting issues related to Quartz.
 created: 2025-05-05T00:00:00Z+0200
-modified: 2026-02-03T18:03:55Z+0100
+modified: 2025-05-20T20:31:59Z+0200
 tags:
   - quartz
 cssclasses: ""
@@ -21,7 +21,7 @@ See [[Guides/Using an Obsidian theme in Quartz]].
 
 ## What theme is this site using?
 
-[Gummy Revived](https://github.com/saberzero1/quartz-themes/blob/master/themes/gummy-revived/README.md).
+[Tokyo Night](https://github.com/saberzero1/quartz-themes/blob/master/themes/tokyo-night/README.md).
 
 ## Can I configure Quartz settings from Obsidian using Quartz Syncer?
 
