@@ -10,6 +10,6 @@ tags:
 
 | Category                                                                    | Description                                                             | Default value |
 | --------------------------------------------------------------------------- | ----------------------------------------------------------------------- | ------------- |
-| [[Settings/Quartz/Apply embeds.md|Apply embeds]]                           | Whether to let Quartz Syncer should handle link embeddings.             | true          |
-| [[Settings/Quartz/Content folder.md|Content folder]]                       | What folder in your Quartz repository notes should be published to.     | `content`     |
-| [[Settings/Quartz/Use full image resolution.md|Use full image resolution]] | Whether to use full resolution or to apply compression to image assets. | true          |
+| [[Settings/Quartz/Apply embeds.md\|Apply embeds]]                           | Whether to let Quartz Syncer should handle link embeddings.             | true          |
+| [[Settings/Quartz/Content folder.md\|Content folder]]                       | What folder in your Quartz repository notes should be published to.     | `content`     |
+| [[Settings/Quartz/Use full image resolution.md\|Use full image resolution]] | Whether to use full resolution or to apply compression to image assets. | true          |
