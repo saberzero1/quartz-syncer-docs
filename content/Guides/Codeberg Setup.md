@@ -6,9 +6,7 @@ created: 2026-01-08T14:00:00Z+0100
 modified: 2026-01-08T17:24:14Z+0100
 tags:
   - guides
-cssclasses: ""
 ---
-
 
 This guide covers setting up a Quartz repository on Codeberg, configuring Codeberg Pages for automatic deployment, and connecting Quartz Syncer.
 
@@ -28,6 +26,7 @@ Codeberg is a free, community-driven Git hosting service powered by Gitea.
 ### Option 2: Create Empty and Push
 
 1. Create a new repository on Codeberg.
+
 2. Clone Quartz locally:
 
    ```bash
@@ -124,6 +123,7 @@ A green checkmark indicates a successful connection.
 ## Custom Domain (Optional)
 
 1. Create a file named `.domains` in your pages repository.
+
 2. Add your domain(s), one per line:
 
    ```

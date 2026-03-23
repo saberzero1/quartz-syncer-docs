@@ -6,9 +6,7 @@ created: 2025-05-16T12:21:25Z+0200
 modified: 2025-05-20T20:31:59Z+0200
 tags:
   - settings/quartz
-cssclasses: ""
 ---
-
 
 > [!WARNING] Quartz expects `content` by default
 >

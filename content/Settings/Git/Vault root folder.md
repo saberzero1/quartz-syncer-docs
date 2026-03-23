@@ -6,9 +6,7 @@ created: 2026-01-08T14:00:00Z+0100
 modified: 2026-01-08T14:00:00Z+0100
 tags:
   - settings/git
-cssclasses: ""
 ---
-
 
 The folder in your Obsidian vault to use for Quartz notes.
 

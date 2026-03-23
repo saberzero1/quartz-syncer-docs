@@ -6,9 +6,7 @@ created: 2025-05-05T00:00:00Z+0200
 modified: 2026-01-09T14:00:00Z+0100
 tags:
   - excalidraw
-cssclasses: ""
 ---
-
 
 > [!INFO] Excalidraw usage
 > For questions regarding Excalidraw usage, please refer to the [Excalidraw documentation](https://excalidraw-obsidian.online).

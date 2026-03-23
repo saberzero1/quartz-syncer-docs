@@ -7,9 +7,7 @@ modified: 2026-01-09T13:00:00Z+0100
 tags:
   - integration
   - settings/integrations
-cssclasses: ""
 ---
-
 
 When enabled, Quartz Syncer automatically manages the SCSS styles required by enabled integrations.
 

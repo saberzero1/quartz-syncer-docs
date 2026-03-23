@@ -6,9 +6,7 @@ created: 2025-06-12T22:44:54Z+0200
 modified: 2026-01-08T13:30:00Z+0100
 tags:
   - settings/performance
-cssclasses: ""
 ---
-
 
 When enabled, Quartz Syncer caches compiled files to avoid reprocessing unchanged notes.
 
@@ -34,6 +32,6 @@ flowchart TD
 
 ## Dynamic content handling
 
-Files containing [[tags/dataview]] or [[tags/datacore]] queries are automatically detected and flagged as containing dynamic content. These files are always recompiled when you open the Publication Center, ensuring query results reflect the current state of your vault.
+Files containing [[Dataview]] or [[Datacore]] queries are automatically detected and flagged as containing dynamic content. These files are always recompiled when you open the Publication Center, ensuring query results reflect the current state of your vault.
 
 After recompilation, the output is compared against the published version. If the compiled result is identical, the file won't appear as changed—only files with actual differences are shown.

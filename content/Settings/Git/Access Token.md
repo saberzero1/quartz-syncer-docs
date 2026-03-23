@@ -6,9 +6,7 @@ created: 2026-01-08T14:00:00Z+0100
 modified: 2026-01-09T10:00:54Z+0100
 tags:
   - settings/git
-cssclasses: ""
 ---
-
 
 > [!WARNING] Requirements
 > Secure token storage requires **Obsidian 1.11.4 or later**.
@@ -41,4 +39,4 @@ If you're upgrading from a version prior to 1.9.1, your existing token will be a
 
 ## Generating Tokens
 
-Refer to the [[Setup Guide#Choose Your Git Provider\|setup guide for your Git provider]] for instructions on generating tokens for different Git providers.
+Refer to the [[Setup Guide#Choose Your Git Provider|setup guide for your Git provider]] for instructions on generating tokens for different Git providers.

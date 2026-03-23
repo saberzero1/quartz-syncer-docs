@@ -6,6 +6,4 @@ created: 2025-06-29T17:23:42Z+0200
 modified: 2025-06-29T17:34:18Z+0200
 tags:
   - settings/frontmatter
-cssclasses: ""
 ---
-

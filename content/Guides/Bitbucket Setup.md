@@ -6,9 +6,7 @@ created: 2026-01-08T14:00:00Z+0100
 modified: 2026-01-08T18:10:06Z+0100
 tags:
   - guides
-cssclasses: ""
 ---
-
 
 This guide covers setting up a Quartz repository on Bitbucket, configuring deployment, and connecting Quartz Syncer.
 
@@ -29,6 +27,7 @@ This guide covers setting up a Quartz repository on Bitbucket, configuring deplo
 ### Option 2: Create and Push Manually
 
 1. Create a new repository on Bitbucket.
+
 2. Clone Quartz locally:
 
    ```bash

@@ -6,9 +6,7 @@ created: 2025-05-05T12:00:00Z+0200
 modified: 2026-01-08T17:16:24Z+0100
 tags:
   - guides
-cssclasses: ""
 ---
-
 
 > [!WARNING] Set up Quartz first
 > This plugin manages Quartz content from Obsidian. Please set up Quartz on your Git provider before continuing.
@@ -19,10 +17,10 @@ Quartz Syncer supports any Git provider. Choose your provider for complete setup
 
 | Provider | Guide | Hosting |
 |----------|-------|---------|
-| **GitHub** | [[Guides/GitHub Setup]] | GitHub Pages (built-in) |
-| **GitLab** | [[Guides/GitLab Setup]] | GitLab Pages (built-in) |
-| **Codeberg** | [[Guides/Codeberg Setup]] | Codeberg Pages (built-in) |
-| **Bitbucket** | [[Guides/Bitbucket Setup]] | Netlify, Cloudflare, Vercel |
+| **GitHub** | [[GitHub Setup]] | GitHub Pages (built-in) |
+| **GitLab** | [[GitLab Setup]] | GitLab Pages (built-in) |
+| **Codeberg** | [[Codeberg Setup]] | Codeberg Pages (built-in) |
+| **Bitbucket** | [[Bitbucket Setup]] | Netlify, Cloudflare, Vercel |
 | **Other** | See [Generic Setup](#generic-setup) below | Varies |
 
 Each guide covers:

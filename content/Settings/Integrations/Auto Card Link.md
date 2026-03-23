@@ -7,9 +7,7 @@ modified: 2025-07-19T11:46:51Z+0200
 tags:
   - integration
   - settings/integrations
-cssclasses: ""
 ---
-
 
 ## Supported features
 

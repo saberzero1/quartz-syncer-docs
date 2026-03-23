@@ -9,7 +9,6 @@ tags:
   - settings/performance
 ---
 
-
 |Category|Description|Default value|
 |---|---|---|
 |[[Settings/Performance/Enable caching\|Enable caching]]|Whether to cache note compilation results to greatly improve performance.|true|

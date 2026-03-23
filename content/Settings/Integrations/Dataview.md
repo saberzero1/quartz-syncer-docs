@@ -10,14 +10,13 @@ tags:
   - settings/integrations
 ---
 
-
 When enabled, Quartz Syncer compiles Dataview queries into static markdown before publishing. This allows your Quartz site to display query results without requiring Dataview at runtime.
 
 ## Supported query types
 
 - `dataview` code blocks
 - `dataviewjs` code blocks (customizable keyword via Dataview settings)
-- Inline queries (e.g., `` Dataview ``)
+- Inline queries (e.g., `Dataview`)
 - Inline JS queries
 
 ## Cache behavior

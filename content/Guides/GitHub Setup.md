@@ -6,15 +6,13 @@ created: 2025-05-15T00:00:00Z+0200
 modified: 2026-01-08T17:24:14Z+0100
 tags:
   - guides
-cssclasses: ""
 ---
-
 
 This guide covers setting up a Quartz repository on GitHub, configuring GitHub Pages for automatic deployment, and connecting Quartz Syncer.
 
 ## Create a Quartz Repository
 
-If you haven't set up a Quartz repository on GitHub yet, [click here](https://github.com/new?template_name=quartz&template_owner=jackyzha0) to create one using the official Quartz template.
+If you haven't set up a Quartz repository on GitHub yet, [click here](https://github.com/new?template_name=quartz\&template_owner=jackyzha0) to create one using the official Quartz template.
 
 ## Configure GitHub Pages
 
@@ -120,8 +118,8 @@ A green checkmark indicates a successful connection.
 2. Under **Custom domain**, enter your domain and click **Save**.
 3. Configure your DNS:
    - **Apex domain** (`example.com`): Create `A` records pointing to:
-	 - `185.199.108.153`
-	 - `185.199.109.153`
-	 - `185.199.110.153`
-	 - `185.199.111.153`
+     - `185.199.108.153`
+     - `185.199.109.153`
+     - `185.199.110.153`
+     - `185.199.111.153`
    - **Subdomain** (`docs.example.com`): Create a `CNAME` record pointing to `<username>.github.io`.

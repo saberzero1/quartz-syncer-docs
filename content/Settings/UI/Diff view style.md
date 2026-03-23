@@ -6,9 +6,7 @@ created: 2026-01-08T13:00:00Z+0100
 modified: 2026-01-08T19:40:58Z+0100
 tags:
   - settings/ui
-cssclasses: ""
 ---
-
 
 This setting controls how the diff viewer displays differences when comparing your local file with the published version.
 

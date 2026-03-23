@@ -6,9 +6,7 @@ created: 2025-05-16T11:22:39Z+0200
 modified: 2025-05-20T12:00:57Z+0200
 tags:
   - guides
-cssclasses: ""
 ---
-
 
 > [!IMPORTANT] Mixed content vaults
 >
@@ -29,7 +27,7 @@ To use your entire vault, set the folder to `/` or leave the search box empty. T
 When a folder other than the vault root (`/`) is configured, the following changes are made when compiling notes for Quartz:
 
 - All internal links are rewritten to remove the path to the folder.
-- If [[Settings/Integrations/Dataview\|Dataview integration]] is enabled, all Dataview query results are rewritten to remove the path to the folder.
+- If [[Settings/Integrations/Dataview|Dataview integration]] is enabled, all Dataview query results are rewritten to remove the path to the folder.
 - All internal embeds links are rewritten to remove the path to the folder.
 
 The final result that is deployed to your Quartz content folder is as if your configured folder is the root of your website.

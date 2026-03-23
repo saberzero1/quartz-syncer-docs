@@ -6,9 +6,7 @@ created: 2026-01-09T07:32:00Z+0100
 modified: 2026-01-09T07:32:00Z+0100
 tags:
   - settings/frontmatter
-cssclasses: ""
 ---
-
 
 This setting controls the output format for frontmatter in your published notes.
 

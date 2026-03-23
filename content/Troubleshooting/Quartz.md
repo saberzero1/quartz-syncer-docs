@@ -6,9 +6,7 @@ created: 2025-05-05T00:00:00Z+0200
 modified: 2025-05-20T20:31:59Z+0200
 tags:
   - quartz
-cssclasses: ""
 ---
-
 
 > [!INFO] Quartz usage
 > For question regarding Quartz usage, please refer to the [Quartz documentation](https://quartz.jzhao.xyz/).
@@ -17,7 +15,7 @@ cssclasses: ""
 
 ## Can I use an Obsidian Theme in Quartz?
 
-See [[Guides/Using an Obsidian theme in Quartz]].
+See [[Using an Obsidian theme in Quartz]].
 
 ## What theme is this site using?
 

@@ -6,9 +6,7 @@ created: 2026-01-08T14:00:00Z+0100
 modified: 2026-01-08T17:24:14Z+0100
 tags:
   - guides
-cssclasses: ""
 ---
-
 
 This guide covers setting up a Quartz repository on GitLab, configuring GitLab Pages for automatic deployment, and connecting Quartz Syncer.
 
@@ -91,7 +89,7 @@ Your site will be deployed to `<username>.gitlab.io/<project-name>`.
 2. Click **Add new token**.
 3. Enter a **Token name** (e.g., `Quartz Syncer`).
 4. Set an **Expiration date** (maximum 1 year).
-5. Under **Select scopes**, check **write_repository**.
+5. Under **Select scopes**, check **write\_repository**.
 6. Click **Create personal access token**.
 7. Copy the generated token immediately.
 

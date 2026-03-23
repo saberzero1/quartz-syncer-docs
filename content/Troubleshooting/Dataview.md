@@ -6,9 +6,7 @@ created: 2025-05-05T00:00:00Z+0200
 modified: 2026-01-08T13:30:00Z+0100
 tags:
   - dataview
-cssclasses: ""
 ---
-
 
 > [!INFO] Dataview usage
 > For questions regarding Dataview syntax, please refer to the [Dataview documentation](https://blacksmithgu.github.io/obsidian-dataview/)

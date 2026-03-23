@@ -9,7 +9,6 @@ tags:
   - settings/ui
 ---
 
-
 |Category|Description|Default value|
 |---|---|---|
 |[[Settings/UI/Diff view style\|Diff view style]]|Choose the default layout for viewing differences between local and published files.|Auto|

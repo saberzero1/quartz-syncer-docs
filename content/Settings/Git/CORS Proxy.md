@@ -6,9 +6,7 @@ created: 2026-01-08T14:00:00Z+0100
 modified: 2026-01-08T14:00:00Z+0100
 tags:
   - settings/git
-cssclasses: ""
 ---
-
 
 Optional CORS proxy URL, only needed if the Git server does not support CORS (common in mobile or web environments).
 

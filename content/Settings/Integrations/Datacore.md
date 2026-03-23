@@ -10,7 +10,6 @@ tags:
   - settings/integrations
 ---
 
-
 > [!WARNING] Datacore is still in early development
 >
 > Not all features may work correctly
@@ -43,7 +42,7 @@ return function View() {
 }
 ```
 
-- [[Settings/Integrations/Datacore\|Datacore]]
+- [[Settings/Integrations/Datacore|Datacore]]
 
 ### Datacore Tables
 

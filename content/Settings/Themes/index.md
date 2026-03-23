@@ -9,7 +9,6 @@ tags:
   - themes
 ---
 
-
 > [!WARNING] Upcoming feature
 > Configuring Quartz Themes using Quartz Syncer is an upcoming feature. It is not released yet.
 >
@@ -19,4 +18,3 @@ tags:
 
 | Category | Description |
 | -------- | ----------- |
-

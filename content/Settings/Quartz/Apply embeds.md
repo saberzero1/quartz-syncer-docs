@@ -6,9 +6,7 @@ created: 2025-05-21T11:39:18Z+0200
 modified: 2026-01-08T15:15:14Z+0100
 tags:
   - settings/quartz
-cssclasses: ""
 ---
-
 
 When enabled, embed links are handled by Quartz Syncer.
 
@@ -34,14 +32,14 @@ This setting should be **Disabled** if:
 > ```markdown
 > // index.md
 > # Hello
-> 
+>
 > ![[embed]]
 > ```
 >
 > ```markdown
 > // embed.md
 > ## Goodbye
-> 
+>
 > Look mom, I'm embedded!
 > ```
 >
@@ -50,9 +48,9 @@ This setting should be **Disabled** if:
 > > ```markdown
 > > // index.md
 > > # Hello
-> > 
+> >
 > > ## Goodbye
-> > 
+> >
 > > Look mom, I'm embedded!
 > > ```
 > >
@@ -66,13 +64,13 @@ This setting should be **Disabled** if:
 > > ```markdown
 > > // index.md
 > > # Hello
-> > 
+> >
 > > ![[embed]]
 > > ```
 > >
 > > ```markdown
 > > // embed.md
 > > ## Goodbye
-> > 
+> >
 > > Look mom, I'm Embedded!
 > > ```
