@@ -3,7 +3,7 @@ publish: true
 title: Datacore
 description: Whether to enable support for the Datacore plugin. Requires Datacore to be installed and enabled.
 created: 2025-06-09T20:48:56Z+0200
-modified: 2026-04-01T17:15:09Z+0200
+modified: 2026-01-08T13:30:00Z+0100
 tags:
   - datacore
   - integration
@@ -61,7 +61,7 @@ return function View() {
 
 |Name|Tags|
 |---|---|
-|[[Settings/Integrations/Datacore\|Datacore]]|<a href="tags/datacore" class="tag-link">datacore</a>, <a href="tags/integration" class="tag-link">integration</a>, <a href="tags/settings/integrations" class="tag-link">settings/integrations</a>|
+|[[Settings/Integrations/Datacore|Datacore]]|<a href="tags/datacore" class="tag-link">datacore</a>, <a href="tags/integration" class="tag-link">integration</a>, <a href="tags/settings/integrations" class="tag-link">settings/integrations</a>|
 
 ### Datacore Cards
 

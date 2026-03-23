@@ -1,52 +1,18 @@
 ---
 publish: true
 title: GitHub Setup
-description: Complete guide for setting up Quartz v5 with GitHub and GitHub Pages.
+description: Complete guide for setting up Quartz with GitHub and GitHub Pages.
 created: 2025-05-15T00:00:00Z+0200
-modified: 2026-04-11T18:00:00Z+0200
+modified: 2026-01-08T17:24:14Z+0100
 tags:
   - guides
 ---
 
-This guide covers setting up a Quartz v5 repository on GitHub, configuring GitHub Pages for automatic deployment, and connecting Quartz Syncer.
+This guide covers setting up a Quartz repository on GitHub, configuring GitHub Pages for automatic deployment, and connecting Quartz Syncer.
 
 ## Create a Quartz Repository
 
-If you haven't set up a Quartz repository on GitHub yet, [click here](https://github.com/new?template_name=quartz\&template_owner=jackyzha0) to create one using the official Quartz template. Make sure to check **Include all branches** so the `v5` branch is included.
-
-## Clone and Install
-
-Clone your repository and install dependencies:
-
-```bash
-git clone https://github.com/<username>/<repository>.git
-cd <repository>
-npm ci
-```
-
-To pull future Quartz updates, add the upstream repository as a remote:
-
-```bash
-git remote add upstream https://github.com/jackyzha0/quartz.git
-```
-
-## Run the Setup Wizard
-
-Quartz v5 uses an interactive setup command to create `quartz.config.yaml` and install all required plugins:
-
-```bash
-npx quartz create
-```
-
-Pick a template (`default`, `obsidian`, `ttrpg`, or `blog`), set your base URL (e.g. `<username>.github.io/<repository>`), and choose a content strategy. The `obsidian` template is recommended when publishing from an Obsidian vault.
-
-Commit the generated `quartz.config.yaml` and `quartz.lock.json`:
-
-```bash
-git add quartz.config.yaml quartz.lock.json
-git commit -m "Initial Quartz v5 setup"
-git push
-```
+If you haven't set up a Quartz repository on GitHub yet, [click here](https://github.com/new?template_name=quartz\&template_owner=jackyzha0) to create one using the official Quartz template.
 
 ## Configure GitHub Pages
 
@@ -60,13 +26,13 @@ git push
 
 Create a new file `.github/workflows/deploy.yml` in your repository with the following content:
 
-```yaml title=".github/workflows/deploy.yml"
+```yaml
 name: Deploy Quartz site to GitHub Pages
 
 on:
   push:
     branches:
-      - v5
+      - v4
 
 permissions:
   contents: read
@@ -79,36 +45,20 @@ concurrency:
 
 jobs:
   build:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-22.04
     steps:
-      - uses: actions/checkout@v6
+      - uses: actions/checkout@v4
         with:
-          fetch-depth: 0 # Fetch all history for git info
-      - uses: actions/setup-node@v6
+          fetch-depth: 0
+      - uses: actions/setup-node@v4
         with:
-          node-version: 24
-      - name: Cache dependencies
-        uses: actions/cache@v5
-        with:
-          path: ~/.npm
-          key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
-          restore-keys: |
-            ${{ runner.os }}-node-
-      - name: Cache Quartz plugins
-        uses: actions/cache@v5
-        with:
-          path: .quartz/plugins
-          key: ${{ runner.os }}-plugins-${{ hashFiles('quartz.lock.json') }}
-          restore-keys: |
-            ${{ runner.os }}-plugins-
+          node-version: 22
       - name: Install Dependencies
         run: npm ci
-      - name: Install Quartz plugins
-        run: npx quartz plugin install
       - name: Build Quartz
         run: npx quartz build
       - name: Upload artifact
-        uses: actions/upload-pages-artifact@v4
+        uses: actions/upload-pages-artifact@v3
         with:
           path: public
 
@@ -123,9 +73,6 @@ jobs:
         id: deployment
         uses: actions/deploy-pages@v4
 ```
-
-> [!TIP] Plugin install is mandatory in v5
-> Quartz v5 downloads community plugins into `.quartz/plugins/` at build time. The `npx quartz plugin install` step **must** run before `npx quartz build`, otherwise the build will fail. The `.quartz/plugins` cache above keys on `quartz.lock.json` so plugins are only re-downloaded when you change your configuration.
 
 Your site will be deployed to `<username>.github.io/<repository-name>`.
 
@@ -157,7 +104,7 @@ Your site will be deployed to `<username>.github.io/<repository-name>`.
 1. Open Obsidian and go to **Settings** > **Community Plugins** > **Quartz Syncer**.
 2. In the **Git** settings tab:
    - **Remote URL**: `https://github.com/<username>/<repository>.git`
-   - **Branch**: Your repository's default branch (typically `v5`)
+   - **Branch**: `v4` (or your Quartz branch)
    - **Provider**: GitHub
    - **Authentication Type**: Username & Token/Password
    - **Username**: Your GitHub username
@@ -176,5 +123,3 @@ A green checkmark indicates a successful connection.
      - `185.199.110.153`
      - `185.199.111.153`
    - **Subdomain** (`docs.example.com`): Create a `CNAME` record pointing to `<username>.github.io`.
-
-Don't forget to update `baseUrl` in `quartz.config.yaml` to match your custom domain.

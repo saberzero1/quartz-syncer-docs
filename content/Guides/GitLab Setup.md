@@ -1,14 +1,14 @@
 ---
 publish: true
 title: GitLab Setup
-description: Complete guide for setting up Quartz v5 with GitLab and GitLab Pages.
+description: Complete guide for setting up Quartz with GitLab and GitLab Pages.
 created: 2026-01-08T14:00:00Z+0100
-modified: 2026-05-02T14:48:13Z+0200
+modified: 2026-01-08T17:24:14Z+0100
 tags:
   - guides
 ---
 
-This guide covers setting up a Quartz v5 repository on GitLab, configuring GitLab Pages for automatic deployment, and connecting Quartz Syncer.
+This guide covers setting up a Quartz repository on GitLab, configuring GitLab Pages for automatic deployment, and connecting Quartz Syncer.
 
 ## Create a Quartz Repository
 
@@ -19,7 +19,7 @@ This guide covers setting up a Quartz v5 repository on GitLab, configuring GitLa
 3. Enter the Quartz repository URL: `https://github.com/jackyzha0/quartz.git`
 4. Set your **Project name** (e.g., `quartz`).
 5. Set **Visibility Level** to your preference.
-6. Click **Create project**. All branches (including `v5`) are imported automatically.
+6. Click **Create project**.
 
 ### Option 2: Mirror from GitHub
 
@@ -29,82 +29,42 @@ If you want to keep your GitLab repository in sync with the upstream Quartz repo
 2. Go to **Settings** > **Repository** > **Mirroring repositories**.
 3. Add `https://github.com/jackyzha0/quartz.git` as a mirror.
 
-## Clone and Install
-
-Clone your GitLab repository and install dependencies:
-
-```bash
-git clone https://gitlab.com/<username>/<project>.git
-cd <project>
-npm ci
-```
-
-To pull future Quartz updates, add the upstream repository as a remote:
-
-```bash
-git remote add upstream https://github.com/jackyzha0/quartz.git
-```
-
-## Run the Setup Wizard
-
-Quartz v5 uses an interactive setup command to create `quartz.config.yaml` and install all required plugins:
-
-```bash
-npx quartz create
-```
-
-Pick a template (`default`, `obsidian`, `ttrpg`, or `blog`), set your base URL (e.g. `<username>.gitlab.io/<project>`), and choose a content strategy. The `obsidian` template is recommended when publishing from an Obsidian vault. Commit the generated config and lockfile:
-
-```bash
-git add quartz.config.yaml quartz.lock.json
-git commit -m "Initial Quartz v5 setup"
-git push
-```
-
 ## Configure GitLab Pages
 
 ### Add the CI/CD Configuration
 
 Create a new file `.gitlab-ci.yml` in the root of your repository with the following content:
 
-```yaml title=".gitlab-ci.yml"
+```yaml
 stages:
   - build
   - deploy
-
-image: node:24
-cache:
-  - key:
-      prefix: npm
-      files:
-        - package-lock.json
-    paths:
-      - .npm/
-  - key:
-      prefix: plugins
-      files:
-        - quartz.lock.json
-    paths:
-      - .quartz/plugins/
-
+ 
+image: node:22
+cache: # Cache modules in between jobs
+  key: $CI_COMMIT_REF_SLUG
+  paths:
+    - .npm/
+ 
 build:
   stage: build
   rules:
-    - if: '$CI_COMMIT_REF_NAME == "v5"'
-  script:
+    - if: '$CI_COMMIT_REF_NAME == "v4"'
+  before_script:
+    - hash -r
     - npm ci --cache .npm --prefer-offline
-    - npx quartz plugin install
+  script:
     - npx quartz build
   artifacts:
     paths:
       - public
-
+  tags:
+    - gitlab-org-docker
+ 
 pages:
   stage: deploy
-  needs:
-    - build
   rules:
-    - if: '$CI_COMMIT_REF_NAME == "v5"'
+    - if: '$CI_COMMIT_REF_NAME == "v4"'
   script:
     - echo "Deploying to GitLab Pages..."
   artifacts:
@@ -112,8 +72,8 @@ pages:
       - public
 ```
 
-> [!TIP] Plugin install is mandatory in v5
-> Quartz v5 downloads community plugins into `.quartz/plugins/` at build time. The `npx quartz plugin install` step **must** run before `npx quartz build`, otherwise the build will fail. The caches above key on `package-lock.json` and `quartz.lock.json` respectively, so dependencies are only re-downloaded when you change your configuration.
+> [!NOTE] Default Branch
+> This configuration deploys when pushing to the default branch. If your Quartz content is on a different branch (e.g., `v4`), replace `$CI_DEFAULT_BRANCH` with your branch name.
 
 ### Verify GitLab Pages is Enabled
 
@@ -129,7 +89,7 @@ Your site will be deployed to `<username>.gitlab.io/<project-name>`.
 2. Click **Add new token**.
 3. Enter a **Token name** (e.g., `Quartz Syncer`).
 4. Set an **Expiration date** (maximum 1 year).
-5. Under **Select scopes**, check **read\_repository** and **write\_repository**.
+5. Under **Select scopes**, check **write\_repository**.
 6. Click **Create personal access token**.
 7. Copy the generated token immediately.
 
@@ -141,7 +101,7 @@ Your site will be deployed to `<username>.gitlab.io/<project-name>`.
 1. Open Obsidian and go to **Settings** > **Community Plugins** > **Quartz Syncer**.
 2. In the **Git** settings tab:
    - **Remote URL**: `https://gitlab.com/<username>/<project>.git`
-   - **Branch**: Your repository's default branch (typically `v5`)
+   - **Branch**: Your default branch (e.g., `main` or `v4`)
    - **Provider**: GitLab
    - **Authentication Type**: Username & Token/Password
    - **Username**: `oauth2` (when using a Personal Access Token)
@@ -161,8 +121,6 @@ A green checkmark indicates a successful connection.
    - **Apex domain** (`example.com`): Create an `A` record pointing to `35.185.44.232`
    - **Subdomain** (`docs.example.com`): Create a `CNAME` record pointing to `<username>.gitlab.io`
 5. Optionally enable **Force HTTPS** after DNS verification.
-
-Don't forget to update `baseUrl` in `quartz.config.yaml` to match your custom domain.
 
 ## Self-Managed GitLab
 

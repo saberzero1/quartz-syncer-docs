@@ -3,7 +3,7 @@ publish: true
 title: Usage Guide
 description: Details on using Quartz Syncer.
 created: 2025-05-05T00:00:00Z+0200
-modified: 2026-04-24T19:37:00Z+0200
+modified: 2026-01-08T13:30:00Z+0100
 tags:
   - guides
 ---
@@ -19,7 +19,7 @@ tags:
 There are two ways to open the publication center:
 
 1. From the command palette: `Quartz Syncer: Open publication center`.
-2. Clicking the leaf icon in the ribbon.
+2. Clicking the Quartz crystal icon.
    1. (On desktop): By default, in the vertical bar on the left side of your screen.
    2. (On mobile): By default, press the hamburger button on the bottom right (three horizontal lines) and press `Quartz Syncer publication center`.
 
@@ -49,13 +49,9 @@ Open the publication center (see above for instructions). Your eligible notes wi
   - The diff viewer supports two modes: **Split view** (side-by-side comparison) and **Unified view** (interleaved changes). Toggle between them using the buttons at the top of the viewer.
   - Configure the default view style in **Settings > UI > Diff view style**.
 - **Published notes (select to unpublished)**: notes that are in your in your Quartz repository. Any notes checked here will be unpublished and removed from your Quartz repository. Notes deleted from your vault need to be unpublished here to remove them from Quartz.
-- **Unchanged notes**: a list of all unchanged notes that are currently published in your Quartz repository. It includes only unchanged notes that are also in your vault.
+- **Unchanged  notes**: a list of all unchanged notes that are currently published in your Quartz repository. It includes only unchanged notes that are also in your vault.
 
 After you are satisfied with your selection, click the big button on the bottom left that says `PUBLISH SELECTED CHANGES` and watch the magic happen.
-
-## CLI
-
-Quartz Syncer also supports the [Obsidian CLI](https://obsidian.md/cli) (v1.12+) for automating publishing from the terminal. See the [[Guides/CLI|CLI guide]] for the full command reference and example workflows.
 
 > [!INFO] Why does Quartz Syncer sometimes make two commits?
 >

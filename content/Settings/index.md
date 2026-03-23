@@ -3,7 +3,7 @@ publish: true
 title: Settings
 description: Overview of all settings.
 created: 2025-05-07T22:37:11Z+0200
-modified: 2026-04-01T17:15:09Z+0200
+modified: 2026-01-08T13:30:00Z+0100
 tags:
   - settings
 ---
@@ -12,13 +12,13 @@ tags:
 
 | Category                                                             | Description                                                                 |
 | -------------------------------------------------------------------- | --------------------------------------------------------------------------- |
-| [[Settings/Git/index.md\|Git]]                                       | Quartz Syncer settings related to Git repository configuration.             |
-| [[Settings/Integrations/index.md\|Integrations]]                     | Quartz Syncer settings related to integrations with other Obsidian plugins. |
-| [[Settings/Note properties/index.md\|Note properties (frontmatter)]] | Quartz Syncer settings related to note properties or frontmatter.           |
-| [[Settings/Performance/index.md\|Performance]]                       | Quartz Syncer settings related to performance.                              |
-| [[Settings/Quartz/index.md\|Quartz]]                                 | Quartz Syncer settings related to Quartz.                                   |
-| [[Settings/Themes/index.md\|Themes]]                                 | Quartz Syncer settings related to Quartz Themes.                            |
-| [[Settings/UI/index.md\|UI]]                                         | Quartz Syncer settings related to the user interface.                       |
+| [[Settings/Git/index.md|Git]]                                       | Quartz Syncer settings related to Git repository configuration.             |
+| [[Settings/Integrations/index.md|Integrations]]                     | Quartz Syncer settings related to integrations with other Obsidian plugins. |
+| [[Settings/Note properties/index.md|Note properties (frontmatter)]] | Quartz Syncer settings related to note properties or frontmatter.           |
+| [[Settings/Performance/index.md|Performance]]                       | Quartz Syncer settings related to performance.                              |
+| [[Settings/Quartz/index.md|Quartz]]                                 | Quartz Syncer settings related to Quartz.                                   |
+| [[Settings/Themes/index.md|Themes]]                                 | Quartz Syncer settings related to Quartz Themes.                            |
+| [[Settings/UI/index.md|UI]]                                         | Quartz Syncer settings related to the user interface.                       |
 
 ## Commands
 

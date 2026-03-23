@@ -1,14 +1,14 @@
 ---
 publish: true
 title: Codeberg Setup
-description: Complete guide for setting up Quartz v5 with Codeberg and Codeberg Pages.
+description: Complete guide for setting up Quartz with Codeberg and Codeberg Pages.
 created: 2026-01-08T14:00:00Z+0100
-modified: 2026-04-11T18:00:00Z+0200
+modified: 2026-01-08T17:24:14Z+0100
 tags:
   - guides
 ---
 
-This guide covers setting up a Quartz v5 repository on Codeberg, configuring Codeberg Pages for automatic deployment, and connecting Quartz Syncer.
+This guide covers setting up a Quartz repository on Codeberg, configuring Codeberg Pages for automatic deployment, and connecting Quartz Syncer.
 
 Codeberg is a free, community-driven Git hosting service powered by Gitea.
 
@@ -21,126 +21,50 @@ Codeberg is a free, community-driven Git hosting service powered by Gitea.
 3. Select **GitHub** as the source.
 4. Enter the Quartz repository URL: `https://github.com/jackyzha0/quartz`
 5. Set your **Repository name** (e.g., `quartz`).
-6. Click **Migrate Repository**. All branches (including `v5`) are included automatically.
+6. Click **Migrate Repository**.
 
 ### Option 2: Create Empty and Push
 
 1. Create a new repository on Codeberg.
-2. Clone Quartz locally, change the remote, and push:
+
+2. Clone Quartz locally:
 
    ```bash
    git clone https://github.com/jackyzha0/quartz.git
    cd quartz
-   git remote set-url origin https://codeberg.org/<username>/quartz.git
-   git push -u origin HEAD
    ```
 
-## Clone and Install
+3. Change the remote and push:
 
-Clone your Codeberg repository and install dependencies:
-
-```bash
-git clone https://codeberg.org/<username>/<repository>.git
-cd <repository>
-npm ci
-```
-
-To pull future Quartz updates, add the upstream repository as a remote:
-
-```bash
-git remote add upstream https://github.com/jackyzha0/quartz.git
-```
-
-## Run the Setup Wizard
-
-Quartz v5 uses an interactive setup command to create `quartz.config.yaml` and install all required plugins:
-
-```bash
-npx quartz create
-```
-
-Pick a template (`default`, `obsidian`, `ttrpg`, or `blog`), set your base URL (e.g. `<username>.codeberg.page`), and choose a content strategy. The `obsidian` template is recommended when publishing from an Obsidian vault. Commit the generated config and lockfile:
-
-```bash
-git add quartz.config.yaml quartz.lock.json
-git commit -m "Initial Quartz v5 setup"
-git push
-```
+   ```bash
+   git remote set-url origin https://codeberg.org/<username>/quartz.git
+   git push -u origin v4
+   ```
 
 ## Configure Codeberg Pages
 
-Codeberg Pages serves static content from a separate repository named `pages`. You need to create this repository before setting up deployment.
+Codeberg Pages uses a special branch called `pages` or a separate repository named `pages` to serve static content. For Quartz, we recommend using Codeberg CI (Woodpecker) to build and deploy.
 
-### Create the Pages Repository
-
-1. Create a new repository on Codeberg named **`pages`**.
-2. Your site will be available at `<username>.codeberg.page` once content is pushed to this repository.
-
-> [!NOTE] How Codeberg Pages works
-> Unlike GitHub Pages, Codeberg Pages does not build your site. It only serves static files from the `pages` repository. You need a CI pipeline or manual process to build Quartz and push the output to that repository.
-
-### Option 1: Using Forgejo Actions
-
-Codeberg supports [Forgejo Actions](https://docs.codeberg.org/ci/forgejo-actions/), a CI system with syntax similar to GitHub Actions. This is the simplest automated deployment option.
-
-Create the directory `.forgejo/workflows/` and add a workflow file:
-
-```yaml title=".forgejo/workflows/deploy.yml"
-on:
-  push:
-    branches:
-      - v5
-
-jobs:
-  deploy:
-    runs-on: docker
-    steps:
-      - uses: https://code.forgejo.org/actions/checkout@v4
-      - uses: https://code.forgejo.org/actions/setup-node@v4
-        with:
-          node-version: 24
-      - name: Install dependencies
-        run: npm ci
-      - name: Install Quartz plugins
-        run: npx quartz plugin install
-      - name: Build Quartz
-        run: npx quartz build
-      - name: Deploy to Codeberg Pages
-        uses: https://codeberg.org/git-pages/action@v2
-        with:
-          site: "https://${{ forge.repository_owner }}.codeberg.page/"
-          token: ${{ forge.token }}
-          source: public/
-```
-
-> [!TIP] Plugin install is mandatory in v5
-> Quartz v5 downloads community plugins into `.quartz/plugins/` at build time. The `npx quartz plugin install` step **must** run before `npx quartz build`, otherwise the build will fail.
-
-### Option 2: Using Woodpecker CI
-
-Codeberg also offers [Woodpecker CI](https://docs.codeberg.org/ci/) as a hosted CI service.
-
-> [!IMPORTANT] Woodpecker CI requires access approval
-> Woodpecker CI access is not automatic. You must [request access](https://codeberg.org/Codeberg-e.V./requests/issues/new?template=ISSUE_TEMPLATE%2fWoodpecker-CI.yaml) and wait for approval before pipelines will run. CI resources are shared and limited — keep your builds efficient.
+### Option 1: Using Codeberg CI (Woodpecker)
 
 Create a new file `.woodpecker.yml` in the root of your repository:
 
-```yaml title=".woodpecker.yml"
+```yaml
 steps:
   build:
-    image: node:24
+    image: node:22
     commands:
       - npm ci
-      - npx quartz plugin install
       - npx quartz build
     when:
-      branch: v5
+      branch: v4
 
   deploy:
     image: alpine
+    secrets: [mail]
     commands:
-      - apk add --no-cache git
-      - git config --global user.email "woodpecker@noreply.codeberg.org"
+      - apk add --no-cache git openssh-client
+      - git config --global user.email "$MAIL"
       - git config --global user.name "Woodpecker CI"
       - cd public
       - git init
@@ -148,27 +72,24 @@ steps:
       - git commit -m "Deploy to Codeberg Pages"
       - git push -f https://$CI_REPO_OWNER:$CI_FORGE_TOKEN@codeberg.org/$CI_REPO_OWNER/pages.git HEAD:main
     when:
-      branch: v5
+      branch: v4
 ```
 
-> [!TIP] Plugin install is mandatory in v5
-> Quartz v5 downloads community plugins into `.quartz/plugins/` at build time. The `npx quartz plugin install` step **must** run before `npx quartz build`, otherwise the build will fail.
+> [!NOTE] Pages Repository
+> This workflow pushes the built site to a separate `pages` repository. Create a repository named `pages` on Codeberg first.
 
-> [!WARNING] Force push
-> The deploy step force-pushes to the `pages` repository, replacing its entire history on every deployment. This is expected — the `pages` repository only needs to contain the latest build output.
-
-### Option 3: Manual Deployment
+### Option 2: Manual Deployment
 
 If you prefer not to use CI, you can manually build and deploy:
 
-1. Install plugins and build Quartz locally:
+1. Build Quartz locally: `npx quartz build`
+2. Create a repository named `pages` on Codeberg
+3. Push the contents of the `public` folder to the `pages` repository
 
-   ```bash
-   npx quartz plugin install
-   npx quartz build
-   ```
+### Enable Codeberg Pages
 
-2. Push the contents of the `public` folder to the `pages` repository.
+1. Create a repository named `pages` (or `<username>.codeberg.page` for a custom domain).
+2. Your site will be available at `<username>.codeberg.page`.
 
 > [!TIP] Project Pages
 > For project-specific pages, create a `.domains` file in your pages repository containing your desired subdomain.
@@ -191,7 +112,7 @@ If you prefer not to use CI, you can manually build and deploy:
 1. Open Obsidian and go to **Settings** > **Community Plugins** > **Quartz Syncer**.
 2. In the **Git** settings tab:
    - **Remote URL**: `https://codeberg.org/<username>/<repository>.git`
-   - **Branch**: Your repository's default branch (typically `v5`)
+   - **Branch**: `v4` (or your Quartz branch)
    - **Provider**: Gitea / Codeberg
    - **Authentication Type**: Username & Token/Password
    - **Username**: Your Codeberg username
@@ -212,8 +133,6 @@ A green checkmark indicates a successful connection.
 3. Configure your DNS:
    - **Subdomain**: Create a `CNAME` record pointing to `<username>.codeberg.page`
    - **Apex domain**: Create a `CNAME` record pointing to `<username>.codeberg.page` (if your DNS provider supports CNAME flattening) or use a redirect service.
-
-Don't forget to update `baseUrl` in `quartz.config.yaml` to match your custom domain.
 
 > [!NOTE] HTTPS
 > Codeberg Pages automatically provisions SSL certificates for custom domains.

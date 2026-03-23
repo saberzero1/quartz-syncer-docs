@@ -3,7 +3,7 @@ publish: true
 title: Apply embeds
 description: Whether to let Quartz Syncer should handle link embeddings.
 created: 2025-05-21T11:39:18Z+0200
-modified: 2026-04-01T17:15:09Z+0200
+modified: 2026-01-08T15:15:14Z+0100
 tags:
   - settings/quartz
 ---
