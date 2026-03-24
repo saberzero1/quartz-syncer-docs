@@ -1,5 +1,7 @@
 #yaml-language-server: $schema=./quartz/plugins/quartz-plugins.schema.json
 
+#yaml-language-server: $schema=./quartz/plugins/quartz-plugins.schema.json
+
 # yaml-language-server: $schema=./quartz/plugins/quartz-plugins.schema.json
 configuration:
   pageTitle: Quartz Syncer
@@ -252,7 +254,7 @@ plugins:
       subdir: plugin
     enabled: true
     options:
-      theme: tokyo-night
+      theme: its-theme.gray
 layout:
   groups:
     toolbar:
