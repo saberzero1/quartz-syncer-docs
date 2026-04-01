@@ -8,7 +8,6 @@ modified: 2026-04-01T02:52:35Z+0200
 
 ## Upcoming
 
-- Manage Quartz v5 configuration.
 - Manage Quartz v5 layout.
 - Manage Quartz v5 components.
 
@@ -21,14 +20,22 @@ modified: 2026-04-01T02:52:35Z+0200
 ### Version 1.13.0
 
 - Added [Obsidian CLI](https://obsidian.md/cli) support for automating publishing workflows from the terminal (requires Obsidian v1.12+).
-  - 9 CLI commands: `status`, `sync`, `publish`, `delete`, `mark`, `test`, `cache`, `config`, and `upgrade`.
+  - 12 CLI commands: `status`, `sync`, `publish`, `delete`, `mark`, `test`, `cache`, `config`, `upgrade`, `version`, `plugin`, and `quartz-config`.
+  - `obsidian quartz-syncer` (no subcommand) shows a help screen with all available commands, flags, and examples.
+  - All commands support `verbose` for detailed output (file paths, connection details, cache contents, commit SHAs).
+  - All commands support `help` for command-specific usage information.
   - All commands support `format=json` for machine-readable output and `dry-run` for previewing changes.
   - Publishing commands (`sync`, `publish`) execute without confirmation. Destructive commands (`delete`, `upgrade`) require `force`.
   - `mark` command supports three path resolution modes: exact path, glob patterns (`notes/**/*.md`), and fuzzy search (`~my post`).
   - `config` command enables reading and writing plugin settings from the terminal, with secret redaction for authentication tokens.
+  - `config` command defaults to listing all settings when no action is provided (`obsidian quartz-syncer:config` = `obsidian quartz-syncer:config action=list`).
+  - `version` command shows plugin, Obsidian, and Quartz version information.
+  - `plugin` command manages Quartz v5 plugins: list, add, remove, check for updates, apply updates, and browse the community registry.
+  - `quartz-config` command reads and writes Quartz v5 site configuration with schema validation.
   - `cache` command provides cache management (status, clear single file, clear all).
   - `test` command validates Git connection and write access.
   - `upgrade` command pulls upstream Quartz changes with automatic `quartz.lock.json` conflict resolution.
+  - Fixed: `upgrade` command now correctly targets Quartz v5 upstream (was hardcoded to v4).
   - Graceful fallback on older Obsidian versions — CLI registration is silently skipped if `registerCliHandler` is unavailable.
 - See the [[Guides/CLI|CLI guide]] for the full command reference and example workflows.
 - Updated documentation.

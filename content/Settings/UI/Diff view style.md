@@ -3,7 +3,7 @@ publish: true
 title: Diff view style
 description: Choose the default layout for viewing differences between local and published files.
 created: 2026-01-08T13:00:00Z+0100
-modified: 2026-01-08T19:40:58Z+0100
+modified: 2026-04-01T17:15:09Z+0200
 tags:
   - settings/ui
 ---

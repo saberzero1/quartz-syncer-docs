@@ -3,7 +3,7 @@ publish: true
 title: CLI
 description: Automate Quartz Syncer workflows from the terminal using the Obsidian CLI.
 created: 2026-04-01T00:00:00Z+0200
-modified: 2026-04-01T02:50:10Z+0200
+modified: 2026-04-01T17:15:10Z+0200
 tags:
   - guides
 ---
@@ -146,7 +146,7 @@ obsidian quartz-syncer:config action=set key=git.branch value=main
 
 | Flag | Description |
 |------|-------------|
-| `action` | **Required.** `list` (show all settings), `get` (read a setting), or `set` (write a setting). |
+| `action` | (default: `list`) `list` (show all settings), `get` (read a setting), or `set` (write a setting). |
 | `key` | Dot-notation setting key (e.g., `git.branch`, `useDataview`). Required for `get` and `set`. |
 | `value` | New value for the setting. Required for `set`. |
 | `format` | Output format: `json` or `text` (default). |
@@ -174,12 +174,76 @@ obsidian quartz-syncer:upgrade dry-run format=json
 >
 > If the upgrade encounters merge conflicts (other than `quartz.lock.json`, which is auto-resolved), the command will fail and list the conflicting files. Resolve them manually in your repository.
 
+### `quartz-syncer:version`
+
+Show plugin, Obsidian, and Quartz version information.
+
+```bash
+obsidian quartz-syncer:version
+obsidian quartz-syncer:version format=json
+```
+
+| Flag | Description |
+|------|-------------|
+| `format` | Output format: `json` or `text` (default). |
+| `verbose` | Include repository name, branch, and config file details. |
+
+### `quartz-syncer:plugin`
+
+Manage Quartz v5 plugins — list installed plugins, add or remove plugins, check for updates, and browse the community registry.
+
+```bash
+obsidian quartz-syncer:plugin
+obsidian quartz-syncer:plugin action=add source="github:org/repo"
+obsidian quartz-syncer:plugin action=remove source="github:org/repo" force
+obsidian quartz-syncer:plugin action=updates
+obsidian quartz-syncer:plugin action=update force
+obsidian quartz-syncer:plugin action=browse
+```
+
+| Flag | Description |
+|------|-------------|
+| `action` | `list` (default), `add`, `remove`, `updates`, `update`, or `browse`. |
+| `source` | Plugin source identifier (e.g., `github:org/repo`). Required for `add` and `remove`. |
+| `force` | Required for `remove` and `update`. |
+| `format` | Output format: `json` or `text` (default). |
+| `verbose` | Show source keys, plugin options, and commit SHAs. |
+
+- `updates` shows only plugins with available updates (use `verbose` to see all).
+- `update` with `force` applies all pending plugin updates to the lock file.
+
+### `quartz-syncer:quartz-config`
+
+Read or update the Quartz v5 site configuration (pageTitle, theme, locale, etc.).
+
+```bash
+obsidian quartz-syncer:quartz-config
+obsidian quartz-syncer:quartz-config action=get key=pageTitle
+obsidian quartz-syncer:quartz-config action=set key=pageTitle value="My Site"
+obsidian quartz-syncer:quartz-config action=set key=theme.typography.header value="Inter"
+```
+
+| Flag | Description |
+|------|-------------|
+| `action` | `list` (default), `get`, or `set`. |
+| `key` | Dot-notation config key (e.g., `pageTitle`, `theme.typography.header`, `theme.colors.lightMode.secondary`). Required for `get` and `set`. |
+| `value` | New value. Required for `set`. |
+| `format` | Output format: `json` or `text` (default). |
+
+Values are validated against the Quartz v5 schema. Boolean keys (`enableSPA`, `enablePopovers`, `theme.cdnCaching`) accept `true` or `false`. The `theme.fontOrigin` key only accepts `googleFonts` or `local`.
+
+Note: `ignorePatterns` and `analytics` cannot be set via CLI due to their complex structure. Use the plugin settings UI for these.
+
 ## Common flags
 
-All commands support the `format` flag:
+All commands support the following flags:
 
 - `format=json` — Returns structured JSON output, useful for scripts and CI pipelines.
 - `format=text` — Returns human-readable text (default).
+- `dry-run` — Preview what would happen without making changes.
+- `force` — Required for destructive operations (`delete`, `upgrade`, and the delete phase of `sync`).
+- `verbose` — Enable detailed output (file paths, connection details, commit SHAs).
+- `help` — Show command-specific help and available flags.
 
 Long-running commands include timing information in the output (e.g., `Published 47 files. (23.4s)`).
 

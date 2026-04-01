@@ -5,7 +5,7 @@ aliases:
 title: Quartz Syncer Documentation
 description: Quartz Syncer allows you to manage your Quartz site content from Obsidian.
 created: 2025-04-20T00:00:00Z+0200
-modified: 2026-01-08T13:30:00Z+0100
+modified: 2026-04-01T17:15:09Z+0200
 ---
 
 [Quartz Syncer](https://github.com/saberzero1/quartz-syncer) is an [Obsidian](https://obsidian.md/) plugin for managing and publishing notes to [Quartz](https://quartz.jzhao.xyz/), the fast, batteries-included static-site generator that transforms Markdown content into fully functional websites.
