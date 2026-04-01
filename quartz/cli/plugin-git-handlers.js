@@ -17,6 +17,8 @@ import {
   isLocalSource,
   getSourceUrl,
   formatSource,
+  resolveLockfileName,
+  getNameOverrides,
 } from "./plugin-data.js"
 
 const INTERNAL_EXPORTS = new Set(["manifest", "default"])
@@ -289,7 +291,10 @@ export async function handlePluginInstallUnified({
 
   if (!fromConfig && !lockfile) {
     console.log(
-      styleText("yellow", "⚠ No quartz.lock.json found. Run 'npx quartz plugin add <repo>' first."),
+      styleText(
+        "yellow",
+        "⚠ No quartz.lock.json found. Run 'npx quartz plugin add <repo>' first.",
+      ),
     )
     return
   }
@@ -650,7 +655,9 @@ export async function handlePluginInstallUnified({
       console.log(styleText("gray", "Updated quartz.lock.json"))
     } else if (failed > 0) {
       console.log()
-      console.log(styleText("yellow", `⚠ Resolved ${installed.length} plugin(s), ${failed} failed`))
+      console.log(
+        styleText("yellow", `⚠ Resolved ${installed.length} plugin(s), ${failed} failed`),
+      )
     }
 
     return
@@ -1052,8 +1059,20 @@ export async function handlePluginAdd(
 
   for (const source of sources) {
     try {
-      const { name, url, ref, local, subdir } = parseGitSource(source)
+      const parsed = parseGitSource(source)
+      const name = nameOverride ?? parsed.name
+      const url = parsed.url
+      const ref = parsed.ref
+      const local = parsed.local
+      const subdir = subdirOverride ?? parsed.subdir
       const pluginDir = path.join(PLUGINS_DIR, name)
+
+      let configSource = undefined
+      if (nameOverride || subdirOverride) {
+        configSource = { repo: source }
+        if (nameOverride) configSource.name = nameOverride
+        if (subdirOverride) configSource.subdir = subdirOverride
+      }
 
       if (fs.existsSync(pluginDir)) {
         console.log(styleText("yellow", `⚠ ${name} already exists. Use 'update' to refresh.`))
@@ -1077,7 +1096,7 @@ export async function handlePluginAdd(
           ...(subdir && { subdir }),
           installedAt: new Date().toISOString(),
         }
-        addedPlugins.push({ name, pluginDir, source })
+        addedPlugins.push({ name, pluginDir, source, configSource })
         console.log(styleText("green", `✓ Added ${name} (local symlink)`))
       } else if (subdir) {
         console.log(styleText("cyan", `→ Adding ${name} from ${url} (subdir: ${subdir})...`))
@@ -1091,7 +1110,7 @@ export async function handlePluginAdd(
           subdir,
           installedAt: new Date().toISOString(),
         }
-        addedPlugins.push({ name, pluginDir, source })
+        addedPlugins.push({ name, pluginDir, source, configSource })
         console.log(styleText("green", `✓ Added ${name}@${commit.slice(0, 7)} (subdir: ${subdir})`))
       } else {
         console.log(styleText("cyan", `→ Adding ${name} from ${url}...`))
@@ -1113,7 +1132,7 @@ export async function handlePluginAdd(
           installedAt: new Date().toISOString(),
         }
 
-        addedPlugins.push({ name, pluginDir, source })
+        addedPlugins.push({ name, pluginDir, source, configSource })
         console.log(styleText("green", `✓ Added ${name}@${commit.slice(0, 7)}`))
       }
     } catch (error) {
@@ -1136,10 +1155,10 @@ export async function handlePluginAdd(
   writeLockfile(lockfile)
   const pluginsJson = readPluginsJson()
   if (pluginsJson?.plugins) {
-    for (const { pluginDir, source } of addedPlugins) {
+    for (const { pluginDir, source, configSource } of addedPlugins) {
       const manifest = readManifestFromPackageJson(pluginDir)
       const newEntry = {
-        source,
+        source: configSource ?? source,
         enabled: manifest?.defaultEnabled ?? true,
         options: manifest?.defaultOptions ?? {},
         order: manifest?.defaultOrder ?? 50,
@@ -1172,23 +1191,28 @@ export async function handlePluginRemove(names) {
     return
   }
 
+  const pluginsJson = readPluginsJson()
   let removed = false
+  const resolvedNames = []
   for (const name of names) {
-    const pluginDir = path.join(PLUGINS_DIR, name)
+    const lockKey = resolveLockfileName(name, lockfile, pluginsJson)
+    resolvedNames.push(lockKey)
+    const pluginDir = path.join(PLUGINS_DIR, lockKey)
 
-    if (!lockfile.plugins[name] && !fs.existsSync(pluginDir)) {
+    if (!lockfile.plugins[lockKey] && !fs.existsSync(pluginDir)) {
       console.log(styleText("yellow", `⚠ ${name} is not installed`))
       continue
     }
 
-    console.log(styleText("cyan", `→ Removing ${name}...`))
+    const displayName = lockKey !== name ? `${name} (${lockKey})` : name
+    console.log(styleText("cyan", `→ Removing ${displayName}...`))
 
     if (fs.existsSync(pluginDir)) {
       fs.rmSync(pluginDir, { recursive: true })
     }
 
-    delete lockfile.plugins[name]
-    console.log(styleText("green", `✓ Removed ${name}`))
+    delete lockfile.plugins[lockKey]
+    console.log(styleText("green", `✓ Removed ${displayName}`))
     removed = true
   }
 
@@ -1197,12 +1221,12 @@ export async function handlePluginRemove(names) {
   }
 
   writeLockfile(lockfile)
-  const pluginsJson = readPluginsJson()
   if (pluginsJson?.plugins) {
     pluginsJson.plugins = pluginsJson.plugins.filter(
       (plugin) =>
         !names.includes(extractPluginName(plugin.source)) &&
-        !names.includes(formatSource(plugin.source)),
+        !names.includes(formatSource(plugin.source)) &&
+        !resolvedNames.includes(extractPluginName(plugin.source)),
     )
     writePluginsJson(pluginsJson)
   }
@@ -1331,18 +1355,24 @@ export async function handlePluginList() {
     return
   }
 
+  const pluginsJson = readPluginsJson()
+  const nameOverrides = getNameOverrides(lockfile, pluginsJson)
+
   console.log(styleText("bold", "Installed Plugins:"))
   console.log()
 
   for (const [name, entry] of Object.entries(lockfile.plugins)) {
     const pluginDir = path.join(PLUGINS_DIR, name)
     const exists = fs.existsSync(pluginDir)
+    const overriddenName = nameOverrides.get(name)
+    const displayLabel = overriddenName
+      ? `${overriddenName} ${styleText("gray", `(dir: ${name})`)}`
+      : name
 
-    // Local plugins: special display
     if (entry.commit === "local") {
       const isLinked = exists && fs.lstatSync(pluginDir).isSymbolicLink()
       const status = isLinked ? styleText("green", "✓") : styleText("red", "✗")
-      console.log(`  ${status} ${styleText("bold", name)}`)
+      console.log(`  ${status} ${styleText("bold", displayLabel)}`)
       console.log(`    Source: ${formatSource(entry.source)}`)
       console.log(`    Type: local symlink`)
       console.log(`    Target: ${entry.resolved}`)
@@ -1363,7 +1393,7 @@ export async function handlePluginList() {
         : styleText("yellow", "⚡")
       : styleText("red", "✗")
 
-    console.log(`  ${status} ${styleText("bold", name)}`)
+    console.log(`  ${status} ${styleText("bold", displayLabel)}`)
     console.log(`    Source: ${formatSource(entry.source)}`)
     console.log(`    Commit: ${entry.commit.slice(0, 7)}`)
     if (currentCommit !== entry.commit && exists) {
