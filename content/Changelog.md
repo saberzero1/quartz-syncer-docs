@@ -3,7 +3,7 @@ publish: true
 title: Roadmap and Changelog
 description: Changelog and feature roadmap for Quartz Syncer.
 created: 2025-05-16T12:59:31Z+0200
-modified: 2026-03-29T04:36:03Z+0200
+modified: 2026-04-01T02:52:35Z+0200
 ---
 
 ## Upcoming
@@ -17,6 +17,21 @@ modified: 2026-03-29T04:36:03Z+0200
 ## Someday
 
 ## Releases
+
+### Version 1.13.0
+
+- Added [Obsidian CLI](https://obsidian.md/cli) support for automating publishing workflows from the terminal (requires Obsidian v1.12+).
+  - 9 CLI commands: `status`, `sync`, `publish`, `delete`, `mark`, `test`, `cache`, `config`, and `upgrade`.
+  - All commands support `format=json` for machine-readable output and `dry-run` for previewing changes.
+  - Publishing commands (`sync`, `publish`) execute without confirmation. Destructive commands (`delete`, `upgrade`) require `force`.
+  - `mark` command supports three path resolution modes: exact path, glob patterns (`notes/**/*.md`), and fuzzy search (`~my post`).
+  - `config` command enables reading and writing plugin settings from the terminal, with secret redaction for authentication tokens.
+  - `cache` command provides cache management (status, clear single file, clear all).
+  - `test` command validates Git connection and write access.
+  - `upgrade` command pulls upstream Quartz changes with automatic `quartz.lock.json` conflict resolution.
+  - Graceful fallback on older Obsidian versions — CLI registration is silently skipped if `registerCliHandler` is unavailable.
+- See the [[Guides/CLI|CLI guide]] for the full command reference and example workflows.
+- Updated documentation.
 
 ### Version 1.12.0
 

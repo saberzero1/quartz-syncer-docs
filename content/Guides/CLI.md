@@ -3,7 +3,7 @@ publish: true
 title: CLI
 description: Automate Quartz Syncer workflows from the terminal using the Obsidian CLI.
 created: 2026-04-01T00:00:00Z+0200
-modified: 2026-04-01T00:00:00Z+0200
+modified: 2026-04-01T02:50:10Z+0200
 tags:
   - guides
 ---
@@ -215,7 +215,7 @@ obsidian quartz-syncer:mark path="blog/**/*.md" value=true
 obsidian quartz-syncer:publish
 ```
 
-### CI/CD integration
+### CI/CD Integration
 
 ```bash
 # Use JSON output for scripting
