@@ -53,6 +53,10 @@ Open the publication center (see above for instructions). Your eligible notes wi
 
 After you are satisfied with your selection, click the big button on the bottom left that says `PUBLISH SELECTED CHANGES` and watch the magic happen.
 
+## CLI
+
+Quartz Syncer also supports the [Obsidian CLI](https://obsidian.md/cli) (v1.12+) for automating publishing from the terminal. See the [[Guides/CLI|CLI guide]] for the full command reference and example workflows.
+
 > [!INFO] Why does Quartz Syncer sometimes make two commits?
 >
 > To prevent any potential inconsistencies with git, Quartz Syncer sometimes makes two commits in a row: the first commit adds and/or updates any notes selected. The second commit removes any notes selected for unpublishing.

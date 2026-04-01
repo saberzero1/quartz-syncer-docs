@@ -32,6 +32,10 @@ Unsure on how to use Quartz Syncer, or just curious about its usage? Check out t
 
 For more advanced use-cases of Quartz Syncer, check the [[Guides/index|guides section]].
 
+## CLI
+
+Quartz Syncer supports the [Obsidian CLI](https://obsidian.md/cli) for automating publishing workflows from the terminal. See the [[Guides/CLI|CLI guide]] for the full command reference.
+
 ## Troubleshooting
 
 > [!INFO] Quartz-related questions
