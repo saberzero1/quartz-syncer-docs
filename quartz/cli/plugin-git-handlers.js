@@ -282,7 +282,10 @@ export async function handlePluginInstallUnified({
 
   if (!fromConfig && !lockfile) {
     console.log(
-      styleText("yellow", "⚠ No quartz.lock.json found. Run 'npx quartz plugin add <repo>' first."),
+      styleText(
+        "yellow",
+        "⚠ No quartz.lock.json found. Run 'npx quartz plugin add <repo>' first.",
+      ),
     )
     return
   }
@@ -662,7 +665,9 @@ export async function handlePluginInstallUnified({
       console.log(styleText("gray", "Updated quartz.lock.json"))
     } else if (failed > 0) {
       console.log()
-      console.log(styleText("yellow", `⚠ Resolved ${installed.length} plugin(s), ${failed} failed`))
+      console.log(
+        styleText("yellow", `⚠ Resolved ${installed.length} plugin(s), ${failed} failed`),
+      )
     }
 
     return
@@ -1142,8 +1147,42 @@ export async function handlePluginAdd(
         }
         addedPlugins.push({ name, pluginDir, source, configSource })
         console.log(styleText("green", `✓ Added ${name} (local symlink)`))
+      } else if (subdir) {
+        console.log(styleText("cyan", `→ Adding ${name} from ${url} (subdir: ${subdir})...`))
+        fs.mkdirSync(path.dirname(pluginDir), { recursive: true })
+        const commit = cloneWithSubdir({ url, ref, subdir, pluginDir })
+        lockfile.plugins[name] = {
+          source,
+          resolved: url,
+          commit,
+          ...(ref && { ref }),
+          subdir,
+          installedAt: new Date().toISOString(),
+        }
+        addedPlugins.push({ name, pluginDir, source, configSource })
+        console.log(styleText("green", `✓ Added ${name}@${commit.slice(0, 7)} (subdir: ${subdir})`))
       } else {
-        remoteSources.push({ source, name, url, ref, subdir, pluginDir, configSource })
+        console.log(styleText("cyan", `→ Adding ${name} from ${url}...`))
+
+        if (ref) {
+          execSync(`git clone --depth 1 --branch ${ref} "${url}" "${pluginDir}"`, {
+            stdio: "ignore",
+          })
+        } else {
+          execSync(`git clone --depth 1 "${url}" "${pluginDir}"`, { stdio: "ignore" })
+        }
+
+        const commit = getGitCommit(pluginDir)
+        lockfile.plugins[name] = {
+          source,
+          resolved: url,
+          commit,
+          ...(ref && { ref }),
+          installedAt: new Date().toISOString(),
+        }
+
+        addedPlugins.push({ name, pluginDir, source, configSource })
+        console.log(styleText("green", `✓ Added ${name}@${commit.slice(0, 7)}`))
       }
     } catch (error) {
       console.log(styleText("red", `✗ Failed to add ${formatSource(source)}: ${error}`))
