@@ -34,7 +34,7 @@
     "canvas-page": {
       "source": "github:quartz-community/canvas-page",
       "resolved": "https://github.com/quartz-community/canvas-page.git",
-      "commit": "025b498d7e7008d65a7740535b2a2de1aef1dcf3",
+      "commit": "614449a0084cdcc78ba7d6d2f7e26b71b81abd3f",
       "installedAt": "2026-03-23T17:51:21.614Z"
     },
     "citations": {
@@ -124,7 +124,7 @@
     "folder-page": {
       "source": "github:quartz-community/folder-page",
       "resolved": "https://github.com/quartz-community/folder-page.git",
-      "commit": "c7fe67ccb1944e895aba10d8315aa7fba58f2bb5",
+      "commit": "6e740ccef9112512f2a9ba442ca23882710a2cb9",
       "installedAt": "2026-03-23T17:51:22.766Z"
     },
     "footer": {
@@ -166,7 +166,7 @@
     "obsidian-flavored-markdown": {
       "source": "github:quartz-community/obsidian-flavored-markdown",
       "resolved": "https://github.com/quartz-community/obsidian-flavored-markdown.git",
-      "commit": "a198ad1370a35b2a8f317302d18340a2f86b7854",
+      "commit": "105a59c2f59cd1919c6663b79ae71f9932c399d0",
       "installedAt": "2026-03-26T02:21:49.540Z"
     },
     "og-image": {
@@ -194,7 +194,7 @@
         "subdir": "plugin"
       },
       "resolved": "https://github.com/saberzero1/quartz-themes.git",
-      "commit": "0af2a0592b72a5971210789fe16bca7ba2b769a3",
+      "commit": "30b246674ce3c9627e5e96ca9b279d73ee0982be",
       "subdir": "plugin",
       "installedAt": "2026-03-24T22:26:12.914Z"
     },
@@ -225,7 +225,7 @@
     "search": {
       "source": "github:quartz-community/search",
       "resolved": "https://github.com/quartz-community/search.git",
-      "commit": "b40d509e850d9f57cd56519f51fea5b0fb085707",
+      "commit": "fa489e37d62ad057297d9cb836c14e8f2e732bb2",
       "installedAt": "2026-03-23T17:51:24.731Z"
     },
     "spacer": {
