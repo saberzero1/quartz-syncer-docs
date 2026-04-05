@@ -3,12 +3,11 @@ publish: true
 title: Roadmap and Changelog
 description: Changelog and feature roadmap for Quartz Syncer.
 created: 2025-05-16T12:59:31Z+0200
-modified: 2026-03-16T15:21:29Z+0100
+modified: 2026-04-05T21:28:35Z+0200
 ---
 
 ## Upcoming
 
-- Manage Quartz v5 configuration.
 - Manage Quartz v5 layout.
 - Manage Quartz v5 components.
 
@@ -17,6 +16,69 @@ modified: 2026-03-16T15:21:29Z+0100
 ## Someday
 
 ## Releases
+
+### Version 1.13.1
+
+- Fixed incorrect escaping of citations and specific callout patterns
+
+### Version 1.13.0
+
+- Added [Obsidian CLI](https://obsidian.md/cli) support for automating publishing workflows from the terminal (requires Obsidian v1.12+).
+  - 12 CLI commands: `status`, `sync`, `publish`, `delete`, `mark`, `test`, `cache`, `config`, `upgrade`, `version`, `plugin`, and `quartz-config`.
+  - `obsidian quartz-syncer` (no subcommand) shows a help screen with all available commands, flags, and examples.
+  - All commands support `verbose` for detailed output (file paths, connection details, cache contents, commit SHAs).
+  - All commands support `help` for command-specific usage information.
+  - All commands support `format=json` for machine-readable output. Commands that make changes support `dry-run` for previewing.
+  - Publishing commands (`sync`, `publish`) execute without confirmation. Destructive commands (`delete`, `upgrade`) require `force`.
+  - `mark` command supports three path resolution modes: exact path, glob patterns (`notes/**/*.md`), and fuzzy search (`~my post`).
+  - `config` command enables reading and writing plugin settings from the terminal, with secret redaction for authentication tokens.
+  - `config` command defaults to listing all settings when no action is provided (`obsidian quartz-syncer:config` = `obsidian quartz-syncer:config action=list`).
+  - `version` command shows plugin, Obsidian, and Quartz version information.
+  - `plugin` command manages Quartz v5 plugins: list, add, remove, check for updates, apply updates, and browse the community registry.
+  - `quartz-config` command reads and writes Quartz v5 site configuration with schema validation.
+  - `cache` command provides cache management (status, clear single file, clear all).
+  - `test` command validates Git connection and write access.
+  - `upgrade` command pulls upstream Quartz changes with automatic `quartz.lock.json` conflict resolution.
+  - Fixed: `upgrade` command now correctly targets Quartz v5 upstream (was hardcoded to v4).
+  - Graceful fallback on older Obsidian versions — CLI registration is silently skipped if `registerCliHandler` is unavailable.
+- See the [[Guides/CLI|CLI guide]] for the full command reference and example workflows.
+- Updated documentation.
+
+### Version 1.12.0
+
+- Added Quartz upgrade check and in-app upgrade support.
+  - Configurable update check strategy: "Version" (compare `package.json` versions) or "Commit" (compare upstream commit SHAs for unreleased changes).
+  - Detects whether the latest upstream Quartz commit exists in the user's repository history.
+  - "Upgrade now" button merges upstream changes directly from within Obsidian, with no external tools required.
+  - Automatic conflict resolution for `quartz.lock.json` — the most common merge conflict during upgrades.
+  - If other conflicts are detected, the merge is safely aborted and conflicting files are listed. No changes are made to the repository.
+  - Works on mobile — uses `isomorphic-git` for all git operations, no dependency on external git.
+- Removed dead settings: `applyEmbeds` and `pathRewriteRules`.
+- Removed SVG conversion, SCSS styles, and ExcalidrawAutomate dependency.
+
+### Version 1.11.1
+
+- Fixed Obsidian styled comments breaking parsing.
+
+### Version 1.11.0
+
+- Migrated compiler pipeline from regex-based transforms to AST-based transforms using [`remark-obsidian`](https://github.com/quartz-community/remark-obsidian).
+  - Obsidian comments (`%% ... %%`) are now stripped via AST instead of regex, correctly handling comments inside code blocks.
+  - Vault path stripping for links and images is now handled via AST node visitors.
+  - Wikilink pipe characters (`|`) inside table rows are automatically escaped for Quartz GFM compatibility.
+  - Callout syntax (`> [!INFO]`) is preserved correctly through the AST round-trip.
+- Delegated rendering transforms to Quartz v5's build pipeline.
+  - Wikilink resolution, transclusion expansion, SVG inlining, highlight syntax, and tag rendering are now handled by Quartz.
+  - Compiler pipeline reduced from 8 steps to 4: frontmatter enrichment, integration pre-compilation, link targeting, and AST transform.
+  - Compiler reduced from ~900 lines to ~500 lines.
+- Fixed image embeds blending with surrounding text when preceded by other content.
+- Removed transclusion and SVG embedding logic (now handled by Quartz v5).
+- Removed publish file cache system (`cacheFilesMarkedForPublishing`, `clearPublishCache`).
+- Simplified `SyncerPageCompiler` constructor (removed `getFilesMarkedForPublishing` parameter).
+- Removed "Apply embeds" toggle from Quartz settings panel.
+- Simplified Excalidraw integration to pass-through (push files only, Quartz v5 handles rendering).
+- Split Git connection status into separate read and write access checks. The settings panel now shows `(read: ok/failed)` and `(write: ok/failed)` independently, correctly identifying when a repository URL is valid but credentials lack push access.
+- Fixed canvas `extractBlobLinks` to only collect asset files (images, fonts, etc.) instead of all file nodes including markdown notes.
 
 ### Version 1.10.1
 

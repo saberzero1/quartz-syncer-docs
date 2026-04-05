@@ -3,7 +3,7 @@ publish: true
 title: Manage integration styles
 description: Whether to automatically manage integration SCSS files and custom.scss imports in your Quartz project.
 created: 2026-01-09T13:00:00Z+0100
-modified: 2026-01-09T13:00:00Z+0100
+modified: 2026-04-01T17:15:09Z+0200
 tags:
   - integration
   - settings/integrations

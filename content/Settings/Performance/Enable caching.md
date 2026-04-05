@@ -3,7 +3,7 @@ publish: true
 title: Enable caching
 description: Whether to cache note compilation results to greatly improve performance.
 created: 2025-06-12T22:44:54Z+0200
-modified: 2026-01-08T13:30:00Z+0100
+modified: 2026-04-01T17:15:09Z+0200
 tags:
   - settings/performance
 ---

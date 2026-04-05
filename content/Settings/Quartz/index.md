@@ -3,13 +3,13 @@ publish: true
 title: Quartz
 description: Quartz Syncer settings related to Quartz.
 created: 2025-05-15T16:03:13Z+0200
-modified: 2025-05-20T20:31:59Z+0200
+modified: 2026-04-01T17:15:09Z+0200
 tags:
   - settings/quartz
 ---
 
 | Category                                                                    | Description                                                             | Default value |
 | --------------------------------------------------------------------------- | ----------------------------------------------------------------------- | ------------- |
-| [[Settings/Quartz/Apply embeds.md|Apply embeds]]                           | Whether to let Quartz Syncer should handle link embeddings.             | true          |
-| [[Settings/Quartz/Content folder.md|Content folder]]                       | What folder in your Quartz repository notes should be published to.     | `content`     |
-| [[Settings/Quartz/Use full image resolution.md|Use full image resolution]] | Whether to use full resolution or to apply compression to image assets. | true          |
+| [[Settings/Quartz/Apply embeds.md\|Apply embeds]]                           | Whether to let Quartz Syncer should handle link embeddings.             | true          |
+| [[Settings/Quartz/Content folder.md\|Content folder]]                       | What folder in your Quartz repository notes should be published to.     | `content`     |
+| [[Settings/Quartz/Use full image resolution.md\|Use full image resolution]] | Whether to use full resolution or to apply compression to image assets. | true          |

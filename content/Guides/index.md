@@ -8,9 +8,10 @@ modified: 2025-05-20T20:32:45Z+0200
 
 | Category                                                                                                         | Description                                                                                        |
 | ---------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------- |
-| [[Guides/Bitbucket Setup.md|Bitbucket Setup]]                                                                   | Complete guide for setting up Quartz with Bitbucket and Bitbucket Pipelines.                       |
-| [[Guides/Codeberg Setup.md|Codeberg Setup]]                                                                     | Complete guide for setting up Quartz with Codeberg and Codeberg Pages.                             |
-| [[Guides/Configuring a specific folder for Quartz content.md|Configuring a specific folder for Quartz content]] | Guide on how to configure a specific folder in your vault for Quartz instead of your entire vault. |
-| [[Guides/GitHub Setup.md|GitHub Setup]]                                                                         | Complete guide for setting up Quartz with GitHub and GitHub Pages.                                 |
-| [[Guides/GitLab Setup.md|GitLab Setup]]                                                                         | Complete guide for setting up Quartz with GitLab and GitLab Pages.                                 |
-| [[Guides/Using an Obsidian theme in Quartz.md|Using an Obsidian theme in Quartz]]                               | Guide on how to use Quartz Themes to use an Obsidian theme in Quartz.                              |
+| [[Guides/Bitbucket Setup.md\|Bitbucket Setup]]                                                                   | Complete guide for setting up Quartz with Bitbucket and Bitbucket Pipelines.                       |
+| [[Guides/CLI.md\|CLI]]                                                                                           | Automate Quartz Syncer workflows from the terminal using the Obsidian CLI.                         |
+| [[Guides/Codeberg Setup.md\|Codeberg Setup]]                                                                     | Complete guide for setting up Quartz with Codeberg and Codeberg Pages.                             |
+| [[Guides/Configuring a specific folder for Quartz content.md\|Configuring a specific folder for Quartz content]] | Guide on how to configure a specific folder in your vault for Quartz instead of your entire vault. |
+| [[Guides/GitHub Setup.md\|GitHub Setup]]                                                                         | Complete guide for setting up Quartz with GitHub and GitHub Pages.                                 |
+| [[Guides/GitLab Setup.md\|GitLab Setup]]                                                                         | Complete guide for setting up Quartz with GitLab and GitLab Pages.                                 |
+| [[Guides/Using an Obsidian theme in Quartz.md\|Using an Obsidian theme in Quartz]]                               | Guide on how to use Quartz Themes to use an Obsidian theme in Quartz.                              |
