@@ -39,13 +39,13 @@ Create a new file `.gitlab-ci.yml` in the root of your repository with the follo
 stages:
   - build
   - deploy
- 
+
 image: node:22
 cache: # Cache modules in between jobs
   key: $CI_COMMIT_REF_SLUG
   paths:
     - .npm/
- 
+
 build:
   stage: build
   rules:
@@ -60,7 +60,7 @@ build:
       - public
   tags:
     - gitlab-org-docker
- 
+
 pages:
   stage: deploy
   rules:
@@ -89,7 +89,7 @@ Your site will be deployed to `<username>.gitlab.io/<project-name>`.
 2. Click **Add new token**.
 3. Enter a **Token name** (e.g., `Quartz Syncer`).
 4. Set an **Expiration date** (maximum 1 year).
-5. Under **Select scopes**, check **write\_repository**.
+5. Under **Select scopes**, check **write_repository**.
 6. Click **Create personal access token**.
 7. Copy the generated token immediately.
 
