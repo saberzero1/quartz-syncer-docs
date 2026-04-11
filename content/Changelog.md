@@ -3,7 +3,7 @@ publish: true
 title: Roadmap and Changelog
 description: Changelog and feature roadmap for Quartz Syncer.
 created: 2025-05-16T12:59:31Z+0200
-modified: 2026-04-07T13:42:18Z+0200
+modified: 2026-04-11T18:37:34Z+0200
 ---
 
 ## Upcoming
@@ -16,6 +16,13 @@ modified: 2026-04-07T13:42:18Z+0200
 ## Someday
 
 ## Releases
+
+### Version 1.13.4
+
+- Fixed outdated documentation link in interface.
+- Updated documentation for Quartz v5.
+- Fixed schema duplication in v5.
+- Removed Themes tab in favor of v5 plugin settings.
 
 ### Version 1.13.3
 
