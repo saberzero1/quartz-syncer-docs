@@ -91,6 +91,7 @@ async function buildQuartz(argv: Argv, mut: Mutex, clientRefresh: () => void) {
   ctx.allSlugs = allFiles.map((fp) => slugifyFilePath(fp as FilePath))
 
   const parsedFiles = await parseMarkdown(ctx, filePaths)
+  reportSlugCollisions(parsedFiles)
   const filteredContent = filterContent(ctx, parsedFiles)
 
   await emitContent(ctx, filteredContent)
