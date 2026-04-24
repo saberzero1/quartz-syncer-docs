@@ -12,11 +12,11 @@ This setting controls how the diff viewer displays differences when comparing yo
 
 ## Options
 
-| Value              | Description                                                                                                              |
-| ------------------ | ------------------------------------------------------------------------------------------------------------------------ |
-| **Auto**           | Uses split view on desktop and unified view on mobile. This is the recommended setting for most users.                   |
-| **Always Split**   | Always shows a side-by-side view with the remote (published) file on the left and the local (current) file on the right. |
-| **Always Unified** | Always shows a single-column view with deletions and additions interleaved.                                              |
+| Value | Description |
+| --- | --- |
+| **Auto** | Uses split view on desktop and unified view on mobile. This is the recommended setting for most users. |
+| **Always Split** | Always shows a side-by-side view with the remote (published) file on the left and the local (current) file on the right. |
+| **Always Unified** | Always shows a single-column view with deletions and additions interleaved. |
 
 ## Split view
 

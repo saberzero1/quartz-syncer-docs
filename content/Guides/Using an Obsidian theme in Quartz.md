@@ -44,15 +44,15 @@ Or let your CI pipeline handle it — every modern Quartz v5 build should run `n
 
 ## Options
 
-| Option         | Type   | Required | Default       | Description                                                                            |
-| -------------- | ------ | -------- | ------------- | -------------------------------------------------------------------------------------- | ------ | ------------------------------- |
-| `theme`        | string | yes      | `tokyo-night` | Theme identifier from the Quartz Themes registry.                                      |
-| `mode`         | `dark` | `light`  | `both`        | yes                                                                                    | `both` | Which color mode(s) to include. |
-| `variation`    | string | no       | —             | Sub-variation for themes that ship multiple palettes (e.g. `frappe` for `catppuccin`). |
-| `calloutStyle` | string | no       | —             | Callout style variant (e.g. `glass`, `glow`).                                          |
-| `fonts`        | object | no       | —             | Override `header`, `body`, and `code` fonts.                                           |
-| `aspects`      | object | no       | —             | Mix-and-match specific aspects from different themes.                                  |
-| `include`      | array  | no       | all           | Explicit list of aspects to apply (e.g. `[typography, callouts]`).                     |
+| Option | Type | Required | Default | Description |
+|---|---|---|---|---|
+| `theme` | string | yes | `tokyo-night` | Theme identifier from the Quartz Themes registry. |
+| `mode` | `dark` | `light` | `both` | yes | `both` | Which color mode(s) to include. |
+| `variation` | string | no | — | Sub-variation for themes that ship multiple palettes (e.g. `frappe` for `catppuccin`). |
+| `calloutStyle` | string | no | — | Callout style variant (e.g. `glass`, `glow`). |
+| `fonts` | object | no | — | Override `header`, `body`, and `code` fonts. |
+| `aspects` | object | no | — | Mix-and-match specific aspects from different themes. |
+| `include` | array | no | all | Explicit list of aspects to apply (e.g. `[typography, callouts]`). |
 
 **Available aspects** (for `aspects` and `include`): `base`, `typography`, `callouts`, `tables`, `code`, `links`, `blockquotes`, `checkboxes`, `images`, `embeds`, `cards`, `search`, `scrollbars`, `explorer`, `toc`, `graph`, `popover`, `footer`, `recentNotes`, `listPage`, `darkmode`, `breadcrumbs`, `lists`, `misc`.
 
@@ -113,5 +113,5 @@ Earlier versions of Quartz Syncer shipped a dedicated **Themes** settings tab. T
 ## Troubleshooting
 
 - **Theme not applying**: make sure `npx quartz plugin install` ran after you edited `quartz.config.yaml`. Quartz v5 downloads community plugins into `.quartz/plugins/` and nothing is applied until they're present on disk.
-- **Node version errors**: `quartz-themes` requires Node 22 or later, matching Quartz v5's minimum requirement.
+- **Node version errors**: `quartz-themes` requires Node 22 or later, matching Quartz v5's minimum requirement. The setup guides use Node 24 (the current LTS), but any version from 22 onward will work.
 - **Missing variation**: only themes that ship multiple palettes accept `variation`. Check `themes.json` for the theme's declared variations.

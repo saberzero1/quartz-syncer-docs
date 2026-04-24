@@ -10,7 +10,7 @@ tags:
 
 | Category                                                     | Description                                           | Default value      |
 | ------------------------------------------------------------ | ----------------------------------------------------- | ------------------ |
-| [[Settings/Git/Access Token.md\|Access Token]]               | Personal access token or password for authentication. | -                  |
+| [[Settings/Git/Access Token.md\|Access Token]]               | Personal access token or password for authentication. | -                 |
 | [[Settings/Git/Authentication Type.md\|Authentication Type]] | How to authenticate with the Git server.              | `"basic"`          |
 | [[Settings/Git/Branch.md\|Branch]]                           | The branch to sync with.                              | `"v4"`             |
 | [[Settings/Git/CORS Proxy.md\|CORS Proxy]]                   | CORS proxy URL for mobile/web environments.           | `""`               |

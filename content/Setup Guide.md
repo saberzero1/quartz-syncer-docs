@@ -18,13 +18,13 @@ tags:
 
 Quartz Syncer supports any Git provider. Choose your provider for complete setup instructions:
 
-| Provider      | Guide                                     | Hosting                     |
-| ------------- | ----------------------------------------- | --------------------------- |
-| **GitHub**    | [[GitHub Setup]]                          | GitHub Pages (built-in)     |
-| **GitLab**    | [[GitLab Setup]]                          | GitLab Pages (built-in)     |
-| **Codeberg**  | [[Codeberg Setup]]                        | Codeberg Pages (built-in)   |
-| **Bitbucket** | [[Bitbucket Setup]]                       | Netlify, Cloudflare, Vercel |
-| **Other**     | See [Generic Setup](#generic-setup) below | Varies                      |
+| Provider | Guide | Hosting |
+|----------|-------|---------|
+| **GitHub** | [[GitHub Setup]] | GitHub Pages (built-in) |
+| **GitLab** | [[GitLab Setup]] | GitLab Pages (built-in) |
+| **Codeberg** | [[Codeberg Setup]] | Codeberg Pages (built-in) |
+| **Bitbucket** | [[Bitbucket Setup]] | Netlify, Cloudflare, Vercel |
+| **Other** | See [Generic Setup](#generic-setup) below | Varies |
 
 Each guide covers:
 
@@ -40,7 +40,7 @@ For Git providers not listed above, follow these general steps.
 
 ### 1. Create a Quartz Repository
 
-Create a new repository on your Git provider (start from the [official Quartz template](https://github.com/new?template_name=quartz&template_owner=jackyzha0) on GitHub, then import or mirror it to your provider of choice). Make sure the `v5` branch is available on your remote.
+Create a new repository on your Git provider (start from the [official Quartz template](https://github.com/new?template_name=quartz\&template_owner=jackyzha0) on GitHub, then import or mirror it to your provider of choice). Make sure the `v5` branch is available on your remote.
 
 Clone the repository locally:
 
@@ -101,14 +101,14 @@ Create a personal access token (or app password) with **write** access to your Q
 
 In Obsidian, go to **Settings** > **Community Plugins** > **Quartz Syncer** and configure:
 
-| Setting                 | Value                                          |
-| ----------------------- | ---------------------------------------------- |
-| **Remote URL**          | `https://<provider>/<user>/<repo>.git`         |
-| **Branch**              | `v5`                                           |
-| **Provider**            | Select your provider or "Custom"               |
-| **Authentication Type** | Username & Token/Password                      |
-| **Username**            | Your username (or `oauth2` for some providers) |
-| **Access Token**        | Your generated token                           |
+| Setting | Value |
+|---------|-------|
+| **Remote URL** | `https://<provider>/<user>/<repo>.git` |
+| **Branch** | `v5` |
+| **Provider** | Select your provider or "Custom" |
+| **Authentication Type** | Username & Token/Password |
+| **Username** | Your username (or `oauth2` for some providers) |
+| **Access Token** | Your generated token |
 
 A green checkmark indicates a successful connection.
 

@@ -37,11 +37,11 @@ obsidian quartz-syncer:sync force
 obsidian quartz-syncer:sync dry-run format=json
 ```
 
-| Flag      | Description                                                                                                                            |
-| --------- | -------------------------------------------------------------------------------------------------------------------------------------- |
-| `force`   | Also delete removed notes from the remote repository. Without `force`, only the publish phase runs and skipped deletions are reported. |
-| `dry-run` | Preview what would happen without making changes.                                                                                      |
-| `format`  | Output format: `json` or `text` (default).                                                                                             |
+| Flag | Description |
+|------|-------------|
+| `force` | Also delete removed notes from the remote repository. Without `force`, only the publish phase runs and skipped deletions are reported. |
+| `dry-run` | Preview what would happen without making changes. |
+| `format` | Output format: `json` or `text` (default). |
 
 ### `quartz-syncer:publish`
 
@@ -52,10 +52,10 @@ obsidian quartz-syncer:publish
 obsidian quartz-syncer:publish dry-run format=json
 ```
 
-| Flag      | Description                                             |
-| --------- | ------------------------------------------------------- |
+| Flag | Description |
+|------|-------------|
 | `dry-run` | Preview what would be published without making changes. |
-| `format`  | Output format: `json` or `text` (default).              |
+| `format` | Output format: `json` or `text` (default). |
 
 ### `quartz-syncer:delete`
 
@@ -66,11 +66,11 @@ obsidian quartz-syncer:delete force
 obsidian quartz-syncer:delete dry-run format=json
 ```
 
-| Flag      | Description                                                                         |
-| --------- | ----------------------------------------------------------------------------------- |
-| `force`   | **Required.** Confirms the deletion. Without `force`, the command returns an error. |
-| `dry-run` | Preview what would be deleted without making changes.                               |
-| `format`  | Output format: `json` or `text` (default).                                          |
+| Flag | Description |
+|------|-------------|
+| `force` | **Required.** Confirms the deletion. Without `force`, the command returns an error. |
+| `dry-run` | Preview what would be deleted without making changes. |
+| `format` | Output format: `json` or `text` (default). |
 
 ### `quartz-syncer:mark`
 
@@ -83,12 +83,12 @@ obsidian quartz-syncer:mark path="~my post" value=toggle
 obsidian quartz-syncer:mark path="blog/**/*.md" dry-run format=json
 ```
 
-| Flag      | Description                                                                                                        |
-| --------- | ------------------------------------------------------------------------------------------------------------------ |
-| `path`    | **Required.** The note path, glob pattern, or fuzzy query (see [[Guides/CLI#Path patterns\|path patterns]] below). |
-| `value`   | `true` (default), `false`, or `toggle`.                                                                            |
-| `dry-run` | Show matched files without modifying them. Useful with glob and fuzzy patterns.                                    |
-| `format`  | Output format: `json` or `text` (default).                                                                         |
+| Flag | Description |
+|------|-------------|
+| `path` | **Required.** The note path, glob pattern, or fuzzy query (see [[Guides/CLI#Path patterns\|path patterns]] below). |
+| `value` | `true` (default), `false`, or `toggle`. |
+| `dry-run` | Show matched files without modifying them. Useful with glob and fuzzy patterns. |
+| `format` | Output format: `json` or `text` (default). |
 
 #### Path patterns
 
@@ -127,12 +127,12 @@ obsidian quartz-syncer:cache action=clear path="notes/my-post.md"
 obsidian quartz-syncer:cache action=clear-all force
 ```
 
-| Flag     | Description                                                                                                                  |
-| -------- | ---------------------------------------------------------------------------------------------------------------------------- |
+| Flag | Description |
+|------|-------------|
 | `action` | **Required.** `status` (show cache info), `clear` (clear cache for a specific file), or `clear-all` (clear all cached data). |
-| `path`   | File path for `action=clear`.                                                                                                |
-| `force`  | Required for `action=clear-all`.                                                                                             |
-| `format` | Output format: `json` or `text` (default).                                                                                   |
+| `path` | File path for `action=clear`. |
+| `force` | Required for `action=clear-all`. |
+| `format` | Output format: `json` or `text` (default). |
 
 ### `quartz-syncer:config`
 
@@ -144,12 +144,12 @@ obsidian quartz-syncer:config action=get key=git.branch
 obsidian quartz-syncer:config action=set key=git.branch value=main
 ```
 
-| Flag     | Description                                                                                       |
-| -------- | ------------------------------------------------------------------------------------------------- |
+| Flag | Description |
+|------|-------------|
 | `action` | (default: `list`) `list` (show all settings), `get` (read a setting), or `set` (write a setting). |
-| `key`    | Dot-notation setting key (e.g., `git.branch`, `useDataview`). Required for `get` and `set`.       |
-| `value`  | New value for the setting. Required for `set`.                                                    |
-| `format` | Output format: `json` or `text` (default).                                                        |
+| `key` | Dot-notation setting key (e.g., `git.branch`, `useDataview`). Required for `get` and `set`. |
+| `value` | New value for the setting. Required for `set`. |
+| `format` | Output format: `json` or `text` (default). |
 
 > [!WARNING] Secret redaction
 >
@@ -164,11 +164,11 @@ obsidian quartz-syncer:upgrade force
 obsidian quartz-syncer:upgrade dry-run format=json
 ```
 
-| Flag      | Description                                                                        |
-| --------- | ---------------------------------------------------------------------------------- |
-| `force`   | **Required.** Confirms the upgrade. Without `force`, the command returns an error. |
-| `dry-run` | Check for available updates without applying them.                                 |
-| `format`  | Output format: `json` or `text` (default).                                         |
+| Flag | Description |
+|------|-------------|
+| `force` | **Required.** Confirms the upgrade. Without `force`, the command returns an error. |
+| `dry-run` | Check for available updates without applying them. |
+| `format` | Output format: `json` or `text` (default). |
 
 > [!WARNING] Merge conflicts
 >
@@ -183,9 +183,9 @@ obsidian quartz-syncer:version
 obsidian quartz-syncer:version format=json
 ```
 
-| Flag      | Description                                               |
-| --------- | --------------------------------------------------------- |
-| `format`  | Output format: `json` or `text` (default).                |
+| Flag | Description |
+|------|-------------|
+| `format` | Output format: `json` or `text` (default). |
 | `verbose` | Include repository name, branch, and config file details. |
 
 ### `quartz-syncer:plugin`
@@ -201,13 +201,13 @@ obsidian quartz-syncer:plugin action=update force
 obsidian quartz-syncer:plugin action=browse
 ```
 
-| Flag      | Description                                                                          |
-| --------- | ------------------------------------------------------------------------------------ |
-| `action`  | `list` (default), `add`, `remove`, `updates`, `update`, or `browse`.                 |
-| `source`  | Plugin source identifier (e.g., `github:org/repo`). Required for `add` and `remove`. |
-| `force`   | Required for `remove` and `update`.                                                  |
-| `format`  | Output format: `json` or `text` (default).                                           |
-| `verbose` | Show source keys, plugin options, and commit SHAs.                                   |
+| Flag | Description |
+|------|-------------|
+| `action` | `list` (default), `add`, `remove`, `updates`, `update`, or `browse`. |
+| `source` | Plugin source identifier (e.g., `github:org/repo`). Required for `add` and `remove`. |
+| `force` | Required for `remove` and `update`. |
+| `format` | Output format: `json` or `text` (default). |
+| `verbose` | Show source keys, plugin options, and commit SHAs. |
 
 - `updates` shows only plugins with available updates (use `verbose` to see all).
 - `update` with `force` applies all pending plugin updates to the lock file.
@@ -223,12 +223,12 @@ obsidian quartz-syncer:quartz-config action=set key=pageTitle value="My Site"
 obsidian quartz-syncer:quartz-config action=set key=theme.typography.header value="Inter"
 ```
 
-| Flag     | Description                                                                                                                               |
-| -------- | ----------------------------------------------------------------------------------------------------------------------------------------- |
-| `action` | `list` (default), `get`, or `set`.                                                                                                        |
-| `key`    | Dot-notation config key (e.g., `pageTitle`, `theme.typography.header`, `theme.colors.lightMode.secondary`). Required for `get` and `set`. |
-| `value`  | New value. Required for `set`.                                                                                                            |
-| `format` | Output format: `json` or `text` (default).                                                                                                |
+| Flag | Description |
+|------|-------------|
+| `action` | `list` (default), `get`, or `set`. |
+| `key` | Dot-notation config key (e.g., `pageTitle`, `theme.typography.header`, `theme.colors.lightMode.secondary`). Required for `get` and `set`. |
+| `value` | New value. Required for `set`. |
+| `format` | Output format: `json` or `text` (default). |
 
 Values are validated against the Quartz v5 schema. Boolean keys (`enableSPA`, `enablePopovers`, `theme.cdnCaching`) accept `true` or `false`. The `theme.fontOrigin` key only accepts `googleFonts` or `local`.
 
@@ -282,7 +282,9 @@ obsidian quartz-syncer:mark path="blog/**/*.md" value=true
 obsidian quartz-syncer:publish
 ```
 
-### CI/CD Integration
+### Scripting with JSON output
+
+The `format=json` flag makes it easy to integrate Quartz Syncer into local shell scripts:
 
 ```bash
 # Use JSON output for scripting
@@ -291,3 +293,6 @@ STATUS=$(obsidian quartz-syncer:status format=json)
 # Sync and capture result
 RESULT=$(obsidian quartz-syncer:sync force format=json)
 ```
+
+> [!NOTE] Local only
+> The Obsidian CLI controls the running Obsidian desktop app — it is not a headless tool. These scripting examples are meant for local automation (e.g., shell aliases, cron jobs on your machine), not for headless CI/CD environments.
