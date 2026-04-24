@@ -12,7 +12,57 @@ This guide covers setting up a Quartz repository on GitHub, configuring GitHub P
 
 ## Create a Quartz Repository
 
-If you haven't set up a Quartz repository on GitHub yet, [click here](https://github.com/new?template_name=quartz\&template_owner=jackyzha0) to create one using the official Quartz template.
+If you haven't set up a Quartz repository on GitHub yet, [click here](https://github.com/new?template_name=quartz\&template_owner=jackyzha0) to create one using the official Quartz template. Make sure to check **Include all branches** so the `v5` branch is included.
+
+## Set v5 as the Default Branch
+
+The upstream Quartz repository currently defaults to `v4`. Change your repository's default branch to `v5`:
+
+1. Go to your repository on GitHub.
+2. Navigate to **Settings** > **General**.
+3. Under **Default branch**, click the switch icon next to the current default branch.
+4. Select `v5` from the dropdown and click **Update**.
+5. Confirm the change.
+
+This ensures new clones, pull requests, and GitHub Pages deployments all target v5.
+
+> [!NOTE] Quartz v5 is in beta
+> Quartz v5 is currently in beta and not yet the default upstream branch. Once v5 leaves beta it will become the default, and this step will no longer be necessary. See the [upstream migration guide](https://quartz.jzhao.xyz/migrating) if you are migrating existing content from v4.
+
+## Clone and Install
+
+Clone your repository and install dependencies:
+
+```bash
+git clone https://github.com/<username>/<repository>.git
+cd <repository>
+git checkout v5
+npm ci
+```
+
+To pull future Quartz updates, add the upstream repository as a remote:
+
+```bash
+git remote add upstream https://github.com/jackyzha0/quartz.git
+```
+
+## Run the Setup Wizard
+
+Quartz v5 uses an interactive setup command to create `quartz.config.yaml` and install all required plugins:
+
+```bash
+npx quartz create
+```
+
+Pick a template (`default`, `obsidian`, `ttrpg`, or `blog`), set your base URL (e.g. `<username>.github.io/<repository>`), and choose a content strategy. The `obsidian` template is recommended when publishing from an Obsidian vault.
+
+Commit the generated `quartz.config.yaml` and `quartz.lock.json`:
+
+```bash
+git add quartz.config.yaml quartz.lock.json
+git commit -m "Initial Quartz v5 setup"
+git push
+```
 
 ## Configure GitHub Pages
 
@@ -58,7 +108,7 @@ jobs:
       - name: Build Quartz
         run: npx quartz build
       - name: Upload artifact
-        uses: actions/upload-pages-artifact@v3
+        uses: actions/upload-pages-artifact@v4
         with:
           path: public
 

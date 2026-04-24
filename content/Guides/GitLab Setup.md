@@ -19,7 +19,7 @@ This guide covers setting up a Quartz repository on GitLab, configuring GitLab P
 3. Enter the Quartz repository URL: `https://github.com/jackyzha0/quartz.git`
 4. Set your **Project name** (e.g., `quartz`).
 5. Set **Visibility Level** to your preference.
-6. Click **Create project**.
+6. Click **Create project**. All branches (including `v5`) are imported automatically.
 
 ### Option 2: Mirror from GitHub
 
@@ -28,6 +28,51 @@ If you want to keep your GitLab repository in sync with the upstream Quartz repo
 1. Create a new project as described above.
 2. Go to **Settings** > **Repository** > **Mirroring repositories**.
 3. Add `https://github.com/jackyzha0/quartz.git` as a mirror.
+
+## Set v5 as the Default Branch
+
+The upstream Quartz repository currently defaults to `v4`. Change your project's default branch to `v5`:
+
+1. Go to your project on GitLab.
+2. Navigate to **Settings** > **Repository** > **Branch defaults**.
+3. Change the default branch to `v5`.
+4. Save the change.
+
+> [!NOTE] Quartz v5 is in beta
+> Quartz v5 is currently in beta and not yet the default upstream branch. Once v5 leaves beta it will become the default, and this step will no longer be necessary. See the [upstream migration guide](https://quartz.jzhao.xyz/migrating) if you are migrating existing content from v4.
+
+## Clone and Install
+
+Clone your GitLab repository and install dependencies:
+
+```bash
+git clone https://gitlab.com/<username>/<project>.git
+cd <project>
+git checkout v5
+npm ci
+```
+
+To pull future Quartz updates, add the upstream repository as a remote:
+
+```bash
+git remote add upstream https://github.com/jackyzha0/quartz.git
+```
+
+## Run the Setup Wizard
+
+Quartz v5 uses an interactive setup command to create `quartz.config.yaml` and install all required plugins:
+
+```bash
+npx quartz create
+```
+
+Pick a template (`default`, `obsidian`, `ttrpg`, or `blog`), set your base URL (e.g. `<username>.gitlab.io/<project>`), and choose a content strategy. The `obsidian` template is recommended when publishing from an Obsidian vault. Commit the generated config and lockfile:
+
+```bash
+git add quartz.config.yaml quartz.lock.json
+git commit -m "Initial Quartz v5 setup"
+git push
+```
 
 ## Configure GitLab Pages
 
@@ -39,30 +84,38 @@ Create a new file `.gitlab-ci.yml` in the root of your repository with the follo
 stages:
   - build
   - deploy
- 
-image: node:22
-cache: # Cache modules in between jobs
-  key: $CI_COMMIT_REF_SLUG
-  paths:
-    - .npm/
- 
+
+image: node:24
+cache:
+  - key:
+      prefix: npm
+      files:
+        - package-lock.json
+    paths:
+      - .npm/
+  - key:
+      prefix: plugins
+      files:
+        - quartz.lock.json
+    paths:
+      - .quartz/plugins/
+
 build:
   stage: build
   rules:
-    - if: '$CI_COMMIT_REF_NAME == "v4"'
-  before_script:
-    - hash -r
-    - npm ci --cache .npm --prefer-offline
+    - if: '$CI_COMMIT_REF_NAME == "v5"'
   script:
+    - npm ci --cache .npm --prefer-offline
+    - npx quartz plugin install
     - npx quartz build
   artifacts:
     paths:
       - public
-  tags:
-    - gitlab-org-docker
- 
+
 pages:
   stage: deploy
+  needs:
+    - build
   rules:
     - if: '$CI_COMMIT_REF_NAME == "v4"'
   script:
@@ -72,8 +125,8 @@ pages:
       - public
 ```
 
-> [!NOTE] Default Branch
-> This configuration deploys when pushing to the default branch. If your Quartz content is on a different branch (e.g., `v4`), replace `$CI_DEFAULT_BRANCH` with your branch name.
+> [!TIP] Plugin install is mandatory in v5
+> Quartz v5 downloads community plugins into `.quartz/plugins/` at build time. The `npx quartz plugin install` step **must** run before `npx quartz build`, otherwise the build will fail. The caches above key on `package-lock.json` and `quartz.lock.json` respectively, so dependencies are only re-downloaded when you change your configuration.
 
 ### Verify GitLab Pages is Enabled
 
