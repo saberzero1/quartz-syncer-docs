@@ -3,7 +3,7 @@ publish: true
 title: GitLab Setup
 description: Complete guide for setting up Quartz v5 with GitLab and GitLab Pages.
 created: 2026-01-08T14:00:00Z+0100
-modified: 2026-04-11T18:00:00Z+0200
+modified: 2026-05-02T14:48:13Z+0200
 tags:
   - guides
 ---
@@ -142,7 +142,7 @@ Your site will be deployed to `<username>.gitlab.io/<project-name>`.
 2. Click **Add new token**.
 3. Enter a **Token name** (e.g., `Quartz Syncer`).
 4. Set an **Expiration date** (maximum 1 year).
-5. Under **Select scopes**, check **write\_repository**.
+5. Under **Select scopes**, check **read\_repository** and **write\_repository**.
 6. Click **Create personal access token**.
 7. Copy the generated token immediately.
 
