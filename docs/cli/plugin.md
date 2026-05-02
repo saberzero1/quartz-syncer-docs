@@ -134,6 +134,29 @@ To keep your plugins fresh:
 npx quartz plugin install --latest
 ```
 
+### Installing on low-end hardware
+
+By default, `plugin install` and `plugin add` clone, fetch, and build plugins in parallel across all your CPU cores. On memory-constrained machines (low-end laptops, Raspberry Pi, small VPS instances, restrictive CI runners) this can exhaust RAM or overwhelm the system because each worker may kick off its own `npm install` / `npm run build` at the same time.
+
+> [!note]
+> Most community plugins now ship with a pre-built `dist/` directory. When Quartz finds this, it skips the installation and build steps entirely, making the process much faster and lighter on resources. This section is primarily relevant for plugins in development or those that don't provide pre-built distribution.
+
+If `plugin install` fails, hangs, or OOMs on your machine, lower the concurrency with `--concurrency` / `-c`:
+
+```shell
+# Install one plugin at a time (safest, slowest)
+npx quartz plugin install --latest -c 1
+
+# Two at a time — usually a good balance on 4 GB machines
+npx quartz plugin install --latest --concurrency 2
+```
+
+The same flag works on `plugin add` and the other plugin subcommands that perform parallel work:
+
+```shell
+npx quartz plugin add github:quartz-community/some-plugin -c 1
+```
+
 ### Managing Configuration
 
 If you want to change a plugin setting without opening the YAML file:
@@ -184,7 +207,12 @@ For local plugin development or airgapped environments, you can add a plugin fro
 npx quartz plugin add ./my-local-plugin
 ```
 
-Local plugins are symlinked into `.quartz/plugins/`, so changes reflect immediately. When you run `install --latest`, local plugins are rebuilt (npm install + npm run build) without any git operations. The `install --latest --dry-run` command will show local plugins with a "local" status instead of checking for remote updates.
+Local plugins are symlinked into `.quartz/plugins/`, so changes reflect immediately. When you run `install --latest`, local plugins are rebuilt (npm install + npm run build) without any git operations.
+
+> [!note]
+> Local symlinked plugins typically use this build-on-install fallback because the `dist/` directory is usually gitignored during development.
+
+The `install --latest --dry-run` command will show local plugins with a "local" status instead of checking for remote updates.
 
 To switch a local plugin back to a git source:
 
