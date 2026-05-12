@@ -3,7 +3,7 @@ publish: true
 title: Auto Card Link
 description: Whether to enable support for the Auto Card Link plugin. Requires Auto Card Link to be installed and enabled.
 created: 2025-07-19T09:24:45Z+0200
-modified: 2026-04-01T17:15:09Z+0200
+modified: 2026-05-12T23:49:57Z+0200
 tags:
   - integration
   - settings/integrations

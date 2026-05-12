@@ -3,7 +3,7 @@ publish: true
 title: Roadmap and Changelog
 description: Changelog and feature roadmap for Quartz Syncer.
 created: 2025-05-16T12:59:31Z+0200
-modified: 2026-05-02T14:47:42Z+0200
+modified: 2026-05-12T23:33:08Z+0200
 ---
 
 ## Upcoming
@@ -16,6 +16,15 @@ modified: 2026-05-02T14:47:42Z+0200
 ## Someday
 
 ## Releases
+
+### Version 1.14.0
+
+- Refactored code to match Obsidian's latest standards.
+- Dropped redundant dependencies.
+
+### Version 1.13.9
+
+- Fixed incorrect escaping in math blocks.
 
 ### Version 1.13.8
 
