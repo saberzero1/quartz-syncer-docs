@@ -172,14 +172,8 @@
     "obsidian-plugin-excalidraw": {
       "source": "github:quartz-community/obsidian-plugin-excalidraw",
       "resolved": "https://github.com/quartz-community/obsidian-plugin-excalidraw.git",
-      "commit": "5821c07b8976b3ba873f4ed6130810049c819882",
-      "installedAt": "2026-05-25T16:29:04.009Z"
-    },
-    "obsidian-plugin-ttrpg-tools-maps": {
-      "source": "github:quartz-community/obsidian-plugin-ttrpg-tools-maps",
-      "resolved": "https://github.com/quartz-community/obsidian-plugin-ttrpg-tools-maps.git",
-      "commit": "c43314724a7606dd18b90972c457f593ccded5f5",
-      "installedAt": "2026-05-25T15:32:47.453Z"
+      "commit": "99d6f0f65bda88bf657d0b72ec5810587d3dfdb9",
+      "installedAt": "2026-05-25T17:17:05.895Z"
     },
     "og-image": {
       "source": "github:quartz-community/og-image",
@@ -275,12 +269,6 @@
       "resolved": "https://github.com/quartz-community/tag-page.git",
       "commit": "82f8a6d5e774de5e075978651b6ca81f2ccb6812",
       "installedAt": "2026-05-25T15:32:48.123Z"
-    },
-    "unlisted-pages": {
-      "source": "github:quartz-community/unlisted-pages",
-      "resolved": "https://github.com/quartz-community/unlisted-pages.git",
-      "commit": "be42781fb08a60e9f9268682d457b289094d2838",
-      "installedAt": "2026-05-25T15:32:47.974Z"
     }
   }
 }
