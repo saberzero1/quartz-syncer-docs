@@ -1,0 +1,472 @@
+---
+publish: true
+title: Roadmap and Changelog
+description: Changelog and feature roadmap for Quartz Syncer.
+created: 2025-05-16T12:59:31Z+0200
+modified: 2026-05-25T17:57:52Z+0200
+---
+
+## Upcoming
+
+- Manage Quartz v5 layout.
+- Manage Quartz v5 components.
+
+## Planned
+
+## Someday
+
+## Releases
+
+### Version 1.15.1
+
+- Excalidraw rendering is now handled by the [Quartz Excalidraw plugin](https://github.com/quartz-community/obsidian-plugin-excalidraw). Quartz Syncer syncs `.excalidraw.md` files as-is without transformation.
+- Removed unused `EXCALIDRAW_REGEX`.
+- Updated Excalidraw documentation and troubleshooting.
+- Updated Quartz Syncer icon.
+
+### Version 1.15.0
+
+- Switched to `localspace` over `localforage` as database driver.
+- Additional refactors to match Obsidian's latest standards.
+
+### Version 1.14.3
+
+- Additional refactors to match Obsidian's latest standards.
+- Fixed missing target `esnext` for Svelte.
+- Delegated sanitation to Obsidian's API `sanitizeHTMLToDom` function.
+
+### Version 1.14.2
+
+- Added Stylelint to improve `styles.css`.
+- Additional refactors to match Obsidian's latest standards.
+
+### Version 1.14.1
+
+- Additional refactors to match Obsidian's latest standards.
+
+### Version 1.14.0
+
+- Refactored code to match Obsidian's latest standards.
+- Dropped redundant dependencies.
+
+### Version 1.13.9
+
+- Fixed incorrect escaping in math blocks.
+
+### Version 1.13.8
+
+- Updated GitLab token hint.
+- Updated GitLab setup guide.
+
+### Version 1.13.7
+
+- Accept new `custom.scss` patterns.
+- Updated setup guides.
+- Updated dependencies.
+
+### Version 1.13.6
+
+- Actually minify bundle correctly.
+
+### Version 1.13.5
+
+- Bundle is now minified by default.
+
+### Version 1.13.4
+
+- Fixed outdated documentation link in interface.
+- Updated documentation for Quartz v5.
+- Fixed schema duplication in v5.
+- Removed Themes tab in favor of v5 plugin settings.
+
+### Version 1.13.3
+
+- Fixed crash on Obsidian mobile related to `Buffer` shim changes.
+
+### Version 1.13.2
+
+- Replace `Buffer` polyfill with Obsidian Git's implementation.
+  - The polyfill is still needed for Capacitor (Obsidian Mobile). Implementation matches Obsidian Git.
+
+### Version 1.13.1
+
+- Fixed incorrect escaping of citations and specific callout patterns
+
+### Version 1.13.0
+
+- Added [Obsidian CLI](https://obsidian.md/cli) support for automating publishing workflows from the terminal (requires Obsidian v1.12+).
+  - 12 CLI commands: `status`, `sync`, `publish`, `delete`, `mark`, `test`, `cache`, `config`, `upgrade`, `version`, `plugin`, and `quartz-config`.
+  - `obsidian quartz-syncer` (no subcommand) shows a help screen with all available commands, flags, and examples.
+  - All commands support `verbose` for detailed output (file paths, connection details, cache contents, commit SHAs).
+  - All commands support `help` for command-specific usage information.
+  - All commands support `format=json` for machine-readable output. Commands that make changes support `dry-run` for previewing.
+  - Publishing commands (`sync`, `publish`) execute without confirmation. Destructive commands (`delete`, `upgrade`) require `force`.
+  - `mark` command supports three path resolution modes: exact path, glob patterns (`notes/**/*.md`), and fuzzy search (`~my post`).
+  - `config` command enables reading and writing plugin settings from the terminal, with secret redaction for authentication tokens.
+  - `config` command defaults to listing all settings when no action is provided (`obsidian quartz-syncer:config` = `obsidian quartz-syncer:config action=list`).
+  - `version` command shows plugin, Obsidian, and Quartz version information.
+  - `plugin` command manages Quartz v5 plugins: list, add, remove, check for updates, apply updates, and browse the community registry.
+  - `quartz-config` command reads and writes Quartz v5 site configuration with schema validation.
+  - `cache` command provides cache management (status, clear single file, clear all).
+  - `test` command validates Git connection and write access.
+  - `upgrade` command pulls upstream Quartz changes with automatic `quartz.lock.json` conflict resolution.
+  - Fixed: `upgrade` command now correctly targets Quartz v5 upstream (was hardcoded to v4).
+  - Graceful fallback on older Obsidian versions — CLI registration is silently skipped if `registerCliHandler` is unavailable.
+- See the [[Guides/CLI|CLI guide]] for the full command reference and example workflows.
+- Updated documentation.
+
+### Version 1.12.0
+
+- Added Quartz upgrade check and in-app upgrade support.
+  - Configurable update check strategy: "Version" (compare `package.json` versions) or "Commit" (compare upstream commit SHAs for unreleased changes).
+  - Detects whether the latest upstream Quartz commit exists in the user's repository history.
+  - "Upgrade now" button merges upstream changes directly from within Obsidian, with no external tools required.
+  - Automatic conflict resolution for `quartz.lock.json` — the most common merge conflict during upgrades.
+  - If other conflicts are detected, the merge is safely aborted and conflicting files are listed. No changes are made to the repository.
+  - Works on mobile — uses `isomorphic-git` for all git operations, no dependency on external git.
+- Removed dead settings: `applyEmbeds` and `pathRewriteRules`.
+- Removed SVG conversion, SCSS styles, and ExcalidrawAutomate dependency.
+
+### Version 1.11.1
+
+- Fixed Obsidian styled comments breaking parsing.
+
+### Version 1.11.0
+
+- Migrated compiler pipeline from regex-based transforms to AST-based transforms using [`remark-obsidian`](https://github.com/quartz-community/remark-obsidian).
+  - Obsidian comments (`%% ... %%`) are now stripped via AST instead of regex, correctly handling comments inside code blocks.
+  - Vault path stripping for links and images is now handled via AST node visitors.
+  - Wikilink pipe characters (`|`) inside table rows are automatically escaped for Quartz GFM compatibility.
+  - Callout syntax (`> [!INFO]`) is preserved correctly through the AST round-trip.
+- Delegated rendering transforms to Quartz v5's build pipeline.
+  - Wikilink resolution, transclusion expansion, SVG inlining, highlight syntax, and tag rendering are now handled by Quartz.
+  - Compiler pipeline reduced from 8 steps to 4: frontmatter enrichment, integration pre-compilation, link targeting, and AST transform.
+  - Compiler reduced from ~900 lines to ~500 lines.
+- Fixed image embeds blending with surrounding text when preceded by other content.
+- Removed transclusion and SVG embedding logic (now handled by Quartz v5).
+- Removed publish file cache system (`cacheFilesMarkedForPublishing`, `clearPublishCache`).
+- Simplified `SyncerPageCompiler` constructor (removed `getFilesMarkedForPublishing` parameter).
+- Removed "Apply embeds" toggle from Quartz settings panel.
+- Simplified Excalidraw integration to pass-through (push files only, Quartz v5 handles rendering).
+- Split Git connection status into separate read and write access checks. The settings panel now shows `(read: ok/failed)` and `(write: ok/failed)` independently, correctly identifying when a repository URL is valid but credentials lack push access.
+- Fixed canvas `extractBlobLinks` to only collect asset files (images, fonts, etc.) instead of all file nodes including markdown notes.
+
+### Version 1.10.1
+
+- Fixed `tag`, `alias`, and `cssclass` compatibility handling for Quartz v5.
+
+### Version 1.10.0
+
+- Added support for publishing Obsidian Bases, as Quartz v5 supports it.
+- Added support for publishing Obsidian Canvas, as Quartz v5 supports it.
+- Significant performance improvements.
+- Improved progress indicators.
+
+### Version 1.9.2
+
+- Added support for [Excalidraw](https://github.com/zsviczian/obsidian-excalidraw-plugin) drawings.
+  - Excalidraw files (`.excalidraw.md`) are automatically converted to embedded SVG images.
+  - Embedded drawings (`![[Example.excalidraw]]`) are supported.
+  - Both light and dark theme variants are generated for proper theme support.
+  - Uses the [ExcalidrawAutomate API](https://excalidraw-obsidian.online) for reliable SVG export.
+- Improved [Fantasy Statblocks](https://github.com/javalent/fantasy-statblocks) integration.
+  - Updated styles to match the plugin's Svelte component styling.
+  - Added complete CSS variable support for theming.
+- Improved [Datacore](https://github.com/blacksmithgu/datacore) integration.
+  - Updated styles with complete CSS from the plugin source (cards, tables, callouts, paging, embeds, errors, and layout).
+- Refactored plugin integration architecture for improved maintainability.
+  - All integrations now use a unified `PluginIntegration` interface.
+  - Integration styles are automatically managed via SCSS files in `quartz/styles/syncer/`.
+- Added new setting: **Manage integration styles** (enabled by default).
+  - When enabled, Quartz Syncer automatically writes integration styles to your Quartz repository.
+  - Styles are written to `quartz/styles/syncer/` with automatic `custom.scss` import management.
+  - Syncer import is added after `@use "./base.scss"` to ensure proper style ordering.
+  - Disabling this setting will clean up syncer styles on next publish.
+- Updated documentation.
+
+### Version 1.9.1
+
+- Added secure token storage using Obsidian's [SecretStorage API](https://docs.obsidian.md/Reference/TypeScript+API/SecretStorage).
+  - Authentication tokens are now stored securely using the platform's native secret storage (Keychain on macOS, Credential Manager on Windows, libsecret on Linux).
+  - Tokens are no longer stored in `data.json`, preventing accidental exposure when syncing vaults.
+  - Existing tokens are automatically migrated to secure storage on plugin load.
+  - New password-style input with visibility toggle in Git settings.
+  - Requires Obsidian 1.11.4 or later.
+- Added configurable frontmatter output format setting.
+  - YAML format is now the default (more readable and standard for static site generators).
+  - JSON format available as an option for backwards compatibility.
+  - Configurable in Settings > Note properties (frontmatter).
+- Improved diff view styling.
+
+### Version 1.9.0
+
+- Replaced Octokit-based implementation with Isomorphic Git-based implementation.
+  - This change resolves a few longstanding issues, as well as address a few frequent requests:
+    - No longer dependent on Octokit, and therefore GitHub as Git host.
+    - Significant performance improvements.
+    - No longer suffers from GitHub API rate limits, mostly due to direct Git calls.
+      - Please let us know if you still run into issue regarding rate limits.
+- Added support for GitLab, Bitbucket, Gitea, Codeberg, and Self-hosted instances.
+- Added new diff viewer in the Publication Center.
+  - Split view (side-by-side comparison) and Unified view options.
+  - Configurable default view style in Settings > UI.
+  - Responsive design: defaults to split view on desktop, unified view on mobile.
+  - Synced scrolling between panes in split view.
+- Improved cache invalidation for dynamic content.
+  - Files containing Dataview or Datacore queries are now automatically detected.
+  - Dynamic files always recompile to ensure query results are up-to-date.
+  - Hash comparison determines if output actually changed, preventing unnecessary updates.
+- Added UI settings tab for configuring user interface preferences.
+- Updated documentation.
+
+### Version 1.8.10
+
+- Fixed publication center showing files outside configured root as publishable.
+- Extended test set.
+- Fixed cached datastores for outdated versions of Quartz Syncer not getting removed after updating the plugin or when clearing the cache.
+- Updated link cleaning logic to apply Quartz' internal/external classes properly to links generated by plugins.
+- Fixed typo in documentation.
+- Updated documentation.
+
+### Version 1.8.9
+
+- Added support for the [Auto Card Link](https://github.com/nekoshita/obsidian-auto-card-link) plugin.
+- Updated documentation.
+
+### Version 1.8.8
+
+- Fixed asset paths not getting rewritten correctly when the `vaultPath` setting was set to a non-root path.
+- Updated documentation.
+
+### Version 1.8.7
+
+- Added support for Dataview [inline fields](https://blacksmithgu.github.io/obsidian-dataview/annotation/add-metadata/#inline-fields)
+  - This works for inline fields defined inside Obsidian comment syntax as well (`%%`)
+- Updated documentation.
+
+### Version 1.8.6
+
+- Added options to configure the keys used for the created, updated, and published timestamps.
+  - Supports a comma-separated list of options to check. Quartz Syncer will use the first matching value per note.
+  - Defaults to the options recognized by Quartz.
+- Updated documentation.
+
+### Version 1.8.5
+
+- Added setting option to override the need for a publish flag in the note properties.
+  - This option is disabled by default.
+- Added documentation for previously undocumented functions.
+- Updated documentation.
+
+### Version 1.8.4
+
+- Addressed feedback for initial Obsidian release.
+- Upgraded frontmatter engine to use Obsidian built-ins.
+- Updated documentation.
+
+### Version 1.8.3
+
+- Rewrote plugin compiler logic.
+- Improved multi-device cache synchronization logic.
+- Cleaned up connection validation.
+- Updated documentation.
+
+### Version 1.8.2
+
+- Added support for the [Fantasy Statblocks](https://github.com/javalent/fantasy-statblocks) plugin.
+- Removed polling in favor of `MutationObserver`.
+- Updated documentation.
+
+### Version 1.8.1
+
+- Fixed caching to be vault-specific.
+- Updated documentation.
+
+### Version 1.8.0
+
+- Significant performance improvements.
+- Added caching of compiled files to reduce processing time and GitHub API calls.
+  - The processed files are stored in Obsidian's [localStorage](https://developer.mozilla.org/en-US/docs/Web/API/Window/localStorage).
+- Added settings related to performance.
+  - Enable cache: whether to save compiled files to cache. Defaults to true.
+  - Sync cache: whether to save compiled files to the plugin's `data.json` as well. This is recommend for users that synchronize their vaults between multiple devices to ensure consistency. Defaults to true.
+  - Persist cache: whether to keep the cache in the localStorage when the plugin unloads. This is only recommended for users that start Obsidian with plugins disabled, such as when using the [Lazy Plugins](https://github.com/alangrainger/obsidian-lazy-plugins) plugin. Defaults to false.
+  - Clear cache: Clears the cache when pressed.
+- Improved preview performance.
+- Visual indicators for loading and publishing.
+  - Added loading bars to indicate progress.
+  - Added partial indicators for folders that have both checked and unchecked files.
+  - Automatically flag files for deletion that are in the remote repository, but not in the local vault.
+    - These are generally deleted, renamed, or moved.
+- Rewrote link resolution logic.
+- New commands:
+  - Clear cache for current file.
+  - Clear cache for all files.
+    - Calling this command will prompt for confirmation.
+- Folder suggester no longer fetches all files instead of just folders.
+- Added release GitHub Action.
+- Updated documentation.
+
+### Version 1.7.1
+
+- Datacore integration improvements.
+- Fixed Datacore callouts.
+- Fixed aliases and permalinks not passing through when set inside note properties.
+- Updated documentation.
+
+### Version 1.7.0
+
+- Experimental [[Settings/Integrations/Datacore|Datacore]] support.
+- Updated documentation.
+
+### Version 1.6.9
+
+- Fixed MathJax embedding inside callouts and multi-layer embeddings.
+- Updated documentation.
+
+### Version 1.6.8
+
+- Fixed DataviewJS queries not always returning correct data.
+- Fixed MathJax collapsing to inline queries when embedded.
+- Updated documentation.
+
+### Version 1.6.7
+
+- Fixed issues related to alias generation on non-embedded links to blocks or headings.
+- Removed redundant `decodeURI` call on blobs.
+- Removed redundant function calls in Dataview processor.
+- Removed unused utility functions.
+- Replaced many CSS rules with Obsidian CSS properties to better integrate with Obsidian themes.
+- Fixed grammatical error in embed settings description.
+- Expanded settings tabs to show names on desktop.
+  - Tablet and mobile still only show name on the active tab.
+- Updated dependencies.
+
+### Version 1.6.6
+
+- Re-implemented the settings modal to use built-in Obsidian functionality.
+- Settings that are overridden by other settings are now automatically hidden.
+- Settings modal will now remember the last settings tab opened, instead of always opening the GitHub tab.
+- Added missing heading to the Frontmatter settings tab.
+- Removed redundant rendering calls.
+- Restructured import statements.
+
+### Version 1.6.5
+
+- Fixed icons in publication center not showing correctly.
+- Fixed broken link in project README file.
+- Removed unnecessary warning.
+- Updated manifest.
+
+### Version 1.6.4
+
+- Fixed embedded math blocks incorrectly parsing to inlined math blocks.
+- Moved all inlined styling to CSS classes.
+- Changed buttons in publication center to sticky.
+  - This makes the buttons always visible at the bottom of the modal, even when displaying larger tree.
+- Removed unused code.
+- Updated manifest.
+- Updated documentation.
+
+### Version 1.6.3
+
+- Fixed mobile folder selector styling.
+
+### Version 1.6.2
+
+- Use Obsidian built-in for rendering Dataviewjs to markdown.
+
+### Version 1.6.1
+
+- Implemented Obsidian built-in folder suggester.
+- Removed now-unused popperjs dependency.
+- Moved cog loading animation styling to CSS.
+
+### Version 1.6.0
+
+- Fixed embedding issues when embedding blocks.
+- Embeddings are now handled by Quartz Syncer instead of Quartz.
+  - This behavior can be configured in the settings `Quartz > Apply embeds`.
+- Added settings menu for Quartz Themes.
+  - This currently does nothing, but will be used for managing and applying Obsidian themes to Quartz.
+- Fixed some minor typos.
+- Updated documentation.
+
+### Version 1.5.3
+
+- Added note counts to the publication center.
+- Added tabbed settings menu.
+- Updated documentation.
+
+### Version 1.5.2
+
+- Restored use of `innerHTML` in the Dataview compiler.
+  - This only affects `dataviewjs` queries. These are an optional, opt-in component of the Dataview plugin. See [Dataview JavaScript API documentation](https://blacksmithgu.github.io/obsidian-dataview/api/intro/) for details.
+
+### Version 1.5.1
+
+- Addressed Obsidian's automated feedback.
+
+### Version 1.5.0
+
+- Added to Obsidian Community Plugin list.
+- Added separate settings for configuring note properties/frontmatter.
+- Added option to only pass valid Quartz properties.
+  - This can be overridden by setting the new `Include all properties` option.
+- Updated publication center headings to better reflect functionality.
+- Cleaned up all unused and redundant functions.
+- Finished up all of the essential documentation.
+
+### Version 1.4.1
+
+- Fixed links to embedded notes resolving to the wrong URL when deploying from a subfolder.
+
+### Version 1.4.0
+
+- Added support for setting a vault folder as Quartz content folder.
+  - This setting is recommended for users with mixed content vaults or users who want to dedicate a specific folder to their Quartz site content.
+  - Specific folder can be configured in the plugin settings.
+- Added configuration option for specifying publish frontmatter key.
+  - The default key is `publish`, matching Obsidian Publish's default key.
+  - The frontmatter key is used to expose notes to Quartz Syncer. Any note without the specified key or eith they key set to `false`/unchecked checkbox will not show up in Quartz Syncer.
+  - The key should be a boolean/Checkbox (source mode/live-preview mode respectively.)
+- Added Obsidian commands for modifying a note's publication status:
+  - `Quartz Syncer: Add publish flag`: adds the specified publish flag to the current note frontmatter if not already present and sets it to `true`. This exposes the note to Quartz Syncer.
+  - `Quartz Syncer: Remove publish flag`: adds the specified publish flag to the current note frontmatter if not already present and sets it to `false`. This hides the note from Quartz Syncer.
+  - `Quartz Syncer: Toggle publication status`: toggles the note's visibility to Quartz Syncer.
+- Added support for all embed filetypes that Quartz also supports. This includes the following:
+  - Note: `md`
+  - Image: `png`, `jpg`, `jpeg`, `gif`, `webp`, `svg`
+  - Audio (new): `mp3`, `wav`, `ogg`
+  - Video (new): `mp4`, `mkv`, `mov`, `avi`
+  - Document (new): `pdf`
+- Added a new icon.
+- Added this documention website.
+- Fixed deleting multiple files in single commit.
+
+### Version 1.3.1
+
+- Fixed Dataview query results not displaying correctly inside nested callouts.
+
+### Version 1.3.0
+
+- Exposed the following options for user configuration in plugin settings view:
+  - Pass frontmatter.
+  - Image file compression.
+  - Use permalink for Quartz URL.
+  - Pass note's created date to Quartz.
+  - Pass note's last modification date to Quartz.
+- Fixed incorrect links to embedded notes.
+- Fixed path resolution resolving to wrong path in some cases.
+
+### Version 1.2.0
+
+- Initial beta release as Quartz Syncer.
+
+### Version 1.1.0
+
+- Support for configuring Quartz path.
+
+### Version 1.0.0
+
+- Forked from [Ole Eskild Steensen](https://github.com/oleeskild)'s [Digital Garden plugin](https://github.com/oleeskild/obsidian-digital-garden).
