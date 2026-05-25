@@ -3,7 +3,7 @@ publish: true
 title: Roadmap and Changelog
 description: Changelog and feature roadmap for Quartz Syncer.
 created: 2025-05-16T12:59:31Z+0200
-modified: 2026-05-12T23:33:08Z+0200
+modified: 2026-05-25T17:57:52Z+0200
 ---
 
 ## Upcoming
@@ -16,6 +16,33 @@ modified: 2026-05-12T23:33:08Z+0200
 ## Someday
 
 ## Releases
+
+### Version 1.15.1
+
+- Excalidraw rendering is now handled by the [Quartz Excalidraw plugin](https://github.com/quartz-community/obsidian-plugin-excalidraw). Quartz Syncer syncs `.excalidraw.md` files as-is without transformation.
+- Removed unused `EXCALIDRAW_REGEX`.
+- Updated Excalidraw documentation and troubleshooting.
+- Updated Quartz Syncer icon.
+
+### Version 1.15.0
+
+- Switched to `localspace` over `localforage` as database driver.
+- Additional refactors to match Obsidian's latest standards.
+
+### Version 1.14.3
+
+- Additional refactors to match Obsidian's latest standards.
+- Fixed missing target `esnext` for Svelte.
+- Delegated sanitation to Obsidian's API `sanitizeHTMLToDom` function.
+
+### Version 1.14.2
+
+- Added Stylelint to improve `styles.css`.
+- Additional refactors to match Obsidian's latest standards.
+
+### Version 1.14.1
+
+- Additional refactors to match Obsidian's latest standards.
 
 ### Version 1.14.0
 

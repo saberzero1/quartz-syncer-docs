@@ -36,11 +36,32 @@ For Git providers not listed above, follow these general steps:
 
 ### 1. Create a Quartz Repository
 
-Clone or fork the [Quartz repository](https://github.com/jackyzha0/quartz) to your Git provider.
+Create a new repository on your Git provider (start from the [official Quartz template](https://github.com/new?template_name=quartz\&template_owner=jackyzha0) on GitHub, then import or mirror it to your provider of choice).
 
 ### 2. Configure Hosting
 
-Set up a CI/CD pipeline to build and deploy Quartz. The build process is:
+```bash
+git clone https://<provider>/<user>/<repo>.git
+cd <repo>
+npm ci
+```
+
+### 2. Run the Quartz Setup Wizard
+
+Quartz v5 ships an interactive setup command that writes `quartz.config.yaml` and installs all required plugins for you:
+
+```bash
+npx quartz create
+```
+
+Pick a template (`default`, `obsidian`, `ttrpg`, or `blog`), set your base URL, and choose how Quartz should treat your content folder. The `obsidian` template is recommended when publishing from an Obsidian vault.
+
+> [!TIP] Non-interactive setup
+> You can pass flags to skip the prompts: `npx quartz create --template obsidian --strategy new --baseUrl <your-site.example.com>`. See the [`quartz create` reference](https://quartz.jzhao.xyz/cli/create) for the full flag list.
+
+### 3. Configure Hosting
+
+Set up a CI/CD pipeline to build and deploy Quartz. The v5 build process **must** install plugins before building:
 
 ```bash
 npm ci
@@ -56,18 +77,18 @@ Popular hosting options:
 
 See the [Quartz hosting documentation](https://quartz.jzhao.xyz/hosting) for more options.
 
-### 3. Generate an Access Token
+### 4. Generate an Access Token
 
-Create a personal access token with write access to your repository. The exact steps vary by provider.
+Create a personal access token (or app password) with **write** access to your Quartz repository. The exact steps vary by provider — see the provider-specific guide linked above, or consult your provider's documentation.
 
-### 4. Configure Quartz Syncer
+### 5. Configure Quartz Syncer
 
 In Obsidian, go to **Settings** > **Community Plugins** > **Quartz Syncer** and configure:
 
 | Setting | Value |
 |---------|-------|
 | **Remote URL** | `https://<provider>/<user>/<repo>.git` |
-| **Branch** | Your Quartz branch (usually `v4` or `main`) |
+| **Branch** | Your repository's default branch (typically `v5`) |
 | **Provider** | Select your provider or "Custom" |
 | **Authentication Type** | Username & Token/Password |
 | **Username** | Your username (or `oauth2` for some providers) |
