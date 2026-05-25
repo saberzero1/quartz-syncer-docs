@@ -250,7 +250,13 @@ plugins:
       subdir: plugin
     enabled: true
     options:
-      theme: obsidian
+      theme: catppuccin
+      mode: both
+      styleSettings:
+        {
+          "catppuccin-theme-settings@@catppuccin-theme-accents": "ctp-accent-green",
+          "catppuccin-theme-settings@@catppuccin-theme-dark": "ctp-mocha",
+        }
 layout:
   groups:
     toolbar:
