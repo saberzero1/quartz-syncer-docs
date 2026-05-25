@@ -250,7 +250,18 @@ plugins:
       subdir: plugin
     enabled: true
     options:
-      theme: tokyo-night
+      theme: catppuccin
+      mode: both
+      styleSettings:
+        catppuccin-theme-settings@@catppuccin-theme-accents: ctp-accent-green
+        catppuccin-theme-settings@@catppuccin-theme-dark: ctp-mocha
+  - source: github:quartz-community/obsidian-plugin-excalidraw
+    enabled: true
+    options:
+      enableInteraction: true
+      darkMode: auto
+      exportPadding: 20
+    order: 50
 layout:
   groups:
     toolbar:
