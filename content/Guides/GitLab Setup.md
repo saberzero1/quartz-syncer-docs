@@ -29,18 +29,6 @@ If you want to keep your GitLab repository in sync with the upstream Quartz repo
 2. Go to **Settings** > **Repository** > **Mirroring repositories**.
 3. Add `https://github.com/jackyzha0/quartz.git` as a mirror.
 
-## Set v5 as the Default Branch
-
-The upstream Quartz repository currently defaults to `v4`. Change your project's default branch to `v5`:
-
-1. Go to your project on GitLab.
-2. Navigate to **Settings** > **Repository** > **Branch defaults**.
-3. Change the default branch to `v5`.
-4. Save the change.
-
-> [!NOTE] Quartz v5 is in beta
-> Quartz v5 is currently in beta and not yet the default upstream branch. Once v5 leaves beta it will become the default, and this step will no longer be necessary. See the [upstream migration guide](https://quartz.jzhao.xyz/migrating) if you are migrating existing content from v4.
-
 ## Clone and Install
 
 Clone your GitLab repository and install dependencies:
@@ -48,7 +36,6 @@ Clone your GitLab repository and install dependencies:
 ```bash
 git clone https://gitlab.com/<username>/<project>.git
 cd <project>
-git checkout v5
 npm ci
 ```
 
@@ -142,7 +129,7 @@ Your site will be deployed to `<username>.gitlab.io/<project-name>`.
 2. Click **Add new token**.
 3. Enter a **Token name** (e.g., `Quartz Syncer`).
 4. Set an **Expiration date** (maximum 1 year).
-5. Under **Select scopes**, check **read_repository** and **write_repository**.
+5. Under **Select scopes**, check **read\_repository** and **write\_repository**.
 6. Click **Create personal access token**.
 7. Copy the generated token immediately.
 
@@ -154,7 +141,7 @@ Your site will be deployed to `<username>.gitlab.io/<project-name>`.
 1. Open Obsidian and go to **Settings** > **Community Plugins** > **Quartz Syncer**.
 2. In the **Git** settings tab:
    - **Remote URL**: `https://gitlab.com/<username>/<project>.git`
-   - **Branch**: `v5`
+   - **Branch**: Your repository's default branch (typically `v5`)
    - **Provider**: GitLab
    - **Authentication Type**: Username & Token/Password
    - **Username**: `oauth2` (when using a Personal Access Token)
