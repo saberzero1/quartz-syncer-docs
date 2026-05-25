@@ -44,6 +44,9 @@ Local plugins are symlinked into `.quartz/plugins/`, so any changes you make to 
 
 When a branch is specified, it is stored in the lockfile. All subsequent commands (`install`, `prune`) will respect that branch automatically. Use `install --latest` to fetch the latest commit from that branch.
 
+> [!tip]
+> `plugin add` also accepts `--concurrency` / `-c` to limit how many remote repositories are cloned and built at the same time. This is the same flag documented under [[#install]] and is useful when adding several plugins at once on low-end hardware.
+
 ### remove
 
 Remove an installed plugin.
@@ -66,6 +69,7 @@ npx quartz plugin install
 - `--latest`: Fetch the latest version of plugins from their remote sources instead of using the version in the lockfile.
 - `--clean`: Skip existing directories and perform a fresh installation.
 - `--dry-run`: Preview the changes without actually installing or removing any files.
+- `--concurrency`, `-c`: Maximum number of plugins to clone, fetch, and build in parallel. Defaults to the number of CPU cores. Lower this (e.g. `-c 1` or `-c 2`) on memory- or CPU-constrained machines where the default parallelism causes failures, OOMs, or hangs. See [[#Installing on low-end hardware]] below.
 
 #### Positional Arguments
 

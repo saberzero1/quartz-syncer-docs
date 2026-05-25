@@ -27,8 +27,6 @@ You can run the CLI using `npx quartz`.
 - [[cli/plugin|plugin]]: Install, add, remove, prune, and configure plugins. Use `plugin install` with flags for lockfile/config sync, updates, and checks.
 - [[tui|tui]]: Use a terminal interface to manage plugins and layout.
 
-# <<<<<<< HEAD
-
 ## Global Flags
 
 These flags are accepted by every Quartz command:
@@ -40,8 +38,6 @@ These flags are accepted by every Quartz command:
 | `--concurrency` | `-c`      | Max parallel workers for operations that run in parallel (e.g. `build`, `plugin install`, `plugin add`) | CPU core count |
 
 Commands that don't perform parallel work accept `-c` as a no-op, so it's always safe to pass. See [[build#Performance Tuning|build]] and [[cli/plugin#Installing on low-end hardware|plugin]] for practical examples.
-
-> > > > > > > 4ffe041f1301f7ef889042009e239c64422fde3f
 
 ## Help and Versioning
 

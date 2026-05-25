@@ -26,6 +26,8 @@ Try increasing concurrency:
 
 ```bash
 npx quartz build --concurrency 8
+# or the shorthand:
+npx quartz build -c 8
 ```
 
 The default uses all available CPU cores. If you're on a memory-constrained environment (CI), reducing concurrency may actually help.
@@ -59,8 +61,6 @@ This means the plugin is referenced in `quartz.ts` but not installed. Either:
 
 - Install it: `npx quartz plugin add github:quartz-community/plugin-name`
 - Or remove the reference from `quartz.ts`
-
-# <<<<<<< HEAD
 
 ### Plugins fail to build on a fresh clone
 
@@ -103,8 +103,6 @@ npx quartz plugin add github:quartz-community/some-plugin -c 1
 ```
 
 If `plugin install` consistently fails near the same plugin with `-c 1`, the issue is likely with that specific plugin's build, not with concurrency — try running `--verbose` to get detailed error output, and check the plugin's own repository for known issues.
-
-> > > > > > > 4ffe041f1301f7ef889042009e239c64422fde3f
 
 ## Content Issues
 
