@@ -1,14 +1,14 @@
 ---
 publish: true
 title: Bitbucket Setup
-description: Complete guide for setting up Quartz with Bitbucket and Bitbucket Pipelines.
+description: Complete guide for setting up Quartz v5 with Bitbucket and Bitbucket Pipelines.
 created: 2026-01-08T14:00:00Z+0100
-modified: 2026-04-01T17:15:10Z+0200
+modified: 2026-04-11T18:00:00Z+0200
 tags:
   - guides
 ---
 
-This guide covers setting up a Quartz repository on Bitbucket, configuring deployment, and connecting Quartz Syncer.
+This guide covers setting up a Quartz v5 repository on Bitbucket, configuring deployment, and connecting Quartz Syncer.
 
 > [!NOTE] Bitbucket Hosting Options
 > Bitbucket does not have a built-in static site hosting service like GitHub Pages. This guide covers deploying to external hosting services using Bitbucket Pipelines.
@@ -72,22 +72,26 @@ git push
 
 Since Bitbucket doesn't have built-in static hosting, you'll need to deploy to an external service. Below are configurations for popular hosting options.
 
+> [!TIP] Plugin install is mandatory in v5
+> Quartz v5 downloads community plugins into `.quartz/plugins/` at build time. Every pipeline below runs `npx quartz plugin install` before `npx quartz build`. If you skip it, the build will fail.
+
 ### Option 1: Deploy to Netlify
 
 Create a file `bitbucket-pipelines.yml` in your repository root:
 
-```yaml
-image: node:22
+```yaml title="bitbucket-pipelines.yml"
+image: node:24
 
 pipelines:
   branches:
-    v4:
+    v5:
       - step:
           name: Build and Deploy to Netlify
           caches:
             - node
           script:
             - npm ci
+            - npx quartz plugin install
             - npx quartz build
             - npm install -g netlify-cli
             - netlify deploy --prod --dir=public --site=$NETLIFY_SITE_ID --auth=$NETLIFY_AUTH_TOKEN
@@ -100,18 +104,19 @@ Add these repository variables in **Repository settings** > **Pipelines** > **Re
 
 ### Option 2: Deploy to Cloudflare Pages
 
-```yaml
-image: node:22
+```yaml title="bitbucket-pipelines.yml"
+image: node:24
 
 pipelines:
   branches:
-    v4:
+    v5:
       - step:
           name: Build and Deploy to Cloudflare
           caches:
             - node
           script:
             - npm ci
+            - npx quartz plugin install
             - npx quartz build
             - npx wrangler pages deploy public --project-name=$CF_PROJECT_NAME
 ```
@@ -124,18 +129,19 @@ Add these repository variables:
 
 ### Option 3: Deploy to Vercel
 
-```yaml
-image: node:22
+```yaml title="bitbucket-pipelines.yml"
+image: node:24
 
 pipelines:
   branches:
-    v4:
+    v5:
       - step:
           name: Build and Deploy to Vercel
           caches:
             - node
           script:
             - npm ci
+            - npx quartz plugin install
             - npx quartz build
             - npx vercel deploy --prod --yes --token=$VERCEL_TOKEN public
 ```
@@ -194,7 +200,7 @@ If you're using Bitbucket Server (Data Center):
 
 ## Alternative: Direct Hosting Service Integration
 
-Instead of using Bitbucket Pipelines, you can connect your hosting service directly to Bitbucket:
+Instead of using Bitbucket Pipelines, you can connect your hosting service directly to Bitbucket. In every case, the build command must install plugins before building.
 
 ### Netlify
 
@@ -203,7 +209,8 @@ Instead of using Bitbucket Pipelines, you can connect your hosting service direc
 3. Select Bitbucket and authorize.
 4. Select your Quartz repository.
 5. Configure build settings:
-   - **Build command**: `npx quartz build`
+   - **Branch to deploy**: `v5`
+   - **Build command**: `npx quartz plugin install && npx quartz build`
    - **Publish directory**: `public`
 
 ### Cloudflare Pages
@@ -212,7 +219,8 @@ Instead of using Bitbucket Pipelines, you can connect your hosting service direc
 2. Go to **Workers & Pages** > **Create application** > **Pages**.
 3. Connect to Git and select Bitbucket.
 4. Select your repository and configure:
-   - **Build command**: `npx quartz build`
+   - **Production branch**: `v5`
+   - **Build command**: `npx quartz plugin install && npx quartz build`
    - **Build output directory**: `public`
 
 ### Vercel
@@ -221,5 +229,6 @@ Instead of using Bitbucket Pipelines, you can connect your hosting service direc
 2. Click **Add New** > **Project**.
 3. Import from Bitbucket.
 4. Configure:
-   - **Build Command**: `npx quartz build`
+   - **Production Branch**: `v5`
+   - **Build Command**: `npx quartz plugin install && npx quartz build`
    - **Output Directory**: `public`

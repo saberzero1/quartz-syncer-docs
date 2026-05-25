@@ -1,14 +1,14 @@
 ---
 publish: true
 title: GitLab Setup
-description: Complete guide for setting up Quartz with GitLab and GitLab Pages.
+description: Complete guide for setting up Quartz v5 with GitLab and GitLab Pages.
 created: 2026-01-08T14:00:00Z+0100
-modified: 2026-01-08T17:24:14Z+0100
+modified: 2026-05-02T14:48:13Z+0200
 tags:
   - guides
 ---
 
-This guide covers setting up a Quartz repository on GitLab, configuring GitLab Pages for automatic deployment, and connecting Quartz Syncer.
+This guide covers setting up a Quartz v5 repository on GitLab, configuring GitLab Pages for automatic deployment, and connecting Quartz Syncer.
 
 ## Create a Quartz Repository
 
@@ -67,7 +67,7 @@ git push
 
 Create a new file `.gitlab-ci.yml` in the root of your repository with the following content:
 
-```yaml
+```yaml title=".gitlab-ci.yml"
 stages:
   - build
   - deploy
@@ -104,7 +104,7 @@ pages:
   needs:
     - build
   rules:
-    - if: '$CI_COMMIT_REF_NAME == "v4"'
+    - if: '$CI_COMMIT_REF_NAME == "v5"'
   script:
     - echo "Deploying to GitLab Pages..."
   artifacts:
@@ -129,7 +129,7 @@ Your site will be deployed to `<username>.gitlab.io/<project-name>`.
 2. Click **Add new token**.
 3. Enter a **Token name** (e.g., `Quartz Syncer`).
 4. Set an **Expiration date** (maximum 1 year).
-5. Under **Select scopes**, check **write\_repository**.
+5. Under **Select scopes**, check **read\_repository** and **write\_repository**.
 6. Click **Create personal access token**.
 7. Copy the generated token immediately.
 
@@ -161,6 +161,8 @@ A green checkmark indicates a successful connection.
    - **Apex domain** (`example.com`): Create an `A` record pointing to `35.185.44.232`
    - **Subdomain** (`docs.example.com`): Create a `CNAME` record pointing to `<username>.gitlab.io`
 5. Optionally enable **Force HTTPS** after DNS verification.
+
+Don't forget to update `baseUrl` in `quartz.config.yaml` to match your custom domain.
 
 ## Self-Managed GitLab
 

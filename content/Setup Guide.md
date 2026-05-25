@@ -3,13 +3,16 @@ publish: true
 title: Setup Guide
 description: Instructions for setting up Quartz Syncer plugin.
 created: 2025-05-05T12:00:00Z+0200
-modified: 2026-01-08T17:16:24Z+0100
+modified: 2026-04-11T18:00:00Z+0200
 tags:
   - guides
 ---
 
 > [!WARNING] Set up Quartz first
-> This plugin manages Quartz content from Obsidian. Please set up Quartz on your Git provider before continuing.
+> Quartz Syncer manages Quartz content from Obsidian. Please set up a Quartz v5 site on your Git provider before continuing.
+
+> [!IMPORTANT] Quartz v5 required
+> Quartz Syncer targets [Quartz v5](https://quartz.jzhao.xyz/). Quartz v4 configurations (`quartz.config.ts`, `quartz.layout.ts`) are no longer supported. If you are upgrading from v4, follow the [upstream migration guide](https://quartz.jzhao.xyz/migrating) first.
 
 ## Choose Your Git Provider
 
@@ -25,20 +28,21 @@ Quartz Syncer supports any Git provider. Choose your provider for complete setup
 
 Each guide covers:
 
-1. Creating a Quartz repository
-2. Configuring automatic deployment
-3. Generating an access token
-4. Configuring Quartz Syncer
+1. Creating a Quartz v5 repository
+2. Running the `npx quartz create` setup wizard
+3. Configuring automatic deployment
+4. Generating an access token
+5. Configuring Quartz Syncer
 
 ## Generic Setup
 
-For Git providers not listed above, follow these general steps:
+For Git providers not listed above, follow these general steps.
 
 ### 1. Create a Quartz Repository
 
 Create a new repository on your Git provider (start from the [official Quartz template](https://github.com/new?template_name=quartz\&template_owner=jackyzha0) on GitHub, then import or mirror it to your provider of choice).
 
-### 2. Configure Hosting
+Clone the repository locally:
 
 ```bash
 git clone https://<provider>/<user>/<repo>.git
@@ -65,8 +69,15 @@ Set up a CI/CD pipeline to build and deploy Quartz. The v5 build process **must*
 
 ```bash
 npm ci
+npx quartz plugin install
 npx quartz build
 # Deploy the 'public' folder to your hosting service
+```
+
+For single-line build commands (Netlify, Cloudflare Pages, Vercel), use:
+
+```bash
+npx quartz plugin install && npx quartz build
 ```
 
 Popular hosting options:
@@ -75,7 +86,7 @@ Popular hosting options:
 - [Cloudflare Pages](https://pages.cloudflare.com)
 - [Vercel](https://vercel.com)
 
-See the [Quartz hosting documentation](https://quartz.jzhao.xyz/hosting) for more options.
+See the [Quartz hosting documentation](https://quartz.jzhao.xyz/hosting) for provider-specific CI examples, caching strategies, and custom domain setup.
 
 ### 4. Generate an Access Token
 
@@ -98,27 +109,27 @@ A green checkmark indicates a successful connection.
 
 ## Configure Quartz
 
-After setting up your repository and Quartz Syncer, configure Quartz itself:
+Quartz v5 uses YAML for its configuration. The `npx quartz create` wizard writes a working `quartz.config.yaml` for you, but you can edit it at any time. A minimal example:
 
-### `quartz.config.ts`
-
-Update these key settings in `quartz.config.ts`:
-
-```ts
-const config: QuartzConfig = {
-  configuration: {
-    pageTitle: "Your Site Title",
-    baseUrl: "your-site.example.com", // Without https://
-    defaultDateType: "modified", // or "created", "published"
-  },
-  plugins: {
-    transformers: [
-      Plugin.CrawlLinks({ markdownLinkResolution: "shortest" }),
-      // Should match your Obsidian link settings
-    ],
-  },
-}
+```yaml title="quartz.config.yaml"
+configuration:
+  pageTitle: Your Site Title
+  baseUrl: your-site.example.com
+  enableSPA: true
+  locale: en-US
+plugins:
+  - source: github:quartz-community/obsidian-flavored-markdown
+    enabled: true
+  - source: github:quartz-community/syntax-highlighting
+    enabled: true
 ```
+
+> [!TIP] Editing the config from Obsidian
+> Quartz Syncer can read and update `quartz.config.yaml` directly via the **Quartz** settings tab, so you don't need to leave Obsidian to change site-wide options.
+
+After editing `quartz.config.yaml` (either directly or through Quartz Syncer), run `npx quartz plugin install` locally (or let your CI pipeline handle it) so any newly referenced plugins are downloaded into `.quartz/plugins/`.
+
+See the upstream [configuration reference](https://quartz.jzhao.xyz/configuration) for the complete list of supported options and the [plugin list](https://quartz.jzhao.xyz/tags/plugin) for every available community plugin.
 
 ## That's It
 

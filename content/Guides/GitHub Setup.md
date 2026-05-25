@@ -1,14 +1,14 @@
 ---
 publish: true
 title: GitHub Setup
-description: Complete guide for setting up Quartz with GitHub and GitHub Pages.
+description: Complete guide for setting up Quartz v5 with GitHub and GitHub Pages.
 created: 2025-05-15T00:00:00Z+0200
-modified: 2026-01-08T17:24:14Z+0100
+modified: 2026-04-11T18:00:00Z+0200
 tags:
   - guides
 ---
 
-This guide covers setting up a Quartz repository on GitHub, configuring GitHub Pages for automatic deployment, and connecting Quartz Syncer.
+This guide covers setting up a Quartz v5 repository on GitHub, configuring GitHub Pages for automatic deployment, and connecting Quartz Syncer.
 
 ## Create a Quartz Repository
 
@@ -60,13 +60,13 @@ git push
 
 Create a new file `.github/workflows/deploy.yml` in your repository with the following content:
 
-```yaml
+```yaml title=".github/workflows/deploy.yml"
 name: Deploy Quartz site to GitHub Pages
 
 on:
   push:
     branches:
-      - v4
+      - v5
 
 permissions:
   contents: read
@@ -79,16 +79,32 @@ concurrency:
 
 jobs:
   build:
-    runs-on: ubuntu-22.04
+    runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v6
         with:
-          fetch-depth: 0
-      - uses: actions/setup-node@v4
+          fetch-depth: 0 # Fetch all history for git info
+      - uses: actions/setup-node@v6
         with:
-          node-version: 22
+          node-version: 24
+      - name: Cache dependencies
+        uses: actions/cache@v5
+        with:
+          path: ~/.npm
+          key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
+          restore-keys: |
+            ${{ runner.os }}-node-
+      - name: Cache Quartz plugins
+        uses: actions/cache@v5
+        with:
+          path: .quartz/plugins
+          key: ${{ runner.os }}-plugins-${{ hashFiles('quartz.lock.json') }}
+          restore-keys: |
+            ${{ runner.os }}-plugins-
       - name: Install Dependencies
         run: npm ci
+      - name: Install Quartz plugins
+        run: npx quartz plugin install
       - name: Build Quartz
         run: npx quartz build
       - name: Upload artifact
@@ -107,6 +123,9 @@ jobs:
         id: deployment
         uses: actions/deploy-pages@v4
 ```
+
+> [!TIP] Plugin install is mandatory in v5
+> Quartz v5 downloads community plugins into `.quartz/plugins/` at build time. The `npx quartz plugin install` step **must** run before `npx quartz build`, otherwise the build will fail. The `.quartz/plugins` cache above keys on `quartz.lock.json` so plugins are only re-downloaded when you change your configuration.
 
 Your site will be deployed to `<username>.github.io/<repository-name>`.
 
@@ -157,3 +176,5 @@ A green checkmark indicates a successful connection.
      - `185.199.110.153`
      - `185.199.111.153`
    - **Subdomain** (`docs.example.com`): Create a `CNAME` record pointing to `<username>.github.io`.
+
+Don't forget to update `baseUrl` in `quartz.config.yaml` to match your custom domain.

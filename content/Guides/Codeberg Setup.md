@@ -1,14 +1,14 @@
 ---
 publish: true
 title: Codeberg Setup
-description: Complete guide for setting up Quartz with Codeberg and Codeberg Pages.
+description: Complete guide for setting up Quartz v5 with Codeberg and Codeberg Pages.
 created: 2026-01-08T14:00:00Z+0100
-modified: 2026-04-01T17:15:09Z+0200
+modified: 2026-04-11T18:00:00Z+0200
 tags:
   - guides
 ---
 
-This guide covers setting up a Quartz repository on Codeberg, configuring Codeberg Pages for automatic deployment, and connecting Quartz Syncer.
+This guide covers setting up a Quartz v5 repository on Codeberg, configuring Codeberg Pages for automatic deployment, and connecting Quartz Syncer.
 
 Codeberg is a free, community-driven Git hosting service powered by Gitea.
 
@@ -125,15 +125,16 @@ Codeberg also offers [Woodpecker CI](https://docs.codeberg.org/ci/) as a hosted 
 
 Create a new file `.woodpecker.yml` in the root of your repository:
 
-```yaml
+```yaml title=".woodpecker.yml"
 steps:
   build:
-    image: node:22
+    image: node:24
     commands:
       - npm ci
+      - npx quartz plugin install
       - npx quartz build
     when:
-      branch: v4
+      branch: v5
 
   deploy:
     image: alpine
@@ -147,7 +148,7 @@ steps:
       - git commit -m "Deploy to Codeberg Pages"
       - git push -f https://$CI_REPO_OWNER:$CI_FORGE_TOKEN@codeberg.org/$CI_REPO_OWNER/pages.git HEAD:main
     when:
-      branch: v4
+      branch: v5
 ```
 
 > [!TIP] Plugin install is mandatory in v5
@@ -211,6 +212,8 @@ A green checkmark indicates a successful connection.
 3. Configure your DNS:
    - **Subdomain**: Create a `CNAME` record pointing to `<username>.codeberg.page`
    - **Apex domain**: Create a `CNAME` record pointing to `<username>.codeberg.page` (if your DNS provider supports CNAME flattening) or use a redirect service.
+
+Don't forget to update `baseUrl` in `quartz.config.yaml` to match your custom domain.
 
 > [!NOTE] HTTPS
 > Codeberg Pages automatically provisions SSL certificates for custom domains.
