@@ -250,7 +250,7 @@ plugins:
       subdir: plugin
     enabled: true
     options:
-      theme: gummy-revived
+      theme: obsidian
 layout:
   groups:
     toolbar:
