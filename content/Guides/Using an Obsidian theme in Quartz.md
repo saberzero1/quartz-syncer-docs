@@ -44,16 +44,16 @@ Or let your CI pipeline handle it — every modern Quartz v5 build should run `n
 
 ## Options
 
-| Option | Type | Required | Default | Description |
-|---|---|---|---|---|
-| `theme` | string | yes | `tokyo-night` | Theme identifier from the Quartz Themes registry. |
-| `mode` | `dark` | `light` | `both` | yes | `both` | Which color mode(s) to include. |
-| `variation` | string | no | — | Sub-variation for themes that ship multiple palettes (e.g. `frappe` for `catppuccin`). |
-| `calloutStyle` | string | no | — | Callout style variant (e.g. `glass`, `glow`, `draa`). See [available styles](#callout-styles). |
-| `fonts` | object | no | — | Override `header`, `body`, and `code` fonts. |
-| `aspects` | object | no | — | Mix-and-match specific aspects from different themes, or `false` to exclude. |
-| `include` | array | no | all | Explicit list of aspects to apply (e.g. `[typography, callouts]`). |
-| `styleSettings` | object or string | no | — | Obsidian [Style Settings](https://github.com/mgmeyers/obsidian-style-settings) overrides as a JSON object or file path. |
+| Option          | Type             | Required | Default       | Description                                                                                                             |
+| --------------- | ---------------- | -------- | ------------- | ----------------------------------------------------------------------------------------------------------------------- | ------ | ------------------------------- |
+| `theme`         | string           | yes      | `tokyo-night` | Theme identifier from the Quartz Themes registry.                                                                       |
+| `mode`          | `dark`           | `light`  | `both`        | yes                                                                                                                     | `both` | Which color mode(s) to include. |
+| `variation`     | string           | no       | —             | Sub-variation for themes that ship multiple palettes (e.g. `frappe` for `catppuccin`).                                  |
+| `calloutStyle`  | string           | no       | —             | Callout style variant (e.g. `glass`, `glow`, `draa`). See [available styles](#callout-styles).                          |
+| `fonts`         | object           | no       | —             | Override `header`, `body`, and `code` fonts.                                                                            |
+| `aspects`       | object           | no       | —             | Mix-and-match specific aspects from different themes, or `false` to exclude.                                            |
+| `include`       | array            | no       | all           | Explicit list of aspects to apply (e.g. `[typography, callouts]`).                                                      |
+| `styleSettings` | object or string | no       | —             | Obsidian [Style Settings](https://github.com/mgmeyers/obsidian-style-settings) overrides as a JSON object or file path. |
 
 **Available aspects** (for `aspects` and `include`): `base`, `typography`, `callouts`, `tables`, `code`, `links`, `blockquotes`, `checkboxes`, `images`, `embeds`, `cards`, `search`, `scrollbars`, `explorer`, `toc`, `graph`, `popover`, `footer`, `recentNotes`, `listPage`, `darkmode`, `breadcrumbs`, `lists`, `canvas`, `bases`, `properties`, `stacked`, `misc`.
 

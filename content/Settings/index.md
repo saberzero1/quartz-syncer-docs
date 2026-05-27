@@ -22,11 +22,11 @@ tags:
 
 ## Commands
 
-| Command | Effect |
-| --- | --- |
-| `Quartz Syncer: Open publication center` | Opens the modal to manage the Quartz content on your Git repository. |
-| `Quartz Syncer: Add publish flag` | Adds the configured publish flag to the frontmatter and sets it to `true`. |
-| `Quartz Syncer: Remove publish flag` | Adds the configured publish flag to the frontmatter and sets it to `false`. |
-| `Quartz Syncer: Toggle publication status` | Adds the configured publish flag to the frontmatter and toggles it between `true` and `false`. |
-| `Quartz Syncer: Clear cache for current file` | Clears the cached compilation data for the current file. |
-| `Quartz Syncer: Clear cache for all files` | Clears all cached compilation data (prompts for confirmation). |
+| Command                                       | Effect                                                                                         |
+| --------------------------------------------- | ---------------------------------------------------------------------------------------------- |
+| `Quartz Syncer: Open publication center`      | Opens the modal to manage the Quartz content on your Git repository.                           |
+| `Quartz Syncer: Add publish flag`             | Adds the configured publish flag to the frontmatter and sets it to `true`.                     |
+| `Quartz Syncer: Remove publish flag`          | Adds the configured publish flag to the frontmatter and sets it to `false`.                    |
+| `Quartz Syncer: Toggle publication status`    | Adds the configured publish flag to the frontmatter and toggles it between `true` and `false`. |
+| `Quartz Syncer: Clear cache for current file` | Clears the cached compilation data for the current file.                                       |
+| `Quartz Syncer: Clear cache for all files`    | Clears all cached compilation data (prompts for confirmation).                                 |

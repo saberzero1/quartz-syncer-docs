@@ -129,7 +129,7 @@ Your site will be deployed to `<username>.gitlab.io/<project-name>`.
 2. Click **Add new token**.
 3. Enter a **Token name** (e.g., `Quartz Syncer`).
 4. Set an **Expiration date** (maximum 1 year).
-5. Under **Select scopes**, check **read\_repository** and **write\_repository**.
+5. Under **Select scopes**, check **read_repository** and **write_repository**.
 6. Click **Create personal access token**.
 7. Copy the generated token immediately.
 
