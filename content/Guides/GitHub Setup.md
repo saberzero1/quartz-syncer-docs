@@ -12,7 +12,7 @@ This guide covers setting up a Quartz v5 repository on GitHub, configuring GitHu
 
 ## Create a Quartz Repository
 
-If you haven't set up a Quartz repository on GitHub yet, [click here](https://github.com/new?template_name=quartz&template_owner=jackyzha0) to create one using the official Quartz template. Make sure to check **Include all branches** so the `v5` branch is included.
+If you haven't set up a Quartz repository on GitHub yet, [click here](https://github.com/new?template_name=quartz\&template_owner=jackyzha0) to create one using the official Quartz template. Make sure to check **Include all branches** so the `v5` branch is included.
 
 ## Clone and Install
 

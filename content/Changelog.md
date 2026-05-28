@@ -3,19 +3,25 @@ publish: true
 title: Roadmap and Changelog
 description: Changelog and feature roadmap for Quartz Syncer.
 created: 2025-05-16T12:59:31Z+0200
-modified: 2026-05-25T17:57:52Z+0200
+modified: 2026-05-29T00:59:04Z+0200
 ---
 
 ## Upcoming
 
-- Manage Quartz v5 layout.
-- Manage Quartz v5 components.
-
-## Planned
-
-## Someday
-
 ## Releases
+
+### Version 1.16.0
+
+- Added support for the new Obsidian Settings API.
+- Bumped minimum required version to 1.13.0.
+
+### Version 1.15.3
+
+- Implemented `obsidian-extended-metadatacache` for faster publishable files lookup performance.
+
+### Version 1.15.2
+
+- Removed snapshot tests from production plugin bundle.
 
 ### Version 1.15.1
 

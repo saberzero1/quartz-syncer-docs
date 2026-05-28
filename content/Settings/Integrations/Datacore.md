@@ -26,7 +26,7 @@ The output is then compared against the published version—if the compiled resu
 
 ```js title="datacorejsx"
 return function View() {
-  return <p>Hello!</p>
+  return <p>Hello!</p>;
 }
 ```
 
@@ -36,9 +36,9 @@ Hello!
 
 ```js title="datacorejsx"
 return function View() {
-  const pages = dc.useQuery("@page and #datacore")
-
-  return <dc.List rows={pages} renderer={(pages) => pages.$link} />
+  const pages = dc.useQuery('@page and #datacore');
+  
+  return <dc.List rows={pages} renderer={pages => pages.$link} />;
 }
 ```
 
@@ -48,26 +48,26 @@ return function View() {
 
 ```js title="datacorejsx"
 return function View() {
-  const pages = dc.useQuery("@page and #datacore")
+  const pages = dc.useQuery("@page and #datacore");
 
   const COLUMNS = [
-    { id: "Name", value: (page) => page.$link },
-    { id: "Tags", value: (page) => page.$tags },
-  ]
-
-  return <dc.Table rows={pages} columns={COLUMNS} />
+    {id: "Name", value: page => page.$link},
+    {id: "Tags", value: page => page.$tags}
+  ];
+  
+  return <dc.Table rows={pages} columns={COLUMNS} />;
 }
 ```
 
-| Name                                         | Tags                                                                                                                                                                                                |
-| -------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| [[Settings/Integrations/Datacore\|Datacore]] | <a href="tags/datacore" class="tag-link">datacore</a>, <a href="tags/integration" class="tag-link">integration</a>, <a href="tags/settings/integrations" class="tag-link">settings/integrations</a> |
+|Name|Tags|
+|---|---|
+|[[Settings/Integrations/Datacore\|Datacore]]|<a href="tags/datacore" class="tag-link">datacore</a>, <a href="tags/integration" class="tag-link">integration</a>, <a href="tags/settings/integrations" class="tag-link">settings/integrations</a>|
 
 ### Datacore Cards
 
 ```js title="datacorejsx"
 return function View() {
-  return <dc.Card title={"Test"} content={"Testing out a card"} footer={"Hello!"} />
+  return <dc.Card title={"Test"} content={"Testing out a card"} footer={"Hello!"} />;
 }
 ```
 
@@ -77,11 +77,7 @@ return function View() {
 
 ```js title="datacorejsx"
 return function View() {
-  return (
-    <dc.Callout title={"Test"} collapsible={true} open={true}>
-      Hello!
-    </dc.Callout>
-  )
+  return <dc.Callout title={"Test"} collapsible={true} open={true}>Hello!</dc.Callout>;
 }
 ```
 

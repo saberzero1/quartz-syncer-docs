@@ -31,7 +31,6 @@ This setting should be **Disabled** if:
 >
 > ```markdown
 > // index.md
->
 > # Hello
 >
 > ![[embed]]
@@ -39,7 +38,6 @@ This setting should be **Disabled** if:
 >
 > ```markdown
 > // embed.md
->
 > ## Goodbye
 >
 > Look mom, I'm embedded!
@@ -49,7 +47,6 @@ This setting should be **Disabled** if:
 > >
 > > ```markdown
 > > // index.md
-> >
 > > # Hello
 > >
 > > ## Goodbye
@@ -66,7 +63,6 @@ This setting should be **Disabled** if:
 > >
 > > ```markdown
 > > // index.md
-> >
 > > # Hello
 > >
 > > ![[embed]]
@@ -74,7 +70,6 @@ This setting should be **Disabled** if:
 > >
 > > ```markdown
 > > // embed.md
-> >
 > > ## Goodbye
 > >
 > > Look mom, I'm Embedded!

@@ -1,3 +1,4 @@
+
 // Quartz fixes
 .statblock {
   .statblock-item-container div {
@@ -53,9 +54,7 @@
   --statblock-content-font: "Noto Sans", "Myriad Pro", Calibri, Helvetica, Arial, sans-serif;
   --statblock-content-font-size: 14px;
 
-  --statblock-heading-font:
-    "Libre Baskerville", "Lora", "Calisto MT", "Bookman Old Style", Bookman, "Goudy Old Style",
-    Garamond, "Hoefler Text", "Bitstream Charter", Georgia, serif;
+  --statblock-heading-font: "Libre Baskerville", "Lora", "Calisto MT", "Bookman Old Style", Bookman, "Goudy Old Style", Garamond, "Hoefler Text", "Bitstream Charter", Georgia, serif;
   --statblock-heading-font-color: var(--statblock-font-color);
   --statblock-heading-font-size: 23px;
   --statblock-heading-font-variant: small-caps;
@@ -196,8 +195,9 @@
     background-color: var(--active-background-color);
     padding: 0.5em;
     border: var(--active-border-size) var(--active-border-color) solid;
-    box-shadow: var(--active-box-shadow-x-offset) var(--active-box-shadow-y-offset)
-      var(--active-box-shadow-blur) var(--active-box-shadow-color);
+    box-shadow: var(--active-box-shadow-x-offset)
+      var(--active-box-shadow-y-offset) var(--active-box-shadow-blur)
+      var(--active-box-shadow-color);
     margin-left: 2px;
     margin-right: 2px;
     display: flex;
@@ -275,8 +275,7 @@
 }
 
 .section-header {
-  border-bottom: var(--active-section-heading-border-size) solid
-    var(--active-section-heading-border-color);
+  border-bottom: var(--active-section-heading-border-size) solid var(--active-section-heading-border-color);
   color: var(--active-section-heading-font-color);
   font-size: var(--active-section-heading-font-size);
   font-variant: var(--active-section-heading-font-variant);
