@@ -3,12 +3,16 @@ publish: true
 title: Roadmap and Changelog
 description: Changelog and feature roadmap for Quartz Syncer.
 created: 2025-05-16T12:59:31Z+0200
-modified: 2026-05-29T00:59:04Z+0200
+modified: 2026-05-29T18:47:57Z+0200
 ---
 
 ## Upcoming
 
 ## Releases
+
+### Version 1.17.0
+
+- Migrated to Svelte 5 from Svelte 4.
 
 ### Version 1.16.0
 
