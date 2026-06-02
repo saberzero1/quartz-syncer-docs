@@ -29,6 +29,41 @@ Yes. Quartz Syncer can read and update `quartz.config.yaml` directly:
 - **From the CLI**: Use the `quartz-syncer:quartz-config` command to read or update configuration values. See the [[Guides/CLI|CLI guide]] for details.
 - **Plugin management**: Use the `quartz-syncer:plugin` command to list, add, remove, and update Quartz v5 plugins. See the [[Guides/CLI|CLI guide]] for details.
 
+## Quartz plugins fail to build on a fresh clone
+
+On a brand-new clone, `npx quartz plugin install` may report a handful of plugins failing to build. This happens because `quartz.lock.json` pins each plugin to a specific commit, and those older commits may have been authored against earlier versions of `@quartz-community/types` / `@quartz-community/utils` whose built output is no longer available.
+
+Fix it by refreshing all plugins to their latest versions:
+
+```bash
+npx quartz plugin install --latest
+```
+
+This rewrites `quartz.lock.json` with the newest commits and rebuilds every plugin from scratch. Subsequent `npx quartz plugin install` calls will restore cleanly from the refreshed lockfile.
+
+> [!TIP] Most community plugins now ship pre-built
+> Most community plugins now include a pre-built `dist/` directory, skipping the build step entirely. This issue mainly applies to plugins in development or older plugins that haven't adopted pre-built distribution.
+
+## Plugin install hangs or fails on low-end hardware or CI
+
+By default, `npx quartz plugin install` clones and builds plugins in parallel across all CPU cores. On memory-constrained environments (CI runners, low-end laptops, Raspberry Pi, small VPS instances) this can exhaust RAM or cause the process to hang.
+
+Lower the parallelism with the `--concurrency` / `-c` flag:
+
+```bash
+# Install one plugin at a time (safest, slowest)
+npx quartz plugin install --latest -c 1
+
+# Two at a time — usually works on 4 GB machines
+npx quartz plugin install --latest --concurrency 2
+```
+
+The same flag works for `plugin add`:
+
+```bash
+npx quartz plugin add github:quartz-community/some-plugin -c 1
+```
+
 ## I have a different issue not listed here
 
 Please raise an [issue on GitHub](https://github.com/saberzero1/quartz-syncer/issues).

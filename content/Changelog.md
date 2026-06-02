@@ -3,12 +3,20 @@ publish: true
 title: Roadmap and Changelog
 description: Changelog and feature roadmap for Quartz Syncer.
 created: 2025-05-16T12:59:31Z+0200
-modified: 2026-05-29T18:47:57Z+0200
+modified: 2026-06-02T14:27:39Z+0200
 ---
 
 ## Upcoming
 
 ## Releases
+
+### Version 1.17.1
+
+- Upgraded vulnerable dependencies versions.
+- Removed Dataview and Datacore dependencies
+  - Quartz Syncer will use these directly  instead (when enabled.)
+- Cleaned up stale files.
+- Updated setup guide and troubleshooting.
 
 ### Version 1.17.0
 

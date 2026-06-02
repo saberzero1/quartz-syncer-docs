@@ -14,6 +14,9 @@ tags:
 > [!IMPORTANT] Quartz v5 required
 > Quartz Syncer targets [Quartz v5](https://quartz.jzhao.xyz/). Quartz v4 configurations (`quartz.config.ts`, `quartz.layout.ts`) are no longer supported. If you are upgrading from v4, follow the [upstream migration guide](https://quartz.jzhao.xyz/migrating) first.
 
+> [!IMPORTANT] Node.js v22 or later required
+> Quartz v5 requires **[Node.js](https://nodejs.org/) v22 or later** and **npm v10.9.2 or later**. Run `node -v` and `npm -v` to check your versions before continuing.
+
 ## Choose Your Git Provider
 
 Quartz Syncer supports any Git provider. Choose your provider for complete setup instructions:
