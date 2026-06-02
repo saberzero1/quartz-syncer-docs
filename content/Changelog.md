@@ -3,7 +3,7 @@ publish: true
 title: Roadmap and Changelog
 description: Changelog and feature roadmap for Quartz Syncer.
 created: 2025-05-16T12:59:31Z+0200
-modified: 2026-06-02T14:27:39Z+0200
+modified: 2026-06-02T14:46:51Z+0200
 ---
 
 ## Upcoming
@@ -12,6 +12,7 @@ modified: 2026-06-02T14:27:39Z+0200
 
 ### Version 1.17.1
 
+- Fixed Svelte 5 reactivity issue.
 - Upgraded vulnerable dependencies versions.
 - Removed Dataview and Datacore dependencies
   - Quartz Syncer will use these directly  instead (when enabled.)
