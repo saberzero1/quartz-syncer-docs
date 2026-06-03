@@ -3,12 +3,18 @@ publish: true
 title: Roadmap and Changelog
 description: Changelog and feature roadmap for Quartz Syncer.
 created: 2025-05-16T12:59:31Z+0200
-modified: 2026-06-02T18:24:47Z+0200
+modified: 2026-06-02T19:09:30Z+0200
 ---
 
 ## Upcoming
 
 ## Releases
+
+### Version 1.17.3
+
+- Refactored buffer git interaction.
+- Dropped `bun.lock` to not confuse the automated checks about runtime.
+- Updated Esbuild message.
 
 ### Version 1.17.2
 
