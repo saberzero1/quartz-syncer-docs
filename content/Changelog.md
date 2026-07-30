@@ -3,10 +3,12 @@ publish: true
 title: Roadmap and Changelog
 description: Changelog and feature roadmap for Quartz Syncer.
 created: 2025-05-16T12:59:31Z+0200
-modified: 2026-06-08T15:17:47Z+0200
+modified: 2026-07-30T17:18:08Z+0200
 ---
 
 ## Upcoming
+
+- Full Quartz v5 compatibility.
 
 ## Releases
 
